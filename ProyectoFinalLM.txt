@@ -3,7 +3,7 @@ Tema: quizs
 
 Inicio:
 introduccion
-0  -  aleatorio 
+0  -  mix/aleatorio/
 1  -  historia
 2  -  fisica y quimica
 3  -  biologia
