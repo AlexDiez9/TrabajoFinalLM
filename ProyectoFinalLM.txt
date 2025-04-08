@@ -1,0 +1,21 @@
+Proyecto Final LM
+Tema: quizs
+
+Inicio:
+introduccion
+0  -  aleatorio 
+1  -  historia
+2  -  fisica y quimica
+3  -  biologia
+4  -  tecnologia
+5  -  cine
+6  -  cultura general
+7  -  arte
+8  -  geografia
+9  -  musica
+10 -  deportes
+11 -  literatura
+12 -  marcas y logotipos
+
+
+
