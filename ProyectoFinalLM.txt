@@ -271,13 +271,16 @@ introduccion
 
 
 8  -  geografia
-  1.
-  2.
-  3.
-  4.
-  5.
-  6.
-  7.
+  1.¿Cuál es la capital de Mongolia? A) Ulan Bator (✔) B) Astana C) Seúl D) Almaty
+  2.¿En qué país se encuentra el lago Titicaca? A) Bolivia y Perú (✔) B) Argentina C) Colombia D) Chile
+  3.¿Qué país tiene el mayor número de islas en el mundo? A) Indonesia  B) Suecia (✔) C) Canadá D) Noruega
+  4.¿Cuál es la capital de Bután? A) Katmandú B) Thimphu (✔) C) Colombo D) Dhaka
+  5.¿Cuál es la capital de Canadá? A) Montreal  B) Toronto C) Ottawa (✔) D) Vancouver
+  6.¿Qué océano es el más grande del mundo? A) Atlántico  B) Pacífico (✔) C) Índico D) Ártico
+  7.¿Qué océano es el más grande del mundo? A) Atlántico 
+B) Pacífico (✔)
+C) Índico
+D) Ártico
   8.
   9.
  10.✅
