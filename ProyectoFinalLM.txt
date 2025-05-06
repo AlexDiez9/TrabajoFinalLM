@@ -55,9 +55,9 @@ introduccion
  13. ¿Qué era un feudo? A) Una ciudad medieval B) Una unidad de producción C) Un territorio bajo control de un señor ✅ D) Un ejército
  14. ¿Qué evento marcó el inicio de la Edad Media? A) Descubrimiento de América B) Caída del Imperio Romano ✅ C) Reforma protestante D) La Peste Negra
  15. ¿Qué eran las Cruzadas? A) Expansiones islámicas B) Viajes de comerciantes C) Guerras religiosas para recuperar Tierra Santa ✅ D) Exploraciones
- 16. 
- 17.
- 18.
+ 16. ¿Quién fue Carlomagno? A) Rey de Inglaterra B) Emperador del Sacro Imperio Romano Germánico ✅ C) Explorador vikingo D) Papa
+ 17. ¿En qué año comenzó la invasión musulmana de la Península Ibérica?A) 476 B) 711 ✅ C) 800 D) 1492
+ 18. ¿Qué peste asoló Europa en el siglo XIV? A) Cólera B) Gripe española C) Peste negra ✅ D) Sarampión
  19.
  20.
  21.
@@ -271,22 +271,22 @@ introduccion
 
 
 8  -  geografia
-  1.¿Cuál es la capital de Mongolia? A) Ulan Bator (✔) B) Astana C) Seúl D) Almaty
-  2.¿En qué país se encuentra el lago Titicaca? A) Bolivia y Perú (✔) B) Argentina C) Colombia D) Chile
-  3.¿Qué país tiene el mayor número de islas en el mundo? A) Indonesia  B) Suecia (✔) C) Canadá D) Noruega
-  4.¿Cuál es la capital de Bután? A) Katmandú B) Thimphu (✔) C) Colombo D) Dhaka
-  5.¿Cuál es la capital de Canadá? A) Montreal  B) Toronto C) Ottawa (✔) D) Vancouver
-  6.¿Qué océano es el más grande del mundo? A) Atlántico  B) Pacífico (✔) C) Índico D) Ártico
+  1.¿Cuál es la capital de Mongolia? A) Ulan Bator ✅ B) Astana C) Seúl D) Almaty
+  2.¿En qué país se encuentra el lago Titicaca? A) Bolivia y Perú ✅ B) Argentina C) Colombia D) Chile
+  3.¿Qué país tiene el mayor número de islas en el mundo? A) Indonesia  B) Suecia ✅ C) Canadá D) Noruega
+  4.¿Cuál es la capital de Bután? A) Katmandú B) Thimphu ✅ C) Colombo D) Dhaka
+  5.¿Cuál es la capital de Canadá? A) Montreal  B) Toronto C) Ottawa ✅ D) Vancouver
+  6.¿Qué océano es el más grande del mundo? A) Atlántico  B) Pacífico ✅ C) Índico D) Ártico
   7.¿Qué océano es el más grande del mundo? A) Atlántico 
-B) Pacífico (✔)
+B) Pacífico ✅
 C) Índico
 D) Ártico
   8.
   9.
- 10.✅
- 11.✅
+ 10.
+ 11.
  12.
- 13.✅
+ 13.
  14.
  15.
  16.
