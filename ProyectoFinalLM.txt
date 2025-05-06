@@ -238,72 +238,368 @@ introduccion
 
 
 7  -  arte
-  1.
-  2.
-  3.
-  4.
-  5.
-  6.
-  7.
-  8.
-  9.
- 10.
- 11.
- 12.
- 13.
- 14.
- 15.
- 16.
- 17.
- 18.
- 19.
- 20.
- 21.
- 22.
- 23.
- 24.
- 25.
- 26.
- 27.
- 28.
- 29.
- 30.
+  ¿Quién pintó la famosa obra "La noche estrellada"?
+A) Claude Monet
+B) Pablo Picasso
+C) Vincent van Gogh (✔)
+D) Salvador Dalí
+
+¿En qué estilo artístico se enmarca la obra de "Guernica"?
+A) Impresionismo
+B) Cubismo (✔)
+C) Surrealismo
+D) Realismo
+
+¿Cuál es la pintura más famosa de Leonardo da Vinci?
+A) La Última Cena
+B) La Gioconda (✔)
+C) La Anunciación
+D) La Virgen de las Rocas
+
+¿Qué pintor español es conocido por su obra "Las Meninas"?
+A) Francisco de Goya
+B) Diego Velázquez (✔)
+C) El Greco
+D) José de Ribera
+
+¿Cuál de los siguientes artistas fue precursor del cubismo?
+A) Henri Matisse
+B) Pablo Picasso (✔)
+C) Salvador Dalí
+D) René Magritte
+
+¿Quién pintó "La persistencia de la memoria"?
+A) Marc Chagall
+B) Salvador Dalí (✔)
+C) Henri Rousseau
+D) Pablo Picasso
+
+¿Qué pintor se asocia con el estilo de "expresionismo"?
+A) Edvard Munch (✔)
+B) Vincent van Gogh
+C) Henri Toulouse-Lautrec
+D) Claude Monet
+
+¿Dónde se encuentra la famosa pintura "La Última Cena"?
+A) Museo del Prado
+B) Museo del Louvre
+C) Santa Maria delle Grazie, Milán (✔)
+D) Museo de Arte Moderno de Nueva York
+
+¿Cuál es el título de la famosa pintura de Edvard Munch que muestra una figura angustiada en un puente?
+A) La Sombra
+B) El Grito (✔)
+C) La Danza
+D) La Muerte
+
+¿Qué pintor es conocido por sus obras abstractas y uso del color?
+A) Jackson Pollock (✔)
+B) Mark Rothko
+C) Piet Mondrian
+D) Salvador Dalí
+
+¿Quién pintó "El jardín de las delicias"?
+A) Hieronymus Bosch (✔)
+B) Rafael
+C) Michelangelo
+D) Caravaggio
+
+¿Qué famoso pintor flamenco es conocido por sus obras de tamaño grande y de tema religioso y mitológico, como "El triunfo de Baco"?
+A) Rembrandt
+B) Peter Paul Rubens (✔)
+C) Jan van Eyck
+D) Van Gogh
+
+¿Qué pintor creó la serie de cuadros conocida como "Amanecer en el Prado"?
+A) José Royo
+B) Juan Gris
+C) Francisco de Goya (✔)
+D) Rafael
+
+¿Qué escultor es famoso por sus obras en mármol, especialmente "David"?
+A) Donatello
+B) Miguel Ángel (✔)
+C) Gian Lorenzo Bernini
+D) Auguste Rodin
+
+¿Qué artista italiano del Renacimiento pintó la "Creación de Adán"?
+A) Leonardo da Vinci
+B) Michelangelo (✔)
+C) Sandro Botticelli
+D) Raffaello Sanzio
+
+¿Quién pintó "La joven de la perla"?
+A) Rembrandt
+B) Johannes Vermeer (✔)
+C) Jan Vermeer
+D) Pieter Bruegel
+
+¿Qué pintor surrealista es conocido por sus relojes derretidos?
+A) René Magritte
+B) Salvador Dalí (✔)
+C) Joan Miró
+D) Max Ernst
+
+¿Quién pintó "El nacimiento de Venus"?
+A) Leonardo da Vinci
+B) Sandro Botticelli (✔)
+C) Tiziano
+D) Raffaello
+
+¿Quién es conocido por pintar las "aguas tranquilas" y otras escenas de paisajes y naturaleza?
+A) Claude Monet (✔)
+B) Edgar Degas
+C) Pierre-Auguste Renoir
+D) Vincent van Gogh
+
+¿Qué pintor español está asociado con el estilo conocido como "realismo" y la pintura social?
+A) Francisco de Goya
+B) Diego Rivera
+C) José Royo
+D) José de Ribera (✔)
+
+¿Qué famoso pintor francés fue uno de los fundadores del impresionismo?
+A) Edgar Degas
+B) Claude Monet (✔)
+C) Pierre-Auguste Renoir
+D) Henri Matisse
+
+¿Qué escultor es conocido por la obra "El Pensador"?
+A) Antonio Canova
+B) Gian Lorenzo Bernini
+C) Auguste Rodin (✔)
+D) Michelangelo
+
+¿Qué famoso pintor holandés se destacó por sus autorretratos y paisajes, incluyendo "La Ronda de Noche"?
+A) Vincent van Gogh
+B) Rembrandt (✔)
+C) Johannes Vermeer
+D) Pieter Bruegel
+
+¿Quién pintó "El beso" en el periodo Art Nouveau?
+A) Gustave Klimt (✔)
+B) Henri Toulouse-Lautrec
+C) Pierre-Auguste Renoir
+D) Edgar Degas
+
+¿Qué pintor es conocido por su serie de "Lirios" y "Nenúfares"?
+A) Henri Matisse
+B) Claude Monet (✔)
+C) Edgar Degas
+D) Pierre-Auguste Renoir
+
+¿Qué pintor surrealista belga es conocido por sus "sombras de nubes" y paisajes de mundos alternativos?
+A) René Magritte (✔)
+B) Max Ernst
+C) Salvador Dalí
+D) Joan Miró
+
+¿Quién pintó "La última cena"?
+A) Leonardo da Vinci (✔)
+B) Miguel Ángel
+C) Rafael
+D) Tiziano
+
+¿Qué pintor se asocia con el muralismo mexicano y fue conocido por sus temas políticos?
+A) Diego Rivera (✔)
+B) David Alfaro Siqueiros
+C) José Clemente Orozco
+D) Rufino Tamayo
+
+¿Qué pintor español fue conocido por sus obras de gran tamaño, y "Los fusilamientos del 3 de mayo"?
+A) El Greco
+B) Francisco de Goya (✔)
+C) Diego Velázquez
+D) Joaquín Sorolla
+
+¿Qué pintor italiano fue el principal representante del manierismo y pintó "La Virgen con el Niño y Santos"?
+A) Miguel Ángel
+B) Rafael
+C) El Greco
+D) Parmigianino (✔)
+
 
 
 8  -  geografia
-  1.¿Cuál es la capital de Mongolia? A) Ulan Bator (✔) B) Astana C) Seúl D) Almaty
-  2.¿En qué país se encuentra el lago Titicaca? A) Bolivia y Perú (✔) B) Argentina C) Colombia D) Chile
-  3.¿Qué país tiene el mayor número de islas en el mundo? A) Indonesia  B) Suecia (✔) C) Canadá D) Noruega
-  4.¿Cuál es la capital de Bután? A) Katmandú B) Thimphu (✔) C) Colombo D) Dhaka
-  5.¿Cuál es la capital de Canadá? A) Montreal  B) Toronto C) Ottawa (✔) D) Vancouver
-  6.¿Qué océano es el más grande del mundo? A) Atlántico  B) Pacífico (✔) C) Índico D) Ártico
-  7.¿Qué océano es el más grande del mundo? A) Atlántico 
+ ¿Cuál es la capital de Mongolia?
+A) Ulan Bator (✔)
+B) Astana
+C) Seúl
+D) Almaty
+
+¿En qué país se encuentra el lago Titicaca?
+A) Bolivia y Perú (✔)
+B) Argentina
+C) Colombia
+D) Chile
+
+¿Qué país tiene el mayor número de islas en el mundo?
+A) Indonesia
+B) Suecia (✔)
+C) Canadá
+D) Noruega
+
+¿Cuál es la capital de Bután?
+A) Katmandú
+B) Thimphu (✔)
+C) Colombo
+D) Dhaka
+
+¿Cuál es la capital de Canadá?
+A) Montreal
+B) Toronto
+C) Ottawa (✔)
+D) Vancouver
+
+¿Qué océano es el más grande del mundo?
+A) Atlántico
 B) Pacífico (✔)
 C) Índico
 D) Ártico
-  8.
-  9.
- 10.✅
- 11.✅
- 12.
- 13.✅
- 14.
- 15.
- 16.
- 17.
- 18.
- 19.
- 20.
- 21.
- 22.
- 23.
- 24.
- 25.
- 26.
- 27.
- 28.
- 29.
- 30.
+
+¿En qué continente se encuentran los Alpes?
+A) Asia
+B) Europa (✔)
+C) América
+D) África
+
+¿Cuál es el continente con mayor cantidad de desiertos?
+A) África (✔)
+B) Asia
+C) América del Norte
+D) Oceanía
+
+¿Cuál es el volcán más alto del mundo?
+A) Etna
+B) Mauna Kea
+C) Ojos del Salado (✔)
+D) Vesubio
+
+¿Qué cordillera separa a Europa de Asia?
+A) Himalayas
+B) Andes
+C) Ural (✔)
+D) Alpes
+
+¿Qué país tiene la mayor cantidad de zonas horarias?
+A) Estados Unidos
+B) Rusia (✔)
+C) Brasil
+D) China
+
+¿Cuál es el único país que tiene un territorio en los 4 hemisferios?
+A) Brasil
+B) Francia (✔)
+C) Ecuador
+D) Estados Unidos
+
+¿Qué país tiene más habitantes en el mundo?
+A) Estados Unidos
+B) India
+C) China (✔)
+D) Indonesia
+
+¿Qué país tiene el mayor número de lagos?
+A) Canadá (✔)
+B) Finlandia
+C) Rusia
+D) Estados Unidos
+
+¿Qué isla es la más grande del mundo?
+A) Groenlandia (✔)
+B) Australia
+C) Nueva Guinea
+D) Borneo
+
+¿En qué país está la ciudad de Sarajevo?
+A) Serbia
+B) Bosnia y Herzegovina (✔)
+C) Croacia
+D) Albania
+
+¿Dónde se encuentra la ciudad de Sídney?
+A) Nueva Zelanda
+B) Australia (✔)
+C) Sudáfrica
+D) India
+
+¿Qué país tiene más islas habitadas?
+A) Finlandia (✔)
+B) Grecia
+C) Japón
+D) Estados Unidos
+
+¿En qué continente se encuentra el río Amazonas?
+A) Asia
+B) América del Sur (✔)
+C) África
+D) Oceanía
+
+¿Qué país tiene el mayor número de volcanes activos?
+A) Indonesia (✔)
+B) Japón
+C) Italia
+D) Chile
+
+¿Qué país tiene la mayor cantidad de fronteras con otros países?
+A) Rusia (✔)
+B) China
+C) Brasil
+D) India
+
+¿Qué país tiene la mayor cantidad de zonas horarias?
+A) Rusia (✔)
+B) Estados Unidos
+C) China
+D) Australia
+
+¿Cuál es el único país que tiene un territorio en los 4 hemisferios?
+A) Francia (✔)
+B) Ecuador
+C) Brasil
+D) Indonesia
+
+¿Qué país tiene más habitantes en el mundo?
+A) China (✔)
+B) India
+C) Estados Unidos
+D) Indonesia
+
+¿Qué país tiene el mayor número de lagos?
+A) Canadá (✔)
+B) Finlandia
+C) Rusia
+D) Estados Unidos
+
+¿Qué isla es la más grande del mundo?
+A) Groenlandia (✔)
+B) Australia
+C) Nueva Guinea
+D) Borneo
+
+¿En qué país se encuentra la ciudad de Marrakech?
+A) Marruecos (✔)
+B) Túnez
+C) Argelia
+D) Egipto
+
+¿Cuál es el país más pequeño del mundo?
+A) San Marino
+B) Ciudad del Vaticano (✔)
+C) Mónaco
+D) Nauru
+
+¿En qué continente se encuentran las Islas Galápagos?
+A) América del Sur (✔)
+B) Oceanía
+C) África
+D) Asia
+
+¿Cuál es el país con mayor superficie de selva tropical?
+A) Perú
+B) Brasil (✔)
+C) Venezuela
+D) Colombia
 
 
 9  -  musica
