@@ -48,7 +48,32 @@
     color: white;
     letter-spacing: 1.5px;
     word-spacing: 10px;
-    text-shadow: whitesmoke ;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    h5::before{
+        content: "← ";
+        letter-spacing: 0.5px;
+    }
+    h5{
+        color: white;
+        letter-spacing: 1px;
+    }
+    #resultado h5{
+        color: black;
+    }
+
+    #resultado{
+        display:none; 
+        padding: 20px; 
+        padding-top: 5px;
+        background:#fff3cd; 
+        border:1px solid #ffeeba; 
+        border-radius:10px; 
+        margin-top:10px;
     }
 
     #historia, #Cine{
@@ -59,7 +84,7 @@
         background-color: rgb(0, 204, 255, 0.5);
     }
 
-    #Biologia, #Deporte{
+    #Biologia, #Deporte, #Geografia{
         background-color: rgba(22, 195, 25, 0.719);
     }
 
