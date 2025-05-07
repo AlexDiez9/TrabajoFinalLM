@@ -1,13 +1,329 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
- <title>Inicio</title>
- <meta charset="UTF-8">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <title>Quiz de Tecnología</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
 
+    .pregunta {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pregunta h3 {
+      margin-top: 0;
+    }
+
+    .opcion {
+      margin: 8px 0;
+      padding: 10px;
+      background: #e9ecef;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .opcion:hover {
+      background: #ca3712;
+    }
+
+    .correcta {
+      background-color: #c8e6c9 !important;
+      color: #256029;
+    }
+
+    .incorrecta {
+      background-color: #ffcdd2 !important;
+      color: #b71c1c;
+    }
+
+    .opcion.desactivada {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body id="tecnologia">
+
+  <h1>Cuestionario de Tecnología</h1>
+
+  <!-- Pregunta 1 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>1. ¿Quién fundó Microsoft?</h3>
+    <div class="opcion" data-opcion="A">A) Steve Jobs</div>
+    <div class="opcion" data-opcion="B">B) Bill Gates</div>
+    <div class="opcion" data-opcion="C">C) Mark Zuckerberg</div>
+    <div class="opcion" data-opcion="D">D) Larry Page</div>
+  </div>
+
+  <!-- Pregunta 2 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>2. ¿Cuál es el lenguaje de programación más utilizado para el desarrollo web?</h3>
+    <div class="opcion" data-opcion="A">A) Python</div>
+    <div class="opcion" data-opcion="B">B) Java</div>
+    <div class="opcion" data-opcion="C">C) JavaScript</div>
+    <div class="opcion" data-opcion="D">D) C++</div>
+  </div>
+
+  <!-- Pregunta 3 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>3. ¿Qué es un algoritmo?</h3>
+    <div class="opcion" data-opcion="A">A) Un conjunto de pasos para resolver un problema</div>
+    <div class="opcion" data-opcion="B">B) Un lenguaje de programación</div>
+    <div class="opcion" data-opcion="C">C) Un tipo de software</div>
+    <div class="opcion" data-opcion="D">D) Un sistema operativo</div>
+  </div>
+
+  <!-- Pregunta 4 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>4. ¿Qué significa la sigla "HTML"?</h3>
+    <div class="opcion" data-opcion="A">A) Hyper Text Markup Language</div>
+    <div class="opcion" data-opcion="B">B) Hyper Text Marking Language</div>
+    <div class="opcion" data-opcion="C">C) Hyper Tool Markup Language</div>
+    <div class="opcion" data-opcion="D">D) Hyper Transfer Markup Language</div>
+  </div>
+
+  <!-- Pregunta 5 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>5. ¿Qué empresa desarrolló el sistema operativo Android?</h3>
+    <div class="opcion" data-opcion="A">A) Apple</div>
+    <div class="opcion" data-opcion="B">B) Microsoft</div>
+    <div class="opcion" data-opcion="C">C) Google</div>
+    <div class="opcion" data-opcion="D">D) Samsung</div>
+  </div>
+
+  <!-- Pregunta 6 -->
+  <div class="pregunta" data-correcta="D">
+    <h3>6. ¿Cuál fue el primer dispositivo móvil que usó la red 5G?</h3>
+    <div class="opcion" data-opcion="A">A) iPhone X</div>
+    <div class="opcion" data-opcion="B">B) Samsung Galaxy S10</div>
+    <div class="opcion" data-opcion="C">C) Huawei Mate 20</div>
+    <div class="opcion" data-opcion="D">D) Samsung Galaxy S20</div>
+  </div>
+
+  <!-- Pregunta 7 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>7. ¿Qué significa la sigla "CPU"?</h3>
+    <div class="opcion" data-opcion="A">A) Unidad Central de Procesamiento</div>
+    <div class="opcion" data-opcion="B">B) Central Program Unit</div>
+    <div class="opcion" data-opcion="C">C) Central Processing Unit</div>
+    <div class="opcion" data-opcion="D">D) Computer Programming Unit</div>
+  </div>
+
+  <!-- Pregunta 8 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>8. ¿Cuál es el nombre del creador de Facebook?</h3>
+    <div class="opcion" data-opcion="A">A) Bill Gates</div>
+    <div class="opcion" data-opcion="B">B) Mark Zuckerberg</div>
+    <div class="opcion" data-opcion="C">C) Steve Jobs</div>
+    <div class="opcion" data-opcion="D">D) Larry Page</div>
+  </div>
+
+  <!-- Pregunta 9 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>9. ¿En qué año se lanzó el primer iPhone?</h3>
+    <div class="opcion" data-opcion="A">A) 2005</div>
+    <div class="opcion" data-opcion="B">B) 2006</div>
+    <div class="opcion" data-opcion="C">C) 2007</div>
+    <div class="opcion" data-opcion="D">D) 2008</div>
+  </div>
+
+  <!-- Pregunta 10 -->
+  <div class="pregunta" data-correcta="D">
+    <h3>10. ¿Qué lenguaje de programación se utiliza principalmente para aplicaciones web del lado del servidor?</h3>
+    <div class="opcion" data-opcion="A">A) Python</div>
+    <div class="opcion" data-opcion="B">B) JavaScript</div>
+    <div class="opcion" data-opcion="C">C) Ruby</div>
+    <div class="opcion" data-opcion="D">D) PHP</div>
+  </div>
+
+  <!-- Pregunta 11 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>11. ¿Qué es un sistema operativo?</h3>
+    <div class="opcion" data-opcion="A">A) Un programa de mensajería</div>
+    <div class="opcion" data-opcion="B">B) Un tipo de hardware</div>
+    <div class="opcion" data-opcion="C">C) Un software que gestiona los recursos del hardware</div>
+    <div class="opcion" data-opcion="D">D) Un servicio de almacenamiento en la nube</div>
+  </div>
+
+  <!-- Pregunta 12 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>12. ¿Qué empresa creó el sistema operativo iOS?</h3>
+    <div class="opcion" data-opcion="A">A) Microsoft</div>
+    <div class="opcion" data-opcion="B">B) Apple</div>
+    <div class="opcion" data-opcion="C">C) Google</div>
+    <div class="opcion" data-opcion="D">D) Samsung</div>
+  </div>
+
+  <!-- Pregunta 13 -->
+  <div class="pregunta" data-correcta="D">
+    <h3>13. ¿Cuál es el nombre del creador de Amazon?</h3>
+    <div class="opcion" data-opcion="A">A) Steve Jobs</div>
+    <div class="opcion" data-opcion="B">B) Bill Gates</div>
+    <div class="opcion" data-opcion="C">C) Larry Page</div>
+    <div class="opcion" data-opcion="D">D) Jeff Bezos</div>
+  </div>
+
+  <!-- Pregunta 14 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>14. ¿Qué es la realidad aumentada?</h3>
+    <div class="opcion" data-opcion="A">A) Tecnología que superpone elementos virtuales sobre el mundo real</div>
+    <div class="opcion" data-opcion="B">B) Un tipo de videojuegos de realidad virtual</div>
+    <div class="opcion" data-opcion="C">C) Un software de diseño gráfico</div>
+    <div class="opcion" data-opcion="D">D) Un servicio de transmisión de videos en línea</div>
+  </div>
+
+  <!-- Pregunta 15 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>15. ¿Qué significa "URL"?</h3>
+    <div class="opcion" data-opcion="A">A) Un tipo de archivo comprimido</div>
+    <div class="opcion" data-opcion="B">B) Uniform Resource Locator</div>
+    <div class="opcion" data-opcion="C">C) Universal Resource Locator</div>
+    <div class="opcion" data-opcion="D">D) Universal Retrieval Locator</div>
+  </div>
+
+  <!-- Pregunta 16 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>16. ¿Cuál de las siguientes opciones es un buscador web?</h3>
+    <div class="opcion" data-opcion="A">A) Facebook</div>
+    <div class="opcion" data-opcion="B">B) Instagram</div>
+    <div class="opcion" data-opcion="C">C) Google</div>
+    <div class="opcion" data-opcion="D">D) Twitter</div>
+  </div>
+
+  <!-- Pregunta 17 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>17. ¿Qué es el "Big Data"?</h3>
+    <div class="opcion" data-opcion="A">A) El análisis de grandes volúmenes de datos</div>
+    <div class="opcion" data-opcion="B">B) Un sistema operativo</div>
+    <div class="opcion" data-opcion="C">C) Una base de datos en la nube</div>
+    <div class="opcion" data-opcion="D">D) Un tipo de software de edición gráfica</div>
+  </div>
+
+  <!-- Pregunta 18 -->
+  <div class="pregunta" data-correcta="D">
+    <h3>18. ¿Qué empresa desarrolló la consola de videojuegos PlayStation?</h3>
+    <div class="opcion" data-opcion="A">A) Microsoft</div>
+    <div class="opcion" data-opcion="B">B) Nintendo</div>
+    <div class="opcion" data-opcion="C">C) Sega</div>
+    <div class="opcion" data-opcion="D">D) Sony</div>
+  </div>
+
+  <!-- Pregunta 19 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>19. ¿Qué significa la sigla "GPU"?</h3>
+    <div class="opcion" data-opcion="A">A) General Processing Unit</div>
+    <div class="opcion" data-opcion="B">B) General Power Unit</div>
+    <div class="opcion" data-opcion="C">C) Graphics Processing Unit</div>
+    <div class="opcion" data-opcion="D">D) Graphics Power Unit</div>
+  </div>
+
+  <!-- Pregunta 20 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>20. ¿En qué año se fundó Google?</h3>
+    <div class="opcion" data-opcion="A">A) 1995</div>
+    <div class="opcion" data-opcion="B">B) 1998</div>
+    <div class="opcion" data-opcion="C">C) 2000</div>
+    <div class="opcion" data-opcion="D">D) 2005</div>
+  </div>
+
+  <!-- Pregunta 21 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>21. ¿Qué significa "IoT" en el contexto de tecnología?</h3>
+    <div class="opcion" data-opcion="A">A) Internet de las Cosas</div>
+    <div class="opcion" data-opcion="B">B) Interfaz de Operación Técnica</div>
+    <div class="opcion" data-opcion="C">C) Integración de Objetos Técnicos</div>
+    <div class="opcion" data-opcion="D">D) Información Operacional de Tecnología</div>
+  </div>
+
+  <!-- Pregunta 22 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>22. ¿Cuál es la finalidad principal de la criptografía?</h3>
+    <div class="opcion" data-opcion="A">A) Acelerar los procesos de computación</div>
+    <div class="opcion" data-opcion="B">B) Mejorar la calidad de las imágenes digitales</div>
+    <div class="opcion" data-opcion="C">C) Asegurar la confidencialidad de los datos</div>
+    <div class="opcion" data-opcion="D">D) Incrementar el rendimiento de los servidores</div>
+  </div>
+
+  <!-- Pregunta 23 -->
+  <div class="pregunta" data-correcta="D">
+    <h3>23. ¿Qué empresa desarrolló el sistema operativo Windows?</h3>
+    <div class="opcion" data-opcion="A">A) Apple</div>
+    <div class="opcion" data-opcion="B">B) Google</div>
+    <div class="opcion" data-opcion="C">C) IBM</div>
+    <div class="opcion" data-opcion="D">D) Microsoft</div>
+  </div>
+
+  <!-- Pregunta 24 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>24. ¿Qué dispositivo portátil fue inventado por Steve Jobs y su equipo en Apple?</h3>
+    <div class="opcion" data-opcion="A">A) iPod</div>
+    <div class="opcion" data-opcion="B">B) iPhone</div>
+    <div class="opcion" data-opcion="C">C) iPad</div>
+    <div class="opcion" data-opcion="D">D) MacBook</div>
+  </div>
+
+  <!-- Pregunta 25 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>25. ¿Qué significa la sigla "VPN" en tecnología?</h3>
+    <div class="opcion" data-opcion="A">A) Virtual Public Network</div>
+    <div class="opcion" data-opcion="B">B) Virtual Private Node</div>
+    <div class="opcion" data-opcion="C">C) Virtual Private Network</div>
+    <div class="opcion" data-opcion="D">D) Virtual Public Node</div>
+  </div>
+
+  <!-- Pregunta 26 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>26. ¿Qué es la inteligencia artificial?</h3>
+    <div class="opcion" data-opcion="A">A) La simulación de procesos de inteligencia humana por parte de máquinas</div>
+    <div class="opcion" data-opcion="B">B) Un sistema de almacenamiento de información</div>
+    <div class="opcion" data-opcion="C">C) Un nuevo sistema operativo</div>
+    <div class="opcion" data-opcion="D">D) Un programa de diseño gráfico</div>
+  </div>
+
+  <!-- Pregunta 27 -->
+  <div class="pregunta" data-correcta="B">
+    <h3>27. ¿Qué es la blockchain?</h3>
+    <div class="opcion" data-opcion="A">A) Una base de datos tradicional</div>
+    <div class="opcion" data-opcion="B">B) Una tecnología de registro distribuido y descentralizado</div>
+    <div class="opcion" data-opcion="C">C) Un software de diseño gráfico</div>
+    <div class="opcion" data-opcion="D">D) Un lenguaje de programación</div>
+  </div>
+
+  <!-- Pregunta 28 -->
+  <div class="pregunta" data-correcta="D">
+    <h3>28. ¿Qué red social fue lanzada por Mark Zuckerberg en 2004?</h3>
+    <div class="opcion" data-opcion="A">A) Twitter</div>
+    <div class="opcion" data-opcion="B">B) Instagram</div>
+    <div class="opcion" data-opcion="C">C) LinkedIn</div>
+    <div class="opcion" data-opcion="D">D) Facebook</div>
+  </div>
+
+  <!-- Pregunta 29 -->
+  <div class="pregunta" data-correcta="C">
+    <h3>29. ¿Qué significa "RAM" en computadoras?</h3>
+    <div class="opcion" data-opcion="A">A) Random Access Memory</div>
+    <div class="opcion" data-opcion="B">B) Read Access Memory</div>
+    <div class="opcion" data-opcion="C">C) Random Array Memory</div>
+    <div class="opcion" data-opcion="D">D) Rapid Access Memory</div>
+  </div>
+
+  <!-- Pregunta 30 -->
+  <div class="pregunta" data-correcta="A">
+    <h3>30. ¿Qué es la "nube" en términos de almacenamiento digital?</h3>
+    <div class="opcion" data-opcion="A">A) Un servicio de almacenamiento remoto de datos</div>
+    <div class="opcion" data-opcion="B">B) Un software de protección antivirus</div>
+    <div class="opcion" data-opcion="C">C) Un tipo de memoria interna en computadoras</div>
+    <div class="opcion" data-opcion="D">D) Un dispositivo de almacenamiento externo</div>
+  </div>
 
 </body>
-
 </html>
