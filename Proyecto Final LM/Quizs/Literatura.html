@@ -2,274 +2,320 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuestionario de Literatura</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
-    .contenedor {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-    .pregunta {
-      margin-bottom: 20px;
-      background-color: #f4f4f4;
-      border-radius: 8px;
-      padding: 15px;
-    }
-
-    .pregunta-texto {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .opcion {
-      padding: 10px;
-      background-color: #ddd;
-      border-radius: 4px;
-      margin-bottom: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .opcion:hover {
-      background-color: #bbb;
-    }
-
-    .correcta {
-      background-color: green;
-      color: white;
-    }
-
-    .incorrecta {
-      background-color: red;
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      .pregunta-texto {
-        font-size: 1rem;
-      }
-
-      .opcion {
-        font-size: 1rem;
-      }
-
-      .contenedor {
-        padding: 15px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.2rem;
-      }
-
-      .pregunta-texto {
-        font-size: 0.9rem;
-      }
-
-      .opcion {
-        font-size: 0.9rem;
-        padding: 8px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../Estilos/quizs.css">
 </head>
-<body>
+<body id="Literatura">
   <div class="contenedor">
     <h1>Cuestionario de Literatura</h1>
 
-    <!-- P1 -->
+    <a href="../index.html"><h5>Volver al inicio</h5></a>
+
     <div class="pregunta" data-correcta="A">
-      <div class="pregunta-texto">¿Quién escribió "Cien años de soledad"?</div>
-      <div class="opcion" data-opcion="A">A) Gabriel García Márquez</div>
-      <div class="opcion" data-opcion="B">B) Mario Vargas Llosa</div>
-      <div class="opcion" data-opcion="C">C) Julio Cortázar</div>
-      <div class="opcion" data-opcion="D">D) Isabel Allende</div>
+        <h3>¿Quién escribió "Cien años de soledad"?</h3>
+        <div class="opcion" data-opcion="A">A) Gabriel García Márquez</div>
+        <div class="opcion" data-opcion="B">B) Mario Vargas Llosa</div>
+        <div class="opcion" data-opcion="C">C) Julio Cortázar</div>
+        <div class="opcion" data-opcion="D">D) Isabel Allende</div>
     </div>
-
-    <!-- P2 -->
-    <div class="pregunta" data-correcta="C">
-      <div class="pregunta-texto">¿En qué obra se encuentra el personaje de Don Quijote de la Mancha?</div>
-      <div class="opcion" data-opcion="A">A) La Iliada</div>
-      <div class="opcion" data-opcion="B">B) El Cid</div>
-      <div class="opcion" data-opcion="C">C) Don Quijote de la Mancha</div>
-      <div class="opcion" data-opcion="D">D) La casa de Bernarda Alba</div>
-    </div>
-
-    <!-- P3 -->
-    <div class="pregunta" data-correcta="B">
-      <div class="pregunta-texto">¿Qué escritor es conocido por su obra "1984"?</div>
-      <div class="opcion" data-opcion="A">A) Aldous Huxley</div>
-      <div class="opcion" data-opcion="B">B) George Orwell</div>
-      <div class="opcion" data-opcion="C">C) Ray Bradbury</div>
-      <div class="opcion" data-opcion="D">D) Franz Kafka</div>
-    </div>
-
-    <!-- P4 -->
-    <div class="pregunta" data-correcta="A">
-      <div class="pregunta-texto">¿Qué autora escribió "Orgullo y prejuicio"?</div>
-      <div class="opcion" data-opcion="A">A) Jane Austen</div>
-      <div class="opcion" data-opcion="B">B) Charlotte Brontë</div>
-      <div class="opcion" data-opcion="C">C) Virginia Woolf</div>
-      <div class="opcion" data-opcion="D">D) Emily Dickinson</div>
-    </div>
-
-    <!-- P5 -->
-    <div class="pregunta" data-correcta="C">
-      <div class="pregunta-texto">¿Quién escribió "Matar a un ruiseñor"?</div>
-      <div class="opcion" data-opcion="A">A) Harper Lee</div>
-      <div class="opcion" data-opcion="B">B) Mark Twain</div>
-      <div class="opcion" data-opcion="C">C) John Steinbeck</div>
-      <div class="opcion" data-opcion="D">D) Ernest Hemingway</div>
-    </div>
-
-    <!-- P6 -->
-    <div class="pregunta" data-correcta="D">
-      <div class="pregunta-texto">¿Quién escribió "La metamorfosis"?</div>
-      <div class="opcion" data-opcion="A">A) Albert Camus</div>
-      <div class="opcion" data-opcion="B">B) Franz Kafka</div>
-      <div class="opcion" data-opcion="C">C) Hermann Hesse</div>
-      <div class="opcion" data-opcion="D">D) Jorge Luis Borges</div>
-    </div>
-
-    <!-- P7 -->
-    <div class="pregunta" data-correcta="B">
-      <div class="pregunta-texto">¿Qué escritor argentino es famoso por su obra "Fervor de Buenos Aires"?</div>
-      <div class="opcion" data-opcion="A">A) Julio Cortázar</div>
-      <div class="opcion" data-opcion="B">B) Jorge Luis Borges</div>
-      <div class="opcion" data-opcion="C">C) Ricardo Piglia</div>
-      <div class="opcion" data-opcion="D">D) Adolfo Bioy Casares</div>
-    </div>
-
-    <!-- P8 -->
-    <div class="pregunta" data-correcta="A">
-      <div class="pregunta-texto">¿Quién escribió "Moby-Dick"?</div>
-      <div class="opcion" data-opcion="A">A) Herman Melville</div>
-      <div class="opcion" data-opcion="B">B) Charles Dickens</div>
-      <div class="opcion" data-opcion="C">C) Mark Twain</div>
-      <div class="opcion" data-opcion="D">D) Jack London</div>
-    </div>
-
-    <!-- P9 -->
-    <div class="pregunta" data-correcta="C">
-      <div class="pregunta-texto">¿Cuál de estos autores no es español?</div>
-      <div class="opcion" data-opcion="A">A) Miguel de Cervantes</div>
-      <div class="opcion" data-opcion="B">B) Gabriel García Márquez</div>
-      <div class="opcion" data-opcion="C">C) Mario Vargas Llosa</div>
-      <div class="opcion" data-opcion="D">D) Federico García Lorca</div>
-    </div>
-
-    <!-- P10 -->
-    <div class="pregunta" data-correcta="B">
-      <div class="pregunta-texto">¿En qué obra aparece el personaje de Sherlock Holmes?</div>
-      <div class="opcion" data-opcion="A">A) Drácula</div>
-      <div class="opcion" data-opcion="B">B) Las aventuras de Sherlock Holmes</div>
-      <div class="opcion" data-opcion="C">C) El retrato de Dorian Gray</div>
-      <div class="opcion" data-opcion="D">D) Frankenstein</div>
-    </div>
-
-    <!-- P11 -->
-    <div class="pregunta" data-correcta="D">
-      <div class="pregunta-texto">¿Cuál es el nombre del escritor de "El Gran Gatsby"?</div>
-      <div class="opcion" data-opcion="A">A) Ernest Hemingway</div>
-      <div class="opcion" data-opcion="B">B) William Faulkner</div>
-      <div class="opcion" data-opcion="C">C) John Steinbeck</div>
-      <div class="opcion" data-opcion="D">D) F. Scott Fitzgerald</div>
-    </div>
-
-    <!-- P12 -->
-    <div class="pregunta" data-correcta="C">
-      <div class="pregunta-texto">¿Quién escribió "Las mil y una noches"?</div>
-      <div class="opcion" data-opcion="A">A) Ibn Battuta</div>
-      <div class="opcion" data-opcion="B">B) Firdawsi</div>
-      <div class="opcion" data-opcion="C">C) Es probable que se haya tratado de varios autores anónimos</div>
-      <div class="opcion" data-opcion="D">D) Al-Jahiz</div>
-    </div>
-
-    <!-- Agregar más preguntas aquí hasta la P30 -->
-    
-    <!-- Botón para verificar las respuestas -->
-    <button id="boton-verificar">Verificar respuestas</button>
-    <div id="resultado"></div>
-  </div>
-
-  <script>
-    !-- Botón para verificar las respuestas -->
-    <button id="boton-verificar">Verificar respuestas</button>
-    <div id="resultado"></div>
-  </div>
-
-  <script>
-    const opciones = document.querySelectorAll('.opcion');
-    const botonVerificar = document.getElementById('boton-verificar');
-    const resultadoDiv = document.getElementById('resultado');
-    
-    // Agregar event listeners a cada opción
-    opciones.forEach(opcion => {
-      opcion.addEventListener('click', function() {
-        // Deshabilitar la selección para evitar nuevas elecciones
-        const pregunta = this.closest('.pregunta');
-        const seleccionada = pregunta.getAttribute('data-seleccionada');
-
-        // Si ya se seleccionó una opción, no permitir más cambios
-        if (!seleccionada) {
-          // Marcar la opción seleccionada
-          pregunta.setAttribute('data-seleccionada', this.getAttribute('data-opcion'));
-
-          // Comprobar si la respuesta es correcta
-          if (this.getAttribute('data-opcion') === pregunta.getAttribute('data-correcta')) {
-            this.classList.add('correcta');
-          } else {
-            this.classList.add('incorrecta');
-          }
-
-          // Deshabilitar las demás opciones
-          pregunta.querySelectorAll('.opcion').forEach(opcion => {
-            opcion.style.pointerEvents = 'none';
-          });
-        }
-      });
-    });
-
-    // Función para verificar las respuestas
-    botonVerificar.addEventListener('click', function() {
-      let puntaje = 0;
-      const preguntas = document.querySelectorAll('.pregunta');
-      preguntas.forEach(pregunta => {
-        const seleccionada = pregunta.getAttribute('data-seleccionada');
-        const correcta = pregunta.getAttribute('data-correcta');
-        
-        if (seleccionada === correcta) {
-          puntaje++;
-        }
-      });
       
-      resultadoDiv.textContent = `Tu puntaje es: ${puntaje} de ${preguntas.length}`;
-    });
-  </script>
+    <div class="pregunta" data-correcta="C">
+        <h3>¿En qué obra se encuentra el personaje de Don Quijote de la Mancha?</h3>
+        <div class="opcion" data-opcion="A">A) La Iliada</div>
+        <div class="opcion" data-opcion="B">B) El Cid</div>
+        <div class="opcion" data-opcion="C">C) Don Quijote de la Mancha</div>
+        <div class="opcion" data-opcion="D">D) La casa de Bernarda Alba</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Qué escritor es conocido por su obra "1984"?</h3>
+        <div class="opcion" data-opcion="A">A) Aldous Huxley</div>
+        <div class="opcion" data-opcion="B">B) George Orwell</div>
+        <div class="opcion" data-opcion="C">C) Ray Bradbury</div>
+        <div class="opcion" data-opcion="D">D) Franz Kafka</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Qué autora escribió "Orgullo y prejuicio"?</h3>
+        <div class="opcion" data-opcion="A">A) Jane Austen</div>
+        <div class="opcion" data-opcion="B">B) Charlotte Brontë</div>
+        <div class="opcion" data-opcion="C">C) Virginia Woolf</div>
+        <div class="opcion" data-opcion="D">D) Emily Dickinson</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "Matar a un ruiseñor"?</h3>
+        <div class="opcion" data-opcion="A">A) Harper Lee</div>
+        <div class="opcion" data-opcion="B">B) Mark Twain</div>
+        <div class="opcion" data-opcion="C">C) John Steinbeck</div>
+        <div class="opcion" data-opcion="D">D) Ernest Hemingway</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Quién escribió "La metamorfosis"?</h3>
+        <div class="opcion" data-opcion="A">A) Albert Camus</div>
+        <div class="opcion" data-opcion="B">B) Franz Kafka</div>
+        <div class="opcion" data-opcion="C">C) Hermann Hesse</div>
+        <div class="opcion" data-opcion="D">D) Jorge Luis Borges</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Qué escritor argentino es famoso por su obra "Fervor de Buenos Aires"?</h3>
+        <div class="opcion" data-opcion="A">A) Julio Cortázar</div>
+        <div class="opcion" data-opcion="B">B) Jorge Luis Borges</div>
+        <div class="opcion" data-opcion="C">C) Ricardo Piglia</div>
+        <div class="opcion" data-opcion="D">D) Adolfo Bioy Casares</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "Moby-Dick"?</h3>
+        <div class="opcion" data-opcion="A">A) Herman Melville</div>
+        <div class="opcion" data-opcion="B">B) Charles Dickens</div>
+        <div class="opcion" data-opcion="C">C) Mark Twain</div>
+        <div class="opcion" data-opcion="D">D) Jack London</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="C">
+        <h3>¿Cuál de estos autores no es español?</h3>
+        <div class="opcion" data-opcion="A">A) Miguel de Cervantes</div>
+        <div class="opcion" data-opcion="B">B) Gabriel García Márquez</div>
+        <div class="opcion" data-opcion="C">C) Mario Vargas Llosa</div>
+        <div class="opcion" data-opcion="D">D) Federico García Lorca</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="B">
+        <h3>¿En qué obra aparece el personaje de Sherlock Holmes?</h3>
+        <div class="opcion" data-opcion="A">A) Drácula</div>
+        <div class="opcion" data-opcion="B">B) Las aventuras de Sherlock Holmes</div>
+        <div class="opcion" data-opcion="C">C) El retrato de Dorian Gray</div>
+        <div class="opcion" data-opcion="D">D) Frankenstein</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="D">
+        <h3>¿Cuál es el nombre del escritor de "El Gran Gatsby"?</h3>
+        <div class="opcion" data-opcion="A">A) Ernest Hemingway</div>
+        <div class="opcion" data-opcion="B">B) William Faulkner</div>
+        <div class="opcion" data-opcion="C">C) John Steinbeck</div>
+        <div class="opcion" data-opcion="D">D) F. Scott Fitzgerald</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="C">
+        <h3>¿Quién escribió "Las mil y una noches"?</h3>
+        <div class="opcion" data-opcion="A">A) Ibn Battuta</div>
+        <div class="opcion" data-opcion="B">B) Firdawsi</div>
+        <div class="opcion" data-opcion="C">C) Es probable que se haya tratado de varios autores anónimos</div>
+        <div class="opcion" data-opcion="D">D) Al-Jahiz</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "La Odisea"?</h3>
+        <div class="opcion" data-opcion="A">A) Homero</div>
+        <div class="opcion" data-opcion="B">B) Virgilio</div>
+        <div class="opcion" data-opcion="C">C) Sófocles</div>
+        <div class="opcion" data-opcion="D">D) Eurípides</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="D">
+        <h3>¿Qué autor escribió "Crimen y castigo"?</h3>
+        <div class="opcion" data-opcion="A">A) León Tolstói</div>
+        <div class="opcion" data-opcion="B">B) Anton Chéjov</div>
+        <div class="opcion" data-opcion="C">C) Nikolái Gógol</div>
+        <div class="opcion" data-opcion="D">D) Fiódor Dostoyevski</div>
+    </div>
+      
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Cuál de estos libros fue escrito por William Shakespeare?</h3>
+        <div class="opcion" data-opcion="A">A) La Divina Comedia</div>
+        <div class="opcion" data-opcion="B">B) Hamlet</div>
+        <div class="opcion" data-opcion="C">C) El paraíso perdido</div>
+        <div class="opcion" data-opcion="D">D) El extranjero</div>
+    </div>      
+    
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "La casa de Bernarda Alba"?</h3>
+        <div class="opcion" data-opcion="A">A) Federico García Lorca</div>
+        <div class="opcion" data-opcion="B">B) Miguel de Unamuno</div>
+        <div class="opcion" data-opcion="C">C) Antonio Machado</div>
+        <div class="opcion" data-opcion="D">D) Valle-Inclán</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Qué autor escribió "Bodas de sangre"?</h3>
+        <div class="opcion" data-opcion="A">A) Federico García Lorca</div>
+        <div class="opcion" data-opcion="B">B) Lope de Vega</div>
+        <div class="opcion" data-opcion="C">C) Tirso de Molina</div>
+        <div class="opcion" data-opcion="D">D) Calderón de la Barca</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="C">
+        <h3>¿Quién es el autor de "El Lazarillo de Tormes"?</h3>
+        <div class="opcion" data-opcion="A">A) Miguel de Cervantes</div>
+        <div class="opcion" data-opcion="B">B) Lope de Rueda</div>
+        <div class="opcion" data-opcion="C">C) Autor anónimo</div>
+        <div class="opcion" data-opcion="D">D) Fray Luis de León</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Quién escribió "San Manuel Bueno, mártir"?</h3>
+        <div class="opcion" data-opcion="A">A) Leopoldo Alas “Clarín”</div>
+        <div class="opcion" data-opcion="B">B) Miguel de Unamuno</div>
+        <div class="opcion" data-opcion="C">C) Pío Baroja</div>
+        <div class="opcion" data-opcion="D">D) Ramón María del Valle-Inclán</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="D">
+        <h3>¿Qué autor escribió "Don Juan Tenorio"?</h3>
+        <div class="opcion" data-opcion="A">A) José Zorrilla</div>
+        <div class="opcion" data-opcion="B">B) Tirso de Molina</div>
+        <div class="opcion" data-opcion="C">C) Lope de Vega</div>
+        <div class="opcion" data-opcion="D">D) José Zorrilla (segunda versión)</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="C">
+        <h3>¿Quién escribió "Fuenteovejuna"?</h3>
+        <div class="opcion" data-opcion="A">A) Lope de Vega</div>
+        <div class="opcion" data-opcion="B">B) Calderón de la Barca</div>
+        <div class="opcion" data-opcion="C">C) Lope de Vega</div>
+        <div class="opcion" data-opcion="D">D) Tirso de Molina</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Quién es el autor de "Luces de bohemia"?</h3>
+        <div class="opcion" data-opcion="A">A) Ramón del Valle-Inclán</div>
+        <div class="opcion" data-opcion="B">B) Ramón María del Valle-Inclán</div>
+        <div class="opcion" data-opcion="C">C) Federico García Lorca</div>
+        <div class="opcion" data-opcion="D">D) Miguel Hernández</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "Pedro Páramo"?</h3>
+        <div class="opcion" data-opcion="A">A) Juan Rulfo</div>
+        <div class="opcion" data-opcion="B">B) Jorge Luis Borges</div>
+        <div class="opcion" data-opcion="C">C) Carlos Fuentes</div>
+        <div class="opcion" data-opcion="D">D) Gabriel García Márquez</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="C">
+        <h3>¿Quién escribió "El señor de las moscas"?</h3>
+        <div class="opcion" data-opcion="A">A) Aldous Huxley</div>
+        <div class="opcion" data-opcion="B">B) George Orwell</div>
+        <div class="opcion" data-opcion="C">C) William Golding</div>
+        <div class="opcion" data-opcion="D">D) Ray Bradbury</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Quién escribió "La tregua"?</h3>
+        <div class="opcion" data-opcion="A">A) Julio Cortázar</div>
+        <div class="opcion" data-opcion="B">B) Mario Benedetti</div>
+        <div class="opcion" data-opcion="C">C) Juan Carlos Onetti</div>
+        <div class="opcion" data-opcion="D">D) Gabriel García Márquez</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "El amor en los tiempos del cólera"?</h3>
+        <div class="opcion" data-opcion="A">A) Gabriel García Márquez</div>
+        <div class="opcion" data-opcion="B">B) Isabel Allende</div>
+        <div class="opcion" data-opcion="C">C) Mario Vargas Llosa</div>
+        <div class="opcion" data-opcion="D">D) Julio Cortázar</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="D">
+        <h3>¿Quién escribió "Rayuela"?</h3>
+        <div class="opcion" data-opcion="A">A) Jorge Luis Borges</div>
+        <div class="opcion" data-opcion="B">B) Julio Cortázar (segunda obra)</div>
+        <div class="opcion" data-opcion="C">C) Pablo Neruda</div>
+        <div class="opcion" data-opcion="D">D) Julio Cortázar</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="B">
+        <h3>¿Quién escribió "La colmena"?</h3>
+        <div class="opcion" data-opcion="A">A) Camilo José Cela</div>
+        <div class="opcion" data-opcion="B">B) Camilo José Cela</div>
+        <div class="opcion" data-opcion="C">C) Miguel Delibes</div>
+        <div class="opcion" data-opcion="D">D) Rosa Montero</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="C">
+        <h3>¿Quién escribió "Nada"?</h3>
+        <div class="opcion" data-opcion="A">A) Carmen Martín Gaite</div>
+        <div class="opcion" data-opcion="B">B) Ana María Matute</div>
+        <div class="opcion" data-opcion="C">C) Carmen Laforet</div>
+        <div class="opcion" data-opcion="D">D) Dulce Chacón</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <h3>¿Quién escribió "El túnel"?</h3>
+        <div class="opcion" data-opcion="A">A) Ernesto Sabato</div>
+        <div class="opcion" data-opcion="B">B) Jorge Luis Borges</div>
+        <div class="opcion" data-opcion="C">C) Julio Cortázar</div>
+        <div class="opcion" data-opcion="D">D) Adolfo Bioy Casares</div>
+    </div>    
+
+    <div id="resultado">
+        <h2>Resultado final:</h2>
+        <p id="mensajeResultado"></p>
+        <a href="../index.html"><h5>Volver al inicio</h5></a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.pregunta').forEach(pregunta => {
+            const correcta = pregunta.getAttribute('data-correcta');
+            pregunta.querySelectorAll('.opcion').forEach(opcion => {
+                opcion.addEventListener('click', () => {
+                    pregunta.querySelectorAll('.opcion').forEach(opt => {
+                        opt.classList.add('desactivada');
+                    });
+                    const seleccion = opcion.getAttribute('data-opcion');
+                    if (seleccion === correcta) {
+                        opcion.classList.add('correcta');
+                    } 
+                    else {
+                        opcion.classList.add('incorrecta');
+                        pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
+                    }
+                });
+            });
+        });
+        const preguntas = document.querySelectorAll('.pregunta');
+        let puntuacion = 0;
+        let respondidas = 0;
+
+        preguntas.forEach(pregunta => {
+            const opciones = pregunta.querySelectorAll('.opcion');
+            const correcta = pregunta.dataset.correcta;
+
+            opciones.forEach(opcion => {
+                opcion.addEventListener('click', () => {
+                    if (pregunta.classList.contains('respondida')) return;
+
+                    const respuestaUsuario = opcion.dataset.opcion;
+
+                    if (respuestaUsuario === correcta) {
+                        opcion.classList.add('correcta');
+                        puntuacion++;
+                    } 
+                    else {
+                        opcion.classList.add('incorrecta');
+                        const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
+                        correctaEl.classList.add('correcta');
+                    }
+
+                    pregunta.classList.add('respondida');
+                    opciones.forEach(opt => opt.classList.add('desactivada'));
+
+                    respondidas++;
+
+                    // Mostrar resultado si es la última respondida
+                    if (respondidas === preguntas.length) {
+                        const resultadoDiv = document.getElementById('resultado');
+                        const mensaje = document.getElementById('mensajeResultado');
+                        mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
+                        resultadoDiv.style.display = 'block';
+                        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
