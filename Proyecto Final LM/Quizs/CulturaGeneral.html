@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Cultura General</title>
+  <style>
+    body {
+      background-color: #c62828;
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pregunta {
+      background-color: #b71c1c;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      width: 80%;
+    }
+    .opcion {
+      background-color: #ef5350;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .opcion.correcta {
+      background-color: #2e7d32;
+    }
+    .opcion.incorrecta {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz de Cultura General</h1>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>1. ¿Quién fue el primer presidente de los Estados Unidos?</h3>
+    <div class="opcion" data-opcion="A">A) Abraham Lincoln</div>
+    <div class="opcion" data-opcion="B">B) George Washington</div>
+    <div class="opcion" data-opcion="C">C) Thomas Jefferson</div>
+    <div class="opcion" data-opcion="D">D) John Adams</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>2. ¿En qué año ocurrió la Revolución Francesa?</h3>
+    <div class="opcion" data-opcion="A">A) 1789</div>
+    <div class="opcion" data-opcion="B">B) 1795</div>
+    <div class="opcion" data-opcion="C">C) 1800</div>
+    <div class="opcion" data-opcion="D">D) 1700</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>3. ¿Quién pintó la famosa obra "La Mona Lisa"?</h3>
+    <div class="opcion" data-opcion="A">A) Vincent van Gogh</div>
+    <div class="opcion" data-opcion="B">B) Leonardo da Vinci</div>
+    <div class="opcion" data-opcion="C">C) Pablo Picasso</div>
+    <div class="opcion" data-opcion="D">D) Salvador Dalí</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>4. ¿Cuál es el río más largo del mundo?</h3>
+    <div class="opcion" data-opcion="A">A) El Amazonas</div>
+    <div class="opcion" data-opcion="B">B) El Nilo</div>
+    <div class="opcion" data-opcion="C">C) El Yangtsé</div>
+    <div class="opcion" data-opcion="D">D) El Amazonas</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>5. ¿En qué continente se encuentra Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Asia</div>
+    <div class="opcion" data-opcion="B">B) Europa</div>
+    <div class="opcion" data-opcion="C">C) África</div>
+    <div class="opcion" data-opcion="D">D) Oceanía</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>6. ¿En qué año terminó la Segunda Guerra Mundial?</h3>
+    <div class="opcion" data-opcion="A">A) 1943</div>
+    <div class="opcion" data-opcion="B">B) 1945</div>
+    <div class="opcion" data-opcion="C">C) 1950</div>
+    <div class="opcion" data-opcion="D">D) 1960</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>7. ¿Qué país es conocido por la Torre Eiffel?</h3>
+    <div class="opcion" data-opcion="A">A) Francia</div>
+    <div class="opcion" data-opcion="B">B) Italia</div>
+    <div class="opcion" data-opcion="C">C) España</div>
+    <div class="opcion" data-opcion="D">D) Alemania</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>8. ¿Cuál es la capital de Japón?</h3>
+    <div class="opcion" data-opcion="A">A) Seúl</div>
+    <div class="opcion" data-opcion="B">B) Pekín</div>
+    <div class="opcion" data-opcion="C">C) Tokio</div>
+    <div class="opcion" data-opcion="D">D) Hong Kong</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>9. ¿En qué año el hombre llegó a la Luna?</h3>
+    <div class="opcion" data-opcion="A">A) 1961</div>
+    <div class="opcion" data-opcion="B">B) 1965</div>
+    <div class="opcion" data-opcion="C">C) 1969</div>
+    <div class="opcion" data-opcion="D">D) 1971</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>10. ¿Qué país tiene más habitantes del mundo?</h3>
+    <div class="opcion" data-opcion="A">A) India</div>
+    <div class="opcion" data-opcion="B">B) China</div>
+    <div class="opcion" data-opcion="C">C) Estados Unidos</div>
+    <div class="opcion" data-opcion="D">D) Brasil</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>11. ¿Quién escribió la famosa novela "Don Quijote de la Mancha"?</h3>
+    <div class="opcion" data-opcion="A">A) Gabriel García Márquez</div>
+    <div class="opcion" data-opcion="B">B) Miguel de Cervantes</div>
+    <div class="opcion" data-opcion="C">C) Mario Vargas Llosa</div>
+    <div class="opcion" data-opcion="D">D) Julio Cortázar</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>12. ¿Qué ciudad es la capital de Australia?</h3>
+    <div class="opcion" data-opcion="A">A) Canberra</div>
+    <div class="opcion" data-opcion="B">B) Sidney</div>
+    <div class="opcion" data-opcion="C">C) Melbourne</div>
+    <div class="opcion" data-opcion="D">D) Perth</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>13. ¿Quién es el autor de la famosa obra "Cien años de soledad"?</h3>
+    <div class="opcion" data-opcion="A">A) Isabel Allende</div>
+    <div class="opcion" data-opcion="B">B) Mario Vargas Llosa</div>
+    <div class="opcion" data-opcion="C">C) Carlos Fuentes</div>
+    <div class="opcion" data-opcion="D">D) Gabriel García Márquez</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>14. ¿Cuál es el continente más grande del mundo?</h3>
+    <div class="opcion" data-opcion="A">A) Europa</div>
+    <div class="opcion" data-opcion="B">B) África</div>
+    <div class="opcion" data-opcion="C">C) Asia</div>
+    <div class="opcion" data-opcion="D">D) América</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>15. ¿En qué país nació el escritor William Shakespeare?</h3>
+    <div class="opcion" data-opcion="A">A) Francia</div>
+    <div class="opcion" data-opcion="B">B) Inglaterra</div>
+    <div class="opcion" data-opcion="C">C) Alemania</div>
+    <div class="opcion" data-opcion="D">D) Italia</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>16. ¿Qué elemento químico tiene el símbolo "O"?</h3>
+    <div class="opcion" data-opcion="A">A) Oxígeno</div>
+    <div class="opcion" data-opcion="B">B) Ozono</div>
+    <div class="opcion" data-opcion="C">C) Osmio</div>
+    <div class="opcion" data-opcion="D">D) Oro</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>17. ¿Quién es el director de la película "Titanic"?</h3>
+    <div class="opcion" data-opcion="A">A) Steven Spielberg</div>
+    <div class="opcion" data-opcion="B">B) Ridley Scott</div>
+    <div class="opcion" data-opcion="C">C) James Cameron</div>
+    <div class="opcion" data-opcion="D">D) Quentin Tarantino</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>18. ¿Quién pintó la obra "La Última Cena"?</h3>
+    <div class="opcion" data-opcion="A">A) Vincent van Gogh</div>
+    <div class="opcion" data-opcion="B">B) Pablo Picasso</div>
+    <div class="opcion" data-opcion="C">C) Salvador Dalí</div>
+    <div class="opcion" data-opcion="D">D) Leonardo da Vinci</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>19. ¿Cuál es la montaña más alta del mundo?</h3>
+    <div class="opcion" data-opcion="A">A) El Everest</div>
+    <div class="opcion" data-opcion="B">B) El K2</div>
+    <div class="opcion" data-opcion="C">C) El Aconcagua</div>
+    <div class="opcion" data-opcion="D">D) El Mont Blanc</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>20. ¿Cuál es el océano más grande del planeta?</h3>
+    <div class="opcion" data-opcion="A">A) Océano Atlántico</div>
+    <div class="opcion" data-opcion="B">B) Océano Índico</div>
+    <div class="opcion" data-opcion="C">C) Océano Pacífico</div>
+    <div class="opcion" data-opcion="D">D) Océano Ártico</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>21. ¿En qué continente está el desierto del Sahara?</h3>
+    <div class="opcion" data-opcion="A">A) Asia</div>
+    <div class="opcion" data-opcion="B">B) África</div>
+    <div class="opcion" data-opcion="C">C) América</div>
+    <div class="opcion" data-opcion="D">D) Oceanía</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>22. ¿Qué es la "alfabetización digital"?</h3>
+    <div class="opcion" data-opcion="A">A) Saber leer y escribir en papel</div>
+    <div class="opcion" data-opcion="B">B) Leer textos impresos en orden alfabético</div>
+    <div class="opcion" data-opcion="C">C) Utilizar el teléfono móvil</div>
+    <div class="opcion" data-opcion="D">D) Conocer y utilizar tecnologías de la información y comunicación</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>23. ¿Quién fue el primer hombre en pisar la Luna?</h3>
+    <div class="opcion" data-opcion="A">A) Neil Armstrong</div>
+    <div class="opcion" data-opcion="B">B) Buzz Aldrin</div>
+    <div class="opcion" data-opcion="C">C) John Glenn</div>
+    <div class="opcion" data-opcion="D">D) Fernando Alonso</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>24. ¿Cuántos huesos tiene el cuerpo humano adulto?</h3>
+    <div class="opcion" data-opcion="A">A) 180</div>
+    <div class="opcion" data-opcion="B">B) 206</div>
+    <div class="opcion" data-opcion="C">C) 208</div>
+    <div class="opcion" data-opcion="D">D) 220</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>25. ¿Cuál es el autor de "El Principito"?</h3>
+    <div class="opcion" data-opcion="A">A) Victor Hugo</div>
+    <div class="opcion" data-opcion="B">B) Antoine de Saint-Exupéry</div>
+    <div class="opcion" data-opcion="C">C) Albert Camus</div>
+    <div class="opcion" data-opcion="D">D) Jean-Paul Sartre</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>26. ¿En qué país se originó el sushi?</h3>
+    <div class="opcion" data-opcion="A">A) China</div>
+    <div class="opcion" data-opcion="B">B) Corea</div>
+    <div class="opcion" data-opcion="C">C) Japón</div>
+    <div class="opcion" data-opcion="D">D) Tailandia</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>27. ¿Qué es un haiku?</h3>
+    <div class="opcion" data-opcion="A">A) Una obra de teatro</div>
+    <div class="opcion" data-opcion="B">B) Una danza tradicional</div>
+    <div class="opcion" data-opcion="C">C) Una receta culinaria</div>
+    <div class="opcion" data-opcion="D">D) Un tipo de poesía japonesa</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>28. ¿Qué famoso explorador descubrió América en 1492?</h3>
+    <div class="opcion" data-opcion="A">A) Cristóbal Colón</div>
+    <div class="opcion" data-opcion="B">B) Marco Polo</div>
+    <div class="opcion" data-opcion="C">C) Hernán Cortés</div>
+    <div class="opcion" data-opcion="D">D) Vasco da Gama</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>29. ¿Cuál es el símbolo químico del oro?</h3>
+    <div class="opcion" data-opcion="A">A) Ag</div>
+    <div class="opcion" data-opcion="B">B) Fe</div>
+    <div class="opcion" data-opcion="C">C) Au</div>
+    <div class="opcion" data-opcion="D">D) Hg</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>30. ¿Cuál es el idioma más hablado en el mundo?</h3>
+    <div class="opcion" data-opcion="A">A) Inglés</div>
+    <div class="opcion" data-opcion="B">B) Español</div>
+    <div class="opcion" data-opcion="C">C) Mandarín</div>
+    <div class="opcion" data-opcion="D">D) Árabe</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.pregunta').forEach(pregunta => {
+      const correcta = pregunta.dataset.correcta;
+      const opciones = pregunta.querySelectorAll('.opcion');
+      opciones.forEach(opcion => {
+        opcion.addEventListener('click', () => {
+          opciones.forEach(o => o.classList.remove('correcta', 'incorrecta'));
+          if (opcion.dataset.opcion === correcta) {
+            opcion.classList.add('correcta');
+          } else {
+            opcion.classList.add('incorrecta');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
