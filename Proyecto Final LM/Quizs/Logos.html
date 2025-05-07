@@ -1,306 +1,321 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz de Logotipos</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
-    }
-
-    .pregunta {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .logo-img {
-      width: 150px;
-      height: auto;
-      margin: 10px 0;
-    }
-
-    .opcion {
-      margin: 8px 0;
-      padding: 10px;
-      background: #e9ecef;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .opcion:hover {
-      background: #ca3712;
-    }
-
-    .correcta {
-      background-color: #c8e6c9 !important;
-      color: #256029;
-    }
-
-    .incorrecta {
-      background-color: #ffcdd2 !important;
-      color: #b71c1c;
-    }
-
-    .opcion.desactivada {
-      pointer-events: none;
-      opacity: 0.7;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Quiz de Logotipos</title>
+    <link rel="stylesheet" href="../Estilos/quizs.css">
 </head>
-<body>
-  <h1>¿A qué marca pertenece este logotipo?</h1>
+<body id="Logos">
+    <h1>¿A qué marca pertenece este logotipo?</h1>
 
-  <!-- P1 -->
-  <div class="pregunta" data-correcta="A">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
-    <div class="opcion" data-opcion="A">A) Apple</div>
-    <div class="opcion" data-opcion="B">B) Microsoft</div>
-    <div class="opcion" data-opcion="C">C) HP</div>
-    <div class="opcion" data-opcion="D">D) IBM</div>
-  </div>
+    <a href="../index.html"><h5>Volver al inicio</h5></a>
 
-  <!-- P2 -->
-  <div class="pregunta" data-correcta="B">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/4/44/McDonalds_logo.svg" alt="McDonald's">
-    <div class="opcion" data-opcion="A">A) KFC</div>
-    <div class="opcion" data-opcion="B">B) McDonald's</div>
-    <div class="opcion" data-opcion="C">C) Wendy's</div>
-    <div class="opcion" data-opcion="D">D) Taco Bell</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+        <div class="opcion" data-opcion="A">A) Apple</div>
+        <div class="opcion" data-opcion="B">B) Microsoft</div>
+        <div class="opcion" data-opcion="C">C) HP</div>
+        <div class="opcion" data-opcion="D">D) IBM</div>
+    </div>
 
-  <!-- P3 -->
-  <div class="pregunta" data-correcta="C">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Instagram_logo_2022.svg" alt="Instagram">
-    <div class="opcion" data-opcion="A">A) TikTok</div>
-    <div class="opcion" data-opcion="B">B) Snapchat</div>
-    <div class="opcion" data-opcion="C">C) Instagram</div>
-    <div class="opcion" data-opcion="D">D) Facebook</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://ams3.digitaloceanspaces.com/graffica/2022/12/unnamed.png" alt="McDonald's">
+        <div class="opcion" data-opcion="A">A) KFC</div>
+        <div class="opcion" data-opcion="B">B) McDonald's</div>
+        <div class="opcion" data-opcion="C">C) Wendy's</div>
+        <div class="opcion" data-opcion="D">D) Taco Bell</div>
+    </div>
 
-  <!-- P4 -->
-  <div class="pregunta" data-correcta="D">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Nike_logo.svg" alt="Nike">
-    <div class="opcion" data-opcion="A">A) Puma</div>
-    <div class="opcion" data-opcion="B">B) Adidas</div>
-    <div class="opcion" data-opcion="C">C) Reebok</div>
-    <div class="opcion" data-opcion="D">D) Nike</div>
-  </div>
-
-  <!-- P5 -->
-  <div class="pregunta" data-correcta="B">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
-    <div class="opcion" data-opcion="A">A) eBay</div>
-    <div class="opcion" data-opcion="B">B) Amazon</div>
-    <div class="opcion" data-opcion="C">C) Etsy</div>
-    <div class="opcion" data-opcion="D">D) MercadoLibre</div>
-  </div>
-
-  <!-- P6 -->
-  <div class="pregunta" data-correcta="A">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Facebook_Logo_%282019%29.png" alt="Facebook">
-    <div class="opcion" data-opcion="A">A) Facebook</div>
-    <div class="opcion" data-opcion="B">B) Twitter</div>
-    <div class="opcion" data-opcion="C">C) LinkedIn</div>
-    <div class="opcion" data-opcion="D">D) Instagram</div>
-  </div>
-
-  <!-- P7 -->
-  <div class="pregunta" data-correcta="C">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Twitter_bird_logo_2012.svg" alt="Twitter/X">
-    <div class="opcion" data-opcion="A">A) Telegram</div>
-    <div class="opcion" data-opcion="B">B) Reddit</div>
-    <div class="opcion" data-opcion="C">C) Twitter</div>
-    <div class="opcion" data-opcion="D">D) Mastodon</div>
-  </div>
-
-  <!-- P8 -->
-  <div class="pregunta" data-correcta="D">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_of_Google_%282015-2019%29.svg" alt="Google">
-    <div class="opcion" data-opcion="A">A) YouTube</div>
-    <div class="opcion" data-opcion="B">B) Gmail</div>
-    <div class="opcion" data-opcion="C">C) Chrome</div>
-    <div class="opcion" data-opcion="D">D) Google</div>
-  </div>
-
-  <!-- P9 -->
-  <div class="pregunta" data-correcta="B">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/02/Pepsi_logo_2014.svg" alt="Pepsi">
-    <div class="opcion" data-opcion="A">A) Coca-Cola</div>
-    <div class="opcion" data-opcion="B">B) Pepsi</div>
-    <div class="opcion" data-opcion="C">C) Dr Pepper</div>
-    <div class="opcion" data-opcion="D">D) Sprite</div>
-  </div>
-
-  <!-- P10 -->
-  <div class="pregunta" data-correcta="A">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/YouTube_social_white_red_square.svg" alt="YouTube">
-    <div class="opcion" data-opcion="A">A) YouTube</div>
-    <div class="opcion" data-opcion="B">B) Vimeo</div>
-    <div class="opcion" data-opcion="C">C) Twitch</div>
-    <div class="opcion" data-opcion="D">D) TikTok</div>
-  </div>
-
-    <!-- P11 -->
     <div class="pregunta" data-correcta="C">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Spotify_logo_with_text.svg" alt="Spotify">
+        <img class="logo-img" src="https://img.freepik.com/vector-gratis/instagram-nuevo-icono_1057-2227.jpg" alt="Instagram">
+        <div class="opcion" data-opcion="A">A) TikTok</div>
+        <div class="opcion" data-opcion="B">B) Snapchat</div>
+        <div class="opcion" data-opcion="C">C) Instagram</div>
+        <div class="opcion" data-opcion="D">D) Facebook</div>
+    </div>
+
+    <div class="pregunta" data-correcta="D">
+        <img class="logo-img" src="https://brandlogos.net/wp-content/uploads/2020/11/nike-swoosh-logo-512x512.png" alt="Nike">
+        <div class="opcion" data-opcion="A">A) Puma</div>
+        <div class="opcion" data-opcion="B">B) Adidas</div>
+        <div class="opcion" data-opcion="C">C) Reebok</div>
+        <div class="opcion" data-opcion="D">D) Nike</div>
+    </div>
+
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg" alt="Amazon">
+        <div class="opcion" data-opcion="A">A) eBay</div>
+        <div class="opcion" data-opcion="B">B) Amazon</div>
+        <div class="opcion" data-opcion="C">C) Etsy</div>
+        <div class="opcion" data-opcion="D">D) MercadoLibre</div>
+    </div>
+
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="data:image/png;base64,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" alt="Facebook">
+        <div class="opcion" data-opcion="A">A) Facebook</div>
+        <div class="opcion" data-opcion="B">B) Twitter</div>
+        <div class="opcion" data-opcion="C">C) LinkedIn</div>
+        <div class="opcion" data-opcion="D">D) Instagram</div>
+    </div>
+
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Emblem.png" alt="Twitter/X">
+        <div class="opcion" data-opcion="A">A) Telegram</div>
+        <div class="opcion" data-opcion="B">B) Reddit</div>
+        <div class="opcion" data-opcion="C">C) Twitter</div>
+        <div class="opcion" data-opcion="D">D) Mastodon</div>
+    </div>
+
+    <div class="pregunta" data-correcta="D">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png" alt="Google">
+        <div class="opcion" data-opcion="A">A) YouTube</div>
+        <div class="opcion" data-opcion="B">B) Gmail</div>
+        <div class="opcion" data-opcion="C">C) Chrome</div>
+        <div class="opcion" data-opcion="D">D) Google</div>
+    </div>
+
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/732/732236.png" alt="Pepsi">
+        <div class="opcion" data-opcion="A">A) Coca-Cola</div>
+        <div class="opcion" data-opcion="B">B) Pepsi</div>
+        <div class="opcion" data-opcion="C">C) Dr Pepper</div>
+        <div class="opcion" data-opcion="D">D) Sprite</div>
+    </div>
+
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://www.freeiconspng.com/uploads/download-youtube-logo-png-clipart-3.png" alt="YouTube">
+        <div class="opcion" data-opcion="A">A) YouTube</div>
+        <div class="opcion" data-opcion="B">B) Vimeo</div>
+        <div class="opcion" data-opcion="C">C) Twitch</div>
+        <div class="opcion" data-opcion="D">D) TikTok</div>
+    </div>
+
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://www.logo.wine/a/logo/Spotify/Spotify-Icon-Logo.wine.svg" alt="Spotify">
         <div class="opcion" data-opcion="A">A) Apple Music</div>
         <div class="opcion" data-opcion="B">B) Deezer</div>
         <div class="opcion" data-opcion="C">C) Spotify</div>
         <div class="opcion" data-opcion="D">D) Tidal</div>
-      </div>
+    </div>
     
-      <!-- P12 -->
-      <div class="pregunta" data-correcta="B">
+    <div class="pregunta" data-correcta="B">
         <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest">
         <div class="opcion" data-opcion="A">A) Tumblr</div>
         <div class="opcion" data-opcion="B">B) Pinterest</div>
         <div class="opcion" data-opcion="C">C) Instagram</div>
         <div class="opcion" data-opcion="D">D) Flickr</div>
-      </div>
+    </div>
     
-      <!-- P13 -->
-      <div class="pregunta" data-correcta="A">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Netflix_logo.svg" alt="Netflix">
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://static.vecteezy.com/system/resources/previews/017/396/804/non_2x/netflix-mobile-application-logo-free-png.png" alt="Netflix">
         <div class="opcion" data-opcion="A">A) Netflix</div>
         <div class="opcion" data-opcion="B">B) Hulu</div>
         <div class="opcion" data-opcion="C">C) Prime Video</div>
         <div class="opcion" data-opcion="D">D) Disney+</div>
-      </div>
+    </div>
     
-      <!-- P14 -->
-      <div class="pregunta" data-correcta="D">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Adobe_Creative_Cloud_rainbow_icon.svg" alt="Adobe">
+    <div class="pregunta" data-correcta="D">
+        <img class="logo-img" src="https://static.cdnlogo.com/logos/a/90/adobe.png" alt="Adobe">
         <div class="opcion" data-opcion="A">A) CorelDraw</div>
         <div class="opcion" data-opcion="B">B) Canva</div>
         <div class="opcion" data-opcion="C">C) GIMP</div>
         <div class="opcion" data-opcion="D">D) Adobe</div>
-      </div>
+    </div>
     
-      <!-- P15 -->
-      <div class="pregunta" data-correcta="C">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mercedes-Benz_logo_2010.svg" alt="Mercedes-Benz">
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-pwVini69MM17bPRVAh4NwSiMEAxmWJBMGw&s" alt="Mercedes-Benz">
         <div class="opcion" data-opcion="A">A) BMW</div>
         <div class="opcion" data-opcion="B">B) Audi</div>
         <div class="opcion" data-opcion="C">C) Mercedes-Benz</div>
         <div class="opcion" data-opcion="D">D) Lexus</div>
-      </div>
+    </div>
     
-      <!-- P16 -->
-      <div class="pregunta" data-correcta="B">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Red_Bull_logo.svg" alt="Red Bull">
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="data:image/jpeg;base64,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" alt="Red Bull">
         <div class="opcion" data-opcion="A">A) Monster</div>
         <div class="opcion" data-opcion="B">B) Red Bull</div>
         <div class="opcion" data-opcion="C">C) Burn</div>
         <div class="opcion" data-opcion="D">D) Rockstar</div>
-      </div>
+    </div>
     
-      <!-- P17 -->
-      <div class="pregunta" data-correcta="A">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/db/PlayStation_logo.svg" alt="PlayStation">
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCUy7OXIuTjyXlIFMFaeMdC33HdIUMyq9gg&s" alt="PlayStation">
         <div class="opcion" data-opcion="A">A) PlayStation</div>
         <div class="opcion" data-opcion="B">B) Xbox</div>
         <div class="opcion" data-opcion="C">C) Nintendo</div>
         <div class="opcion" data-opcion="D">D) Sega</div>
-      </div>
+    </div>
     
-      <!-- P18 -->
-      <div class="pregunta" data-correcta="C">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Volkswagen_logo_2019.svg" alt="Volkswagen">
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZBWvfvbnH9I43_b6jsWoEAwIyQYmXE9P1g&s" alt="Volkswagen">
         <div class="opcion" data-opcion="A">A) Volvo</div>
         <div class="opcion" data-opcion="B">B) Toyota</div>
         <div class="opcion" data-opcion="C">C) Volkswagen</div>
         <div class="opcion" data-opcion="D">D) Renault</div>
-      </div>
+    </div>
     
-      <!-- P19 -->
-      <div class="pregunta" data-correcta="D">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lego_logo.svg" alt="LEGO">
+    <div class="pregunta" data-correcta="D">
+        <img class="logo-img" src="https://cdn.freebiesupply.com/images/thumbs/2x/lego-logo.png" alt="LEGO">
         <div class="opcion" data-opcion="A">A) Mega Bloks</div>
         <div class="opcion" data-opcion="B">B) Hasbro</div>
         <div class="opcion" data-opcion="C">C) Playmobil</div>
         <div class="opcion" data-opcion="D">D) LEGO</div>
-      </div>
+    </div>
     
-      <!-- P20 -->
-      <div class="pregunta" data-correcta="B">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Firefox_logo%2C_2019.svg" alt="Firefox">
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/2048px-Firefox_logo%2C_2019.svg.png" alt="Firefox">
         <div class="opcion" data-opcion="A">A) Chrome</div>
         <div class="opcion" data-opcion="B">B) Firefox</div>
         <div class="opcion" data-opcion="C">C) Edge</div>
         <div class="opcion" data-opcion="D">D) Opera</div>
-      </div>
+    </div>
 
-      <div id="resultado" style="display:none; padding:20px; background:#fff3cd; border:1px solid #ffeeba; border-radius:10px; margin-top:20px;">
-        <h2>Resultado final:</h2>
-        <p id="mensajeResultado"></p>
-      </div>
+    <div class="pregunta" data-correcta="A"> 
+        <img class="logo-img" src="https://cdn.iconscout.com/icon/free/png-256/free-airbnb-4-432491.png?f=webp" alt="Airbnb">
+        <div class="opcion" data-opcion="A">A) Airbnb</div>
+        <div class="opcion" data-opcion="B">B) Booking.com</div>
+        <div class="opcion" data-opcion="C">C) Expedia</div>
+        <div class="opcion" data-opcion="D">D) TripAdvisor</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/technology/amd-69g4ue1ljfkwwh4m3yh7cl.png/amd-c8u5silj61vf28i63dmcqq.png?_a=DATAdtAAZAA0" alt="Intel">
+        <div class="opcion" data-opcion="A">A) AMD</div>
+        <div class="opcion" data-opcion="B">B) Intel</div>
+        <div class="opcion" data-opcion="C">C) Nvidia</div>
+        <div class="opcion" data-opcion="D">D) Qualcomm</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://static.vecteezy.com/system/resources/previews/022/636/379/non_2x/starbucks-logo-starbucks-icon-transparent-free-png.png" alt="Starbucks">
+        <div class="opcion" data-opcion="A">A) Dunkin'</div>
+        <div class="opcion" data-opcion="B">B) Costa Coffee</div>
+        <div class="opcion" data-opcion="C">C) Starbucks</div>
+        <div class="opcion" data-opcion="D">D) Tim Hortons</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXXatvGdUncxQEmUwic8sz5sOGJCfT-ES2A&s" alt="TikTok">
+        <div class="opcion" data-opcion="A">A) TikTok</div>
+        <div class="opcion" data-opcion="B">B) YouTube Shorts</div>
+        <div class="opcion" data-opcion="C">C) Instagram Reels</div>
+        <div class="opcion" data-opcion="D">D) Snapchat</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZEFdF2tl48xabmd4uXzDwbGXKjbPUMfVpg&s" alt="Ferrari">
+        <div class="opcion" data-opcion="A">A) Ferrari</div>
+        <div class="opcion" data-opcion="B">B) Lamborghini</div>
+        <div class="opcion" data-opcion="C">C) Porsche</div>
+        <div class="opcion" data-opcion="D">D) Bugatti</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ChatGPT-Logo.png/2560px-ChatGPT-Logo.png" alt="ChatGPT">
+        <div class="opcion" data-opcion="A">A) Siri</div>
+        <div class="opcion" data-opcion="B">B) ChatGPT</div>
+        <div class="opcion" data-opcion="C">C) Google Assistant</div>
+        <div class="opcion" data-opcion="D">D) Alexa</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://download.logo.wine/logo/Xbox_(app)/Xbox_(app)-Logo.wine.png" alt="Xbox">
+        <div class="opcion" data-opcion="A">A) PlayStation</div>
+        <div class="opcion" data-opcion="B">B) Nintendo</div>
+        <div class="opcion" data-opcion="C">C) Xbox</div>
+        <div class="opcion" data-opcion="D">D) Steam</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://static.vecteezy.com/system/resources/previews/010/994/239/non_2x/adidas-logo-black-symbol-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg" alt="Adidas">
+        <div class="opcion" data-opcion="A">A) Adidas</div>
+        <div class="opcion" data-opcion="B">B) Puma</div>
+        <div class="opcion" data-opcion="C">C) Under Armour</div>
+        <div class="opcion" data-opcion="D">D) Nike</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Logomark-Black-Logo.wine.svg" alt="Tesla">
+        <div class="opcion" data-opcion="A">A) Tesla</div>
+        <div class="opcion" data-opcion="B">B) Ford</div>
+        <div class="opcion" data-opcion="C">C) Toyota</div>
+        <div class="opcion" data-opcion="D">D) Chevrolet</div>
+    </div>
+    
+    <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://static.vecteezy.com/system/resources/previews/018/930/582/non_2x/reddit-logo-reddit-icon-transparent-free-png.png" alt="Reddit">
+        <div class="opcion" data-opcion="A">A) Discord</div>
+        <div class="opcion" data-opcion="B">B) Reddit</div>
+        <div class="opcion" data-opcion="C">C) Quora</div>
+        <div class="opcion" data-opcion="D">D) Tumblr</div>
+    </div>
     
 
-  <!-- Script -->
-  <script>
-    document.querySelectorAll('.pregunta').forEach(pregunta => {
-      const correcta = pregunta.getAttribute('data-correcta');
-      pregunta.querySelectorAll('.opcion').forEach(opcion => {
-        opcion.addEventListener('click', () => {
-          pregunta.querySelectorAll('.opcion').forEach(opt => {
-            opt.classList.add('desactivada');
-          });
-          const seleccion = opcion.getAttribute('data-opcion');
-          if (seleccion === correcta) {
-            opcion.classList.add('correcta');
-          } else {
-            opcion.classList.add('incorrecta');
-            pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
-          }
+    <div id="resultado">
+        <h2>Resultado final:</h2>
+        <p id="mensajeResultado"></p>
+        <a href="../index.html"><h5>Volver al inicio</h5></a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.pregunta').forEach(pregunta => {
+            const correcta = pregunta.getAttribute('data-correcta');
+            pregunta.querySelectorAll('.opcion').forEach(opcion => {
+                opcion.addEventListener('click', () => {
+                    pregunta.querySelectorAll('.opcion').forEach(opt => {
+                        opt.classList.add('desactivada');
+                    });
+                    const seleccion = opcion.getAttribute('data-opcion');
+                    if (seleccion === correcta) {
+                        opcion.classList.add('correcta');
+                    } 
+                    else {
+                        opcion.classList.add('incorrecta');
+                        pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
+                    }
+                });
+            });
         });
-      });
-    });
-    const preguntas = document.querySelectorAll('.pregunta');
-  let puntuacion = 0;
-  let respondidas = 0;
+        const preguntas = document.querySelectorAll('.pregunta');
+        let puntuacion = 0;
+        let respondidas = 0;
 
-  preguntas.forEach(pregunta => {
-    const opciones = pregunta.querySelectorAll('.opcion');
-    const correcta = pregunta.dataset.correcta;
+        preguntas.forEach(pregunta => {
+            const opciones = pregunta.querySelectorAll('.opcion');
+            const correcta = pregunta.dataset.correcta;
 
-    opciones.forEach(opcion => {
-      opcion.addEventListener('click', () => {
-        if (pregunta.classList.contains('respondida')) return;
+            opciones.forEach(opcion => {
+                opcion.addEventListener('click', () => {
+                    if (pregunta.classList.contains('respondida')) return;
 
-        const respuestaUsuario = opcion.dataset.opcion;
+                    const respuestaUsuario = opcion.dataset.opcion;
 
-        if (respuestaUsuario === correcta) {
-          opcion.classList.add('correcta');
-          puntuacion++;
-        } else {
-          opcion.classList.add('incorrecta');
-          const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
-          correctaEl.classList.add('correcta');
-        }
+                    if (respuestaUsuario === correcta) {
+                        opcion.classList.add('correcta');
+                        puntuacion++;
+                    } 
+                    else {
+                        opcion.classList.add('incorrecta');
+                        const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
+                        correctaEl.classList.add('correcta');
+                    }
 
-        pregunta.classList.add('respondida');
-        opciones.forEach(opt => opt.classList.add('desactivada'));
+                    pregunta.classList.add('respondida');
+                    opciones.forEach(opt => opt.classList.add('desactivada'));
 
-        respondidas++;
+                    respondidas++;
 
-        // Mostrar resultado si es la última respondida
-        if (respondidas === preguntas.length) {
-          const resultadoDiv = document.getElementById('resultado');
-          const mensaje = document.getElementById('mensajeResultado');
-          mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
-          resultadoDiv.style.display = 'block';
-          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-        }
-      });
-    });
-  });
-  </script>
-
+                    // Mostrar resultado si es la última respondida
+                    if (respondidas === preguntas.length) {
+                        const resultadoDiv = document.getElementById('resultado');
+                        const mensaje = document.getElementById('mensajeResultado');
+                        mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
+                        resultadoDiv.style.display = 'block';
+                        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
