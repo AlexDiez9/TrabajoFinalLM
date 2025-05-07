@@ -1,57 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz de Historia</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
-    }
-
-    .pregunta {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .pregunta h3 {
-      margin-top: 0;
-    }
-
-    .opcion {
-      margin: 8px 0;
-      padding: 10px;
-      background: #e9ecef;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .opcion:hover {
-      background: #ca3712;
-    }
-
-    .correcta {
-      background-color: #c8e6c9 !important;
-      color: #256029;
-    }
-
-    .incorrecta {
-      background-color: #ffcdd2 !important;
-      color: #b71c1c;
-    }
-
-    .opcion.desactivada {
-      pointer-events: none;
-      opacity: 0.7;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Quiz de Historia</title>
+    <link rel="stylesheet" href="../Estilos/quizs.css">
 </head>
-<body>
+<body id="historia">
 
   <h1>Cuestionario de Historia</h1>
 
@@ -213,7 +167,7 @@
     <div class="opcion" data-opcion="B">B) Latín</div>
     <div class="opcion" data-opcion="C">C) Griego</div>
     <div class="opcion" data-opcion="D">D) Hebreo</div>
-  </div>    
+   </div>
 
    <div class="pregunta" data-correcta="B">
     <h3>21. ¿Quién descubrió América en 1492?</h3>
@@ -284,11 +238,11 @@
     <div class="opcion" data-opcion="B">B) Proclamación de la república</div>
     <div class="opcion" data-opcion="C">C) Ejecución del rey</div>
     <div class="opcion" data-opcion="D">D) Toma de Versalles</div>
-  </div>  
+  </div>
 
   <div class="pregunta" data-correcta="A">
     <h3>30. ¿Qué invento revolucionó la navegación en el siglo XV?</h3>
-    <div class="opcion" data-opcion="A">A) La brújula</div>     
+    <div class="opcion" data-opcion="A">A) La brújula</div>
     <div class="opcion" data-opcion="B">B) El timón de popa</div>
     <div class="opcion" data-opcion="C">C) La pólvora</div>
     <div class="opcion" data-opcion="D">D) El sextante</div>

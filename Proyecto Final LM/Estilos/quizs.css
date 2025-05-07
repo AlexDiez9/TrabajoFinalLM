@@ -1,0 +1,71 @@
+    body {
+        font-family: sans-serif;
+        background-color: #F8F9FA;
+        padding: 20px;
+    }
+
+    .pregunta {
+        background: #FFF;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pregunta h3 {
+        margin-top: 0;
+    }
+
+    .opcion {
+        margin: 8px 0;
+        padding: 10px;
+        background: #E9ECEF;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .opcion:hover {
+        background: lightgray;
+    }
+
+    .correcta {
+        background-color: #C8E6C9 !important;
+        color: green;
+    }
+
+    .incorrecta {
+        background-color: #FFCDD2 !important;
+        color: red;
+    }
+
+    .opcion.desactivada {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+    
+    h1{
+    color: white;
+    letter-spacing: 1.5px;
+    word-spacing: 10px;
+    text-shadow: whitesmoke ;
+    }
+
+    #historia, #Cine{
+        background-color: rgb(255, 51, 51, 0.85);
+    }
+
+    #arte{
+        background-color: rgb(0, 204, 255, 0.5);
+    }
+
+    #Biologia, #Deporte{
+        background-color: rgba(22, 195, 25, 0.719);
+    }
+
+    #CulturaGeneral{
+        background-color: rgba(255, 109, 4, 0.774);
+    }
+
+
+    

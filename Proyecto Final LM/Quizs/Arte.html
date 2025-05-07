@@ -1,293 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz de Cultura General</title>
-  <style>
-    body {
-      background-color: #c62828;
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .pregunta {
-      background-color: #b71c1c;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 10px 0;
-      width: 80%;
-    }
-    .opcion {
-      background-color: #ef5350;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .opcion.correcta {
-      background-color: #2e7d32;
-    }
-    .opcion.incorrecta {
-      background-color: #c62828;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Quiz de Arte</title>
+    <link rel="stylesheet" href="../Estilos/quizs.css">
 </head>
-<body>
-  <h1>Quiz de Cultura General</h1>
+<body id="arte">
+    <h1>Quiz de Arte</h1>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>1. ¿Quién pintó la Mona Lisa?</h3>
-    <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
-    <div class="opcion" data-opcion="B">B) Leonardo da Vinci</div>
-    <div class="opcion" data-opcion="C">C) Vincent van Gogh</div>
-    <div class="opcion" data-opcion="D">D) Michelangelo</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>1. ¿Quién pintó la Mona Lisa?</h3>
+        <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
+        <div class="opcion" data-opcion="B">B) Leonardo da Vinci</div>
+        <div class="opcion" data-opcion="C">C) Vincent van Gogh</div>
+        <div class="opcion" data-opcion="D">D) Michelangelo</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>2. ¿Cuál de estos es un estilo de pintura?</h3>
-    <div class="opcion" data-opcion="A">A) Impresionismo</div>
-    <div class="opcion" data-opcion="B">B) Arquitectura</div>
-    <div class="opcion" data-opcion="C">C) Música</div>
-    <div class="opcion" data-opcion="D">D) Filosofía</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>2. ¿Cuál de estos es un estilo de pintura?</h3>
+        <div class="opcion" data-opcion="A">A) Impresionismo</div>
+        <div class="opcion" data-opcion="B">B) Arquitectura</div>
+        <div class="opcion" data-opcion="C">C) Música</div>
+        <div class="opcion" data-opcion="D">D) Filosofía</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>3. ¿Qué pintor es famoso por sus obras con girasoles?</h3>
-    <div class="opcion" data-opcion="A">A) Claude Monet</div>
-    <div class="opcion" data-opcion="B">B) Salvador Dalí</div>
-    <div class="opcion" data-opcion="C">C) Vincent van Gogh</div>
-    <div class="opcion" data-opcion="D">D) Edgar Degas</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>3. ¿Qué pintor es famoso por sus obras con girasoles?</h3>
+        <div class="opcion" data-opcion="A">A) Claude Monet</div>
+        <div class="opcion" data-opcion="B">B) Salvador Dalí</div>
+        <div class="opcion" data-opcion="C">C) Vincent van Gogh</div>
+        <div class="opcion" data-opcion="D">D) Edgar Degas</div>
+    </div>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>4. ¿En qué museo se encuentra la obra "La última cena" de Leonardo da Vinci?</h3>
-    <div class="opcion" data-opcion="A">A) Museo del Louvre</div>
-    <div class="opcion" data-opcion="B">B) Santa Maria delle Grazie, Milán</div>
-    <div class="opcion" data-opcion="C">C) Museo Metropolitano de Arte</div>
-    <div class="opcion" data-opcion="D">D) Museo Británico</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>4. ¿En qué museo se encuentra la obra "La última cena" de Leonardo da Vinci?</h3>
+        <div class="opcion" data-opcion="A">A) Museo del Louvre</div>
+        <div class="opcion" data-opcion="B">B) Santa Maria delle Grazie, Milán</div>
+        <div class="opcion" data-opcion="C">C) Museo Metropolitano de Arte</div>
+        <div class="opcion" data-opcion="D">D) Museo Británico</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>5. ¿Qué artista es conocido por sus esculturas de formas alargadas y distorsionadas?</h3>
-    <div class="opcion" data-opcion="A">A) Henri Matisse</div>
-    <div class="opcion" data-opcion="B">B) Claude Monet</div>
-    <div class="opcion" data-opcion="C">C) Alberto Giacometti</div>
-    <div class="opcion" data-opcion="D">D) Pablo Picasso</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>5. ¿Qué artista es conocido por sus esculturas de formas alargadas y distorsionadas?</h3>
+        <div class="opcion" data-opcion="A">A) Henri Matisse</div>
+        <div class="opcion" data-opcion="B">B) Claude Monet</div>
+        <div class="opcion" data-opcion="C">C) Alberto Giacometti</div>
+        <div class="opcion" data-opcion="D">D) Pablo Picasso</div>
+    </div>
 
-  <div class="pregunta" data-correcta="D">
-    <h3>6. ¿Qué movimiento artístico es conocido por su uso del color y la luz, especialmente en paisajes y escenas cotidianas?</h3>
-    <div class="opcion" data-opcion="A">A) Surrealismo</div>
-    <div class="opcion" data-opcion="B">B) Expresionismo</div>
-    <div class="opcion" data-opcion="C">C) Realismo</div>
-    <div class="opcion" data-opcion="D">D) Impresionismo</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>6. ¿Qué movimiento artístico es conocido por su uso del color y la luz, especialmente en paisajes y escenas cotidianas?</h3>
+        <div class="opcion" data-opcion="A">A) Surrealismo</div>
+        <div class="opcion" data-opcion="B">B) Expresionismo</div>
+        <div class="opcion" data-opcion="C">C) Realismo</div>
+        <div class="opcion" data-opcion="D">D) Impresionismo</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>7. ¿Qué pintor cubista creó la famosa obra "Les Demoiselles d'Avignon"?</h3>
-    <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
-    <div class="opcion" data-opcion="B">B) Georges Braque</div>
-    <div class="opcion" data-opcion="C">C) Salvador Dalí</div>
-    <div class="opcion" data-opcion="D">D) Jackson Pollock</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>7. ¿Qué pintor cubista creó la famosa obra "Les Demoiselles d'Avignon"?</h3>
+        <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
+        <div class="opcion" data-opcion="B">B) Georges Braque</div>
+        <div class="opcion" data-opcion="C">C) Salvador Dalí</div>
+        <div class="opcion" data-opcion="D">D) Jackson Pollock</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>8. ¿En qué siglo surgió el Renacimiento en Europa?</h3>
-    <div class="opcion" data-opcion="A">A) Siglo XIV</div>
-    <div class="opcion" data-opcion="B">B) Siglo XVI</div>
-    <div class="opcion" data-opcion="C">C) Siglo XV</div>
-    <div class="opcion" data-opcion="D">D) Siglo XIII</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>8. ¿En qué siglo surgió el Renacimiento en Europa?</h3>
+        <div class="opcion" data-opcion="A">A) Siglo XIV</div>
+        <div class="opcion" data-opcion="B">B) Siglo XVI</div>
+        <div class="opcion" data-opcion="C">C) Siglo XV</div>
+        <div class="opcion" data-opcion="D">D) Siglo XIII</div>
+    </div>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>9. ¿Qué artista es conocido por su obra "El grito"?</h3>
-    <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
-    <div class="opcion" data-opcion="B">B) Edvard Munch</div>
-    <div class="opcion" data-opcion="C">C) Vincent van Gogh</div>
-    <div class="opcion" data-opcion="D">D) Henri Toulouse-Lautrec</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>9. ¿Qué artista es conocido por su obra "El grito"?</h3>
+        <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
+        <div class="opcion" data-opcion="B">B) Edvard Munch</div>
+        <div class="opcion" data-opcion="C">C) Vincent van Gogh</div>
+        <div class="opcion" data-opcion="D">D) Henri Toulouse-Lautrec</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>10. ¿Qué pintura es conocida como la obra más famosa de Claude Monet?</h3>
-    <div class="opcion" data-opcion="A">A) Impresión, sol naciente</div>
-    <div class="opcion" data-opcion="B">B) La joven de la perla</div>
-    <div class="opcion" data-opcion="C">C) Las meninas</div>
-    <div class="opcion" data-opcion="D">D) La noche estrellada</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>10. ¿Qué pintura es conocida como la obra más famosa de Claude Monet?</h3>
+        <div class="opcion" data-opcion="A">A) Impresión, sol naciente</div>
+        <div class="opcion" data-opcion="B">B) La joven de la perla</div>
+        <div class="opcion" data-opcion="C">C) Las meninas</div>
+        <div class="opcion" data-opcion="D">D) La noche estrellada</div>
+    </div>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>11. ¿Quién pintó el "Guernica"?</h3>
-    <div class="opcion" data-opcion="A">A) Salvador Dalí</div>
-    <div class="opcion" data-opcion="B">B) Pablo Picasso</div>
-    <div class="opcion" data-opcion="C">C) Francisco Goya</div>
-    <div class="opcion" data-opcion="D">D) Henri Matisse</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>11. ¿Quién pintó el "Guernica"?</h3>
+        <div class="opcion" data-opcion="A">A) Salvador Dalí</div>
+        <div class="opcion" data-opcion="B">B) Pablo Picasso</div>
+        <div class="opcion" data-opcion="C">C) Francisco Goya</div>
+        <div class="opcion" data-opcion="D">D) Henri Matisse</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>12. ¿Cuál es la obra más famosa de Michelangelo?</h3>
-    <div class="opcion" data-opcion="A">A) La creación de Adán</div>
-    <div class="opcion" data-opcion="B">B) La última cena</div>
-    <div class="opcion" data-opcion="C">C) El David</div>
-    <div class="opcion" data-opcion="D">D) El nacimiento de Venus</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>12. ¿Cuál es la obra más famosa de Michelangelo?</h3>
+        <div class="opcion" data-opcion="A">A) La creación de Adán</div>
+        <div class="opcion" data-opcion="B">B) La última cena</div>
+        <div class="opcion" data-opcion="C">C) El David</div>
+        <div class="opcion" data-opcion="D">D) El nacimiento de Venus</div>
+    </div>
 
-  <div class="pregunta" data-correcta="D">
-    <h3>13. ¿En qué ciudad se encuentra la famosa galería de arte, el Museo del Louvre?</h3>
-    <div class="opcion" data-opcion="A">A) Madrid</div>
-    <div class="opcion" data-opcion="B">B) Roma</div>
-    <div class="opcion" data-opcion="C">C) Londres</div>
-    <div class="opcion" data-opcion="D">D) París</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>13. ¿En qué ciudad se encuentra la famosa galería de arte, el Museo del Louvre?</h3>
+        <div class="opcion" data-opcion="A">A) Madrid</div>
+        <div class="opcion" data-opcion="B">B) Roma</div>
+        <div class="opcion" data-opcion="C">C) Londres</div>
+        <div class="opcion" data-opcion="D">D) París</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>14. ¿Qué pintura de Leonardo da Vinci se considera uno de los retratos más famosos del mundo?</h3>
-    <div class="opcion" data-opcion="A">A) La Mona Lisa</div>
-    <div class="opcion" data-opcion="B">B) La última cena</div>
-    <div class="opcion" data-opcion="C">C) La Virgen de las Rocas</div>
-    <div class="opcion" data-opcion="D">D) El Bautismo de Cristo</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>14. ¿Qué pintura de Leonardo da Vinci se considera uno de los retratos más famosos del mundo?</h3>
+        <div class="opcion" data-opcion="A">A) La Mona Lisa</div>
+        <div class="opcion" data-opcion="B">B) La última cena</div>
+        <div class="opcion" data-opcion="C">C) La Virgen de las Rocas</div>
+        <div class="opcion" data-opcion="D">D) El Bautismo de Cristo</div>
+    </div>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>15. ¿Qué tipo de arte es el surrealismo?</h3>
-    <div class="opcion" data-opcion="A">A) Arte figurativo</div>
-    <div class="opcion" data-opcion="B">B) Arte abstracto</div>
-    <div class="opcion" data-opcion="C">C) Arte visual digital</div>
-    <div class="opcion" data-opcion="D">D) Arte moderno</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>15. ¿Qué tipo de arte es el surrealismo?</h3>
+        <div class="opcion" data-opcion="A">A) Arte figurativo</div>
+        <div class="opcion" data-opcion="B">B) Arte abstracto</div>
+        <div class="opcion" data-opcion="C">C) Arte visual digital</div>
+        <div class="opcion" data-opcion="D">D) Arte moderno</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>16. ¿Qué artista mexicano es famoso por sus murales y autorretratos?</h3>
-    <div class="opcion" data-opcion="A">A) Diego Rivera</div>
-    <div class="opcion" data-opcion="B">B) Rufino Tamayo</div>
-    <div class="opcion" data-opcion="C">C) Frida Kahlo</div>
-    <div class="opcion" data-opcion="D">D) David Siqueiros</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>16. ¿Qué artista mexicano es famoso por sus murales y autorretratos?</h3>
+        <div class="opcion" data-opcion="A">A) Diego Rivera</div>
+        <div class="opcion" data-opcion="B">B) Rufino Tamayo</div>
+        <div class="opcion" data-opcion="C">C) Frida Kahlo</div>
+        <div class="opcion" data-opcion="D">D) David Siqueiros</div>
+    </div>
 
-  <div class="pregunta" data-correcta="D">
-    <h3>17. ¿Quién pintó la obra "La escuela de Atenas"?</h3>
-    <div class="opcion" data-opcion="A">A) Raphael</div>
-    <div class="opcion" data-opcion="B">B) Leonardo da Vinci</div>
-    <div class="opcion" data-opcion="C">C) Caravaggio</div>
-    <div class="opcion" data-opcion="D">D) Miguel Ángel</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>17. ¿Quién pintó la obra "La escuela de Atenas"?</h3>
+        <div class="opcion" data-opcion="A">A) Raphael</div>
+        <div class="opcion" data-opcion="B">B) Leonardo da Vinci</div>
+        <div class="opcion" data-opcion="C">C) Caravaggio</div>
+        <div class="opcion" data-opcion="D">D) Miguel Ángel</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>18. ¿Cuál fue el primer movimiento artístico de vanguardia del siglo XX?</h3>
-    <div class="opcion" data-opcion="A">A) Cubismo</div>
-    <div class="opcion" data-opcion="B">B) Expresionismo</div>
-    <div class="opcion" data-opcion="C">C) Surrealismo</div>
-    <div class="opcion" data-opcion="D">D) Dadaísmo</div>
-  </div>
-  
-  <div class="pregunta" data-correcta="B">
-    <h3>19. ¿Qué pintor español es conocido por sus obras surrealistas, como "La persistencia de la memoria"?</h3>
-    <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
-    <div class="opcion" data-opcion="B">B) Salvador Dalí</div>
-    <div class="opcion" data-opcion="C">C) Joan Miró</div>
-    <div class="opcion" data-opcion="D">D) Francisco de Goya</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>18. ¿Cuál fue el primer movimiento artístico de vanguardia del siglo XX?</h3>
+        <div class="opcion" data-opcion="A">A) Cubismo</div>
+        <div class="opcion" data-opcion="B">B) Expresionismo</div>
+        <div class="opcion" data-opcion="C">C) Surrealismo</div>
+        <div class="opcion" data-opcion="D">D) Dadaísmo</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>20. ¿Qué movimiento artístico se caracteriza por la representación exagerada y distorsionada de la realidad para expresar emociones?</h3>
-    <div class="opcion" data-opcion="A">A) Expresionismo</div>
-    <div class="opcion" data-opcion="B">B) Realismo</div>
-    <div class="opcion" data-opcion="C">C) Renacimiento</div>
-    <div class="opcion" data-opcion="D">D) Rococó</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>19. ¿Qué pintor español es conocido por sus obras surrealistas, como "La persistencia de la memoria"?</h3>
+        <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
+        <div class="opcion" data-opcion="B">B) Salvador Dalí</div>
+        <div class="opcion" data-opcion="C">C) Joan Miró</div>
+        <div class="opcion" data-opcion="D">D) Francisco de Goya</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>21. ¿En qué país nació el pintor y escultor Michelangelo?</h3>
-    <div class="opcion" data-opcion="A">A) España</div>
-    <div class="opcion" data-opcion="B">B) Francia</div>
-    <div class="opcion" data-opcion="C">C) Italia</div>
-    <div class="opcion" data-opcion="D">D) Grecia</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>20. ¿Qué movimiento artístico se caracteriza por la representación exagerada y distorsionada de la realidad para expresar emociones?</h3>
+        <div class="opcion" data-opcion="A">A) Expresionismo</div>
+        <div class="opcion" data-opcion="B">B) Realismo</div>
+        <div class="opcion" data-opcion="C">C) Renacimiento</div>
+        <div class="opcion" data-opcion="D">D) Rococó</div>
+    </div>
 
-  <div class="pregunta" data-correcta="D">
-    <h3>22. ¿Qué movimiento artístico se originó en Francia a finales del siglo XIX y se caracteriza por el uso de colores brillantes y pinceladas sueltas?</h3>
-    <div class="opcion" data-opcion="A">A) Surrealismo</div>
-    <div class="opcion" data-opcion="B">B) Impresionismo</div>
-    <div class="opcion" data-opcion="C">C) Barroco</div>
-    <div class="opcion" data-opcion="D">D) Impresionismo</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>21. ¿En qué país nació el pintor y escultor Michelangelo?</h3>
+        <div class="opcion" data-opcion="A">A) España</div>
+        <div class="opcion" data-opcion="B">B) Francia</div>
+        <div class="opcion" data-opcion="C">C) Italia</div>
+        <div class="opcion" data-opcion="D">D) Grecia</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>23. ¿Quién pintó "El Jardín de las Delicias"?</h3>
-    <div class="opcion" data-opcion="A">A) Hieronymus Bosch</div>
-    <div class="opcion" data-opcion="B">B) Jan van Eyck</div>
-    <div class="opcion" data-opcion="C">C) Rembrandt</div>
-    <div class="opcion" data-opcion="D">D) Pieter Bruegel</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>22. ¿Qué movimiento artístico se originó en Francia a finales del siglo XIX y se caracteriza por el uso de colores brillantes y pinceladas sueltas?</h3>
+        <div class="opcion" data-opcion="A">A) Surrealismo</div>
+        <div class="opcion" data-opcion="B">B) Impresionismo</div>
+        <div class="opcion" data-opcion="C">C) Barroco</div>
+        <div class="opcion" data-opcion="D">D) Impresionismo</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>24. ¿Qué artista es famoso por sus murales en edificios públicos en México y Estados Unidos?</h3>
-    <div class="opcion" data-opcion="A">A) Rufino Tamayo</div>
-    <div class="opcion" data-opcion="B">B) David Siqueiros</div>
-    <div class="opcion" data-opcion="C">C) Diego Rivera</div>
-    <div class="opcion" data-opcion="D">D) José Clemente Orozco</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>23. ¿Quién pintó "El Jardín de las Delicias"?</h3>
+        <div class="opcion" data-opcion="A">A) Hieronymus Bosch</div>
+        <div class="opcion" data-opcion="B">B) Jan van Eyck</div>
+        <div class="opcion" data-opcion="C">C) Rembrandt</div>
+        <div class="opcion" data-opcion="D">D) Pieter Bruegel</div>
+    </div>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>25. ¿Qué famosa escultura fue esculpida por Auguste Rodin?</h3>
-    <div class="opcion" data-opcion="A">A) El David</div>
-    <div class="opcion" data-opcion="B">B) El pensador</div>
-    <div class="opcion" data-opcion="C">C) El Discóbolo</div>
-    <div class="opcion" data-opcion="D">D) La Piedad</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>24. ¿Qué artista es famoso por sus murales en edificios públicos en México y Estados Unidos?</h3>
+        <div class="opcion" data-opcion="A">A) Rufino Tamayo</div>
+        <div class="opcion" data-opcion="B">B) David Siqueiros</div>
+        <div class="opcion" data-opcion="C">C) Diego Rivera</div>
+        <div class="opcion" data-opcion="D">D) José Clemente Orozco</div>
+    </div>
 
-  <div class="pregunta" data-correcta="C">
-    <h3>26. ¿Qué movimiento artístico surgió como una respuesta a las atrocidades de la Primera Guerra Mundial y enfatizaba el azar y el inconsciente?</h3>
-    <div class="opcion" data-opcion="A">A) Surrealismo</div>
-    <div class="opcion" data-opcion="B">B) Expresionismo</div>
-    <div class="opcion" data-opcion="C">C) Dadaísmo</div>
-    <div class="opcion" data-opcion="D">D) Futurismo</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>25. ¿Qué famosa escultura fue esculpida por Auguste Rodin?</h3>
+        <div class="opcion" data-opcion="A">A) El David</div>
+        <div class="opcion" data-opcion="B">B) El pensador</div>
+        <div class="opcion" data-opcion="C">C) El Discóbolo</div>
+        <div class="opcion" data-opcion="D">D) La Piedad</div>
+    </div>
 
-  <div class="pregunta" data-correcta="D">
-    <h3>27. ¿Quién pintó "La noche estrellada"?</h3>
-    <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
-    <div class="opcion" data-opcion="B">B) Claude Monet</div>
-    <div class="opcion" data-opcion="C">C) Henri Matisse</div>
-    <div class="opcion" data-opcion="D">D) Vincent van Gogh</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>26. ¿Qué movimiento artístico surgió como una respuesta a las atrocidades de la Primera Guerra Mundial y enfatizaba el azar y el inconsciente?</h3>
+        <div class="opcion" data-opcion="A">A) Surrealismo</div>
+        <div class="opcion" data-opcion="B">B) Expresionismo</div>
+        <div class="opcion" data-opcion="C">C) Dadaísmo</div>
+        <div class="opcion" data-opcion="D">D) Futurismo</div>
+    </div>
 
-  <div class="pregunta" data-correcta="B">
-    <h3>28. ¿Qué pintor es conocido por su estilo único de pinceladas rápidas y su influencia en el arte contemporáneo?</h3>
-    <div class="opcion" data-opcion="A">A) Michelangelo</div>
-    <div class="opcion" data-opcion="B">B) Jackson Pollock</div>
-    <div class="opcion" data-opcion="C">C) Georges Braque</div>
-    <div class="opcion" data-opcion="D">D) Edvard Munch</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>27. ¿Quién pintó "La noche estrellada"?</h3>
+        <div class="opcion" data-opcion="A">A) Pablo Picasso</div>
+        <div class="opcion" data-opcion="B">B) Claude Monet</div>
+        <div class="opcion" data-opcion="C">C) Henri Matisse</div>
+        <div class="opcion" data-opcion="D">D) Vincent van Gogh</div>
+    </div>
 
-  <div class="pregunta" data-correcta="A">
-    <h3>29. ¿Qué estilo arquitectónico se originó en Europa durante la Edad Media y es conocido por sus altas bóvedas, ventanas con vitrales y torres puntiagudas?</h3>
-    <div class="opcion" data-opcion="A">A) Gótico</div>
-    <div class="opcion" data-opcion="B">B) Barroco</div>
-    <div class="opcion" data-opcion="C">C) Renacimiento</div>
-    <div class="opcion" data-opcion="D">D) Rococó</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>28. ¿Qué pintor es conocido por su estilo único de pinceladas rápidas y su influencia en el arte contemporáneo?</h3>
+        <div class="opcion" data-opcion="A">A) Michelangelo</div>
+        <div class="opcion" data-opcion="B">B) Jackson Pollock</div>
+        <div class="opcion" data-opcion="C">C) Georges Braque</div>
+        <div class="opcion" data-opcion="D">D) Edvard Munch</div>
+    </div>
+
+    <div class="pregunta" data-correcta="A">
+        <h3>29. ¿Qué estilo arquitectónico se originó en Europa durante la Edad Media y es conocido por sus altas bóvedas, ventanas con vitrales y torres puntiagudas?</h3>
+        <div class="opcion" data-opcion="A">A) Gótico</div>
+        <div class="opcion" data-opcion="B">B) Barroco</div>
+        <div class="opcion" data-opcion="C">C) Renacimiento</div>
+        <div class="opcion" data-opcion="D">D) Rococó</div>
+    </div>
 
 
 
-  <script>
-    document.querySelectorAll('.pregunta').forEach(pregunta => {
-      const correcta = pregunta.dataset.correcta;
-      const opciones = pregunta.querySelectorAll('.opcion');
-      opciones.forEach(opcion => {
-        opcion.addEventListener('click', () => {
-          opciones.forEach(o => o.classList.remove('correcta', 'incorrecta'));
-          if (opcion.dataset.opcion === correcta) {
-            opcion.classList.add('correcta');
-          } else {
-            opcion.classList.add('incorrecta');
-          }
+    <script>
+        document.querySelectorAll('.pregunta').forEach(pregunta => {
+          const correcta = pregunta.dataset.correcta;
+          const opciones = pregunta.querySelectorAll('.opcion');
+    
+          opciones.forEach(opcion => {
+            opcion.addEventListener('click', () => {
+              const seleccionada = opcion.dataset.opcion;
+    
+              opciones.forEach(opt => {
+                opt.classList.add('desactivada');
+                if (opt.dataset.opcion === correcta) {
+                  opt.classList.add('correcta');
+                } else if (opt === opcion && seleccionada !== correcta) {
+                  opt.classList.add('incorrecta');
+                }
+              });
+            });
+          });
         });
-      });
-    });
-  </script>
+    </script>
 </body>
 </html>

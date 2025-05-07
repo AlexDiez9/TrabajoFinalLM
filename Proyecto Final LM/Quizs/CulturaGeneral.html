@@ -2,41 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz de Cultura General</title>
-  <style>
-    body {
-      background-color: #c62828;
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .pregunta {
-      background-color: #b71c1c;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 10px 0;
-      width: 80%;
-    }
-    .opcion {
-      background-color: #ef5350;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .opcion.correcta {
-      background-color: #2e7d32;
-    }
-    .opcion.incorrecta {
-      background-color: #c62828;
-    }
-  </style>
+  <link rel="stylesheet" href="../Estilos/quizs.css">
 </head>
-<body>
+<body id="CulturaGeneral">
   <h1>Quiz de Cultura General</h1>
 
   <div class="pregunta" data-correcta="C">
@@ -283,14 +252,19 @@
     document.querySelectorAll('.pregunta').forEach(pregunta => {
       const correcta = pregunta.dataset.correcta;
       const opciones = pregunta.querySelectorAll('.opcion');
+
       opciones.forEach(opcion => {
         opcion.addEventListener('click', () => {
-          opciones.forEach(o => o.classList.remove('correcta', 'incorrecta'));
-          if (opcion.dataset.opcion === correcta) {
-            opcion.classList.add('correcta');
-          } else {
-            opcion.classList.add('incorrecta');
-          }
+          const seleccionada = opcion.dataset.opcion;
+
+          opciones.forEach(opt => {
+            opt.classList.add('desactivada');
+            if (opt.dataset.opcion === correcta) {
+              opt.classList.add('correcta');
+            } else if (opt === opcion && seleccionada !== correcta) {
+              opt.classList.add('incorrecta');
+            }
+          });
         });
       });
     });
