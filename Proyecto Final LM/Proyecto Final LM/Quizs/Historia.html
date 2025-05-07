@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Historia</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .pregunta {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pregunta h3 {
+      margin-top: 0;
+    }
+
+    .opcion {
+      margin: 8px 0;
+      padding: 10px;
+      background: #e9ecef;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .opcion:hover {
+      background: #ca3712;
+    }
+
+    .correcta {
+      background-color: #c8e6c9 !important;
+      color: #256029;
+    }
+
+    .incorrecta {
+      background-color: #ffcdd2 !important;
+      color: #b71c1c;
+    }
+
+    .opcion.desactivada {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cuestionario de Historia</h1>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>1. ¿En qué año cayó el Imperio Romano de Occidente?</h3>
+    <div class="opcion" data-opcion="A">A) 476 d.C.</div>
+    <div class="opcion" data-opcion="B">B) 395 d.C.</div>
+    <div class="opcion" data-opcion="C">C) 1453</div>
+    <div class="opcion" data-opcion="D">D) 100 d.C.</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>2. ¿Quién fue el primer emperador romano?</h3>
+    <div class="opcion" data-opcion="A">A) Julio César</div>
+    <div class="opcion" data-opcion="B">B) Augusto</div>
+    <div class="opcion" data-opcion="C">C) Trajano</div>
+    <div class="opcion" data-opcion="D">D) Nerón</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>4.</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+   <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+
+
+   <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+
+
+   <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div> <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+
+
+   <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámica</div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.pregunta').forEach(pregunta => {
+      const correcta = pregunta.dataset.correcta;
+      const opciones = pregunta.querySelectorAll('.opcion');
+
+      opciones.forEach(opcion => {
+        opcion.addEventListener('click', () => {
+          const seleccionada = opcion.dataset.opcion;
+
+          opciones.forEach(opt => {
+            opt.classList.add('desactivada');
+            if (opt.dataset.opcion === correcta) {
+              opt.classList.add('correcta');
+            } else if (opt === opcion && seleccionada !== correcta) {
+              opt.classList.add('incorrecta');
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
