@@ -248,25 +248,70 @@
     <div class="opcion" data-opcion="D">D) Árabe</div>
   </div>
 
+  <div id="resultado">
+    <h2>Resultado final:</h2>
+    <p id="mensajeResultado"></p>
+    <a href="../index.html"><h5>Volver al inicio</h5></a>
+  </div>
+
   <script>
     document.querySelectorAll('.pregunta').forEach(pregunta => {
-      const correcta = pregunta.dataset.correcta;
-      const opciones = pregunta.querySelectorAll('.opcion');
-
-      opciones.forEach(opcion => {
-        opcion.addEventListener('click', () => {
-          const seleccionada = opcion.dataset.opcion;
-
-          opciones.forEach(opt => {
-            opt.classList.add('desactivada');
-            if (opt.dataset.opcion === correcta) {
-              opt.classList.add('correcta');
-            } else if (opt === opcion && seleccionada !== correcta) {
-              opt.classList.add('incorrecta');
-            }
-          });
+        const correcta = pregunta.getAttribute('data-correcta');
+        pregunta.querySelectorAll('.opcion').forEach(opcion => {
+            opcion.addEventListener('click', () => {
+                pregunta.querySelectorAll('.opcion').forEach(opt => {
+                    opt.classList.add('desactivada');
+                });
+                const seleccion = opcion.getAttribute('data-opcion');
+                if (seleccion === correcta) {
+                    opcion.classList.add('correcta');
+                } 
+                else {
+                    opcion.classList.add('incorrecta');
+                    pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
+                }
+            });
         });
-      });
+    });
+    const preguntas = document.querySelectorAll('.pregunta');
+    let puntuacion = 0;
+    let respondidas = 0;
+
+    preguntas.forEach(pregunta => {
+        const opciones = pregunta.querySelectorAll('.opcion');
+        const correcta = pregunta.dataset.correcta;
+
+        opciones.forEach(opcion => {
+            opcion.addEventListener('click', () => {
+                if (pregunta.classList.contains('respondida')) return;
+
+                const respuestaUsuario = opcion.dataset.opcion;
+
+                if (respuestaUsuario === correcta) {
+                    opcion.classList.add('correcta');
+                    puntuacion++;
+                } 
+                else {
+                    opcion.classList.add('incorrecta');
+                    const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
+                    correctaEl.classList.add('correcta');
+                }
+
+                pregunta.classList.add('respondida');
+                opciones.forEach(opt => opt.classList.add('desactivada'));
+
+                respondidas++;
+
+                // Mostrar resultado si es la última respondida
+                if (respondidas === preguntas.length) {
+                    const resultadoDiv = document.getElementById('resultado');
+                    const mensaje = document.getElementById('mensajeResultado');
+                    mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
+                    resultadoDiv.style.display = 'block';
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                }
+            });
+        });
     });
   </script>
 </body>
