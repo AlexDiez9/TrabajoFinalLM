@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Historia</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .pregunta {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pregunta h3 {
+      margin-top: 0;
+    }
+
+    .opcion {
+      margin: 8px 0;
+      padding: 10px;
+      background: #e9ecef;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .opcion:hover {
+      background: #ca3712;
+    }
+
+    .correcta {
+      background-color: #c8e6c9 !important;
+      color: #256029;
+    }
+
+    .incorrecta {
+      background-color: #ffcdd2 !important;
+      color: #b71c1c;
+    }
+
+    .opcion.desactivada {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cuestionario de Historia</h1>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>1. ¿En qué año cayó el Imperio Romano de Occidente?</h3>
+    <div class="opcion" data-opcion="A">A) 476 d.C.</div>
+    <div class="opcion" data-opcion="B">B) 395 d.C.</div>
+    <div class="opcion" data-opcion="C">C) 1453</div>
+    <div class="opcion" data-opcion="D">D) 100 d.C.</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>2. ¿Quién fue el primer emperador romano?</h3>
+    <div class="opcion" data-opcion="A">A) Julio César</div>
+    <div class="opcion" data-opcion="B">B) Augusto</div>
+    <div class="opcion" data-opcion="C">C) Trajano</div>
+    <div class="opcion" data-opcion="D">D) Nerón</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>3. ¿Qué civilización construyó las pirámides de Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Mesopotámia </div>
+    <div class="opcion" data-opcion="B">B) Romana</div>
+    <div class="opcion" data-opcion="C">C) Egipcia</div>
+    <div class="opcion" data-opcion="D">D) Persa</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>4. ¿Cuál fue la ciudad principal del Imperio Babilónico?</h3>
+    <div class="opcion" data-opcion="A">A) Roma</div>
+    <div class="opcion" data-opcion="B">B) Jerusalén</div>
+    <div class="opcion" data-opcion="C">C) Atenas</div>
+    <div class="opcion" data-opcion="D">D) Babilonia</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>5. ¿Qué guerra enfrentó a griegos y persas en el siglo V a.C.?</h3>
+    <div class="opcion" data-opcion="A">A) Guerras Médicas</div>
+    <div class="opcion" data-opcion="B">B) Guerras Púnica</div>
+    <div class="opcion" data-opcion="C">C) Guerras del Peloponeso</div>
+    <div class="opcion" data-opcion="D">D) Cruzadas</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3> 6. ¿Quién fue el rey macedonio que conquistó gran parte del mundo conocido?</h3>
+    <div class="opcion" data-opcion="A">A) Alejandro Magno</div>
+    <div class="opcion" data-opcion="B">B) Ciro el Grande</div>
+    <div class="opcion" data-opcion="C">C) Julio César</div>
+    <div class="opcion" data-opcion="D">D) Marco Aurelio </div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>7. ¿Qué invento se atribuye a los fenicios?</h3>
+    <div class="opcion" data-opcion="A">A) La brújula</div>
+    <div class="opcion" data-opcion="B">B) El papel</div>
+    <div class="opcion" data-opcion="C">C) El alfabeto</div>
+    <div class="opcion" data-opcion="D">D) El cero</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>8. ¿En qué ciudad griega se desarrolló la democracia?</h3>
+    <div class="opcion" data-opcion="A">A) Esparta</div>
+    <div class="opcion" data-opcion="B">B) Corinto</div>
+    <div class="opcion" data-opcion="C">C) Atenas</div>
+    <div class="opcion" data-opcion="D">D) Delfos</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>9. ¿Cuál fue el código legal más antiguo conocido?</h3>
+    <div class="opcion" data-opcion="A">A) Código de Hammurabi</div>
+    <div class="opcion" data-opcion="B">B) Ley de las XII Tablas</div>
+    <div class="opcion" data-opcion="C">C) Código Napoleónico</div>
+    <div class="opcion" data-opcion="D">D) Magna Carta</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>10. ¿Quién fue el faraón más famoso del Antiguo Egipto?</h3>
+    <div class="opcion" data-opcion="A">A) Ramsés II</div>
+    <div class="opcion" data-opcion="B">B) Akhenatón</div>
+    <div class="opcion" data-opcion="C">C) Tutankamón</div>
+    <div class="opcion" data-opcion="D">D) Cleopatra</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>11. ¿En qué año ocurrió la caída de Constantinopla?</h3>
+    <div class="opcion" data-opcion="A">A) 1204</div>
+    <div class="opcion" data-opcion="B">B) 1492</div>
+    <div class="opcion" data-opcion="C">C) 1453</div>
+    <div class="opcion" data-opcion="D">D) 1066</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>12. ¿Quién inició la expansión del Islam en el siglo VII?</h3>
+    <div class="opcion" data-opcion="A">A) Mahoma</div>
+    <div class="opcion" data-opcion="B">B) Alí</div>
+    <div class="opcion" data-opcion="C">C) Saladino</div>
+    <div class="opcion" data-opcion="D">D) Harún al-Rashid</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3> 13. ¿Qué era un feudo?</h3>
+    <div class="opcion" data-opcion="A">A) Una ciudad medieval</div>
+    <div class="opcion" data-opcion="B">B) Una unidad de producción</div>
+    <div class="opcion" data-opcion="C">C) Un territorio bajo control de un señor</div>
+    <div class="opcion" data-opcion="D">D) Un ejército</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>14. ¿Qué evento marcó el inicio de la Edad Media?</h3>
+    <div class="opcion" data-opcion="A">A) Descubrimiento de América</div>
+    <div class="opcion" data-opcion="B">B) Caída del Imperio Romano</div>
+    <div class="opcion" data-opcion="C">C) Reforma protestante</div>
+    <div class="opcion" data-opcion="D">D) La Peste Negra</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>15. ¿Qué eran las Cruzadas?</h3>
+    <div class="opcion" data-opcion="A">A) Expansiones islámicas</div>
+    <div class="opcion" data-opcion="B">B) Viajes de comerciantes</div>
+    <div class="opcion" data-opcion="C">C) Guerras religiosas para recuperar Tierra Santa</div>
+    <div class="opcion" data-opcion="D">D) Exploraciones</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>16. ¿Quién fue Carlomagno?</h3>
+    <div class="opcion" data-opcion="A">A) Rey de Inglaterra</div>
+    <div class="opcion" data-opcion="B">B) Emperador del Sacro Imperio Romano Germánico</div>
+    <div class="opcion" data-opcion="C">C) Explorador vikingo</div>
+    <div class="opcion" data-opcion="D">D) Papa</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3> 17. ¿En qué año comenzó la invasión musulmana de la Península Ibérica?</h3>
+    <div class="opcion" data-opcion="A">A) 486</div>
+    <div class="opcion" data-opcion="B">B) 711</div>
+    <div class="opcion" data-opcion="C">C) 800</div>
+    <div class="opcion" data-opcion="D">D) 1492</div>
+  </div>
+
+   <div class="pregunta" data-correcta="C">
+    <h3>18. ¿Qué peste asoló Europa en el siglo XIV?</h3>
+    <div class="opcion" data-opcion="A">A) Cólera</div>
+    <div class="opcion" data-opcion="B">B) Gripe española</div>
+    <div class="opcion" data-opcion="C">C) Peste negra</div>
+    <div class="opcion" data-opcion="D">D) Sarampión</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3> 19. ¿Cuál era el principal sistema económico de la Edad Media?</h3>
+    <div class="opcion" data-opcion="A">A) Capitalismo</div>
+    <div class="opcion" data-opcion="B">B) Feudalismo</div>
+    <div class="opcion" data-opcion="C">C) Comunismo</div>
+    <div class="opcion" data-opcion="D">D) Mercantilismo</div>
+  </div>
+
+   <div class="pregunta" data-correcta="B">
+    <h3> 20. ¿Cuál fue la lengua culta y de la Iglesia en la Edad Media europea?</h3>
+    <div class="opcion" data-opcion="A">A) Arabe</div>
+    <div class="opcion" data-opcion="B">B) Latín</div>
+    <div class="opcion" data-opcion="C">C) Griego</div>
+    <div class="opcion" data-opcion="D">D) Hebreo</div>
+  </div>    
+
+   <div class="pregunta" data-correcta="B">
+    <h3>21. ¿Quién descubrió América en 1492?</h3>
+    <div class="opcion" data-opcion="A">A) Fernando de Magallanes</div>
+    <div class="opcion" data-opcion="B">B) Cristóbal Colón</div>
+    <div class="opcion" data-opcion="C">C) Hernán Cortés</div>
+    <div class="opcion" data-opcion="D">D) Vasco da Gama</div>
+
+  </div> <div class="pregunta" data-correcta="C">
+    <h3>22. ¿En qué país comenzó el Renacimiento?</h3>
+    <div class="opcion" data-opcion="A">A) Francia</div>
+    <div class="opcion" data-opcion="B">B) Inglaterra</div>
+    <div class="opcion" data-opcion="C">C) Italia</div>
+    <div class="opcion" data-opcion="D">D) Alemania</div>
+  </div>
+  <div class="pregunta" data-correcta="B">
+    <h3>23. ¿Qué invento ayudó a difundir las ideas del Renacimiento?</h3>
+    <div class="opcion" data-opcion="A">A) El compás</div>
+    <div class="opcion" data-opcion="B">B) La imprenta</div>
+    <div class="opcion" data-opcion="C">C) El telescopio</div>
+    <div class="opcion" data-opcion="D">D) El astrolabio</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>24. ¿Quién pintó la Capilla Sixtina?</h3>
+    <div class="opcion" data-opcion="A">A) Leonardo da Vinci</div>
+    <div class="opcion" data-opcion="B">B) Miguel Ángel</div>
+    <div class="opcion" data-opcion="C">C) Rafael</div>
+    <div class="opcion" data-opcion="D">D) Tiziano</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>25. ¿Qué reforma religiosa inició Martín Lutero?</h3>
+    <div class="opcion" data-opcion="A">A) Ortodoxa</div>
+    <div class="opcion" data-opcion="B">B) Anglicana</div>
+    <div class="opcion" data-opcion="C">C) Católica</div>
+    <div class="opcion" data-opcion="D">D) Protestante</div>
+  </div>
+
+
+   <div class="pregunta" data-correcta="B">
+    <h3>26. ¿Qué imperio conquistó México en el siglo XVI?</h3>
+    <div class="opcion" data-opcion="A">A) Portugués</div>
+    <div class="opcion" data-opcion="B">B) Español</div>
+    <div class="opcion" data-opcion="C">C) Francés</div>
+    <div class="opcion" data-opcion="D">D) Inglés</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>27. ¿Qué tratado dividió América entre España y Portugal?</h3>
+    <div class="opcion" data-opcion="A">A) Tratado de Versalles</div>
+    <div class="opcion" data-opcion="B">B) Tratado de París</div>
+    <div class="opcion" data-opcion="C">C) Tratado de Tordesillas</div>
+    <div class="opcion" data-opcion="D">D) Tratado de Utrecht</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>28. ¿Qué filósofo francés escribió El contrato social?  </h3>
+    <div class="opcion" data-opcion="A">A) Descartes</div>
+    <div class="opcion" data-opcion="B">B) Montesquieu</div>
+    <div class="opcion" data-opcion="C">C) Voltaire</div>
+    <div class="opcion" data-opcion="D">D) Rousseau</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>29. ¿Qué evento dio inicio a la Revolución Francesa?</h3>
+    <div class="opcion" data-opcion="A">A) Caída de la Bastil</div>
+    <div class="opcion" data-opcion="B">B) Proclamación de la república</div>
+    <div class="opcion" data-opcion="C">C) Ejecución del rey</div>
+    <div class="opcion" data-opcion="D">D) Toma de Versalles</div>
+  </div>  
+
+  <div class="pregunta" data-correcta="A">
+    <h3>30. ¿Qué invento revolucionó la navegación en el siglo XV?</h3>
+    <div class="opcion" data-opcion="A">A) La brújula</div>     
+    <div class="opcion" data-opcion="B">B) El timón de popa</div>
+    <div class="opcion" data-opcion="C">C) La pólvora</div>
+    <div class="opcion" data-opcion="D">D) El sextante</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.pregunta').forEach(pregunta => {
+      const correcta = pregunta.dataset.correcta;
+      const opciones = pregunta.querySelectorAll('.opcion');
+
+      opciones.forEach(opcion => {
+        opcion.addEventListener('click', () => {
+          const seleccionada = opcion.dataset.opcion;
+
+          opciones.forEach(opt => {
+            opt.classList.add('desactivada');
+            if (opt.dataset.opcion === correcta) {
+              opt.classList.add('correcta');
+            } else if (opt === opcion && seleccionada !== correcta) {
+              opt.classList.add('incorrecta');
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
