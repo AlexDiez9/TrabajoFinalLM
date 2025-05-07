@@ -1,330 +1,321 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz de Música</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f8f9fa;
-      padding: 20px;
-    }
-
-    .pregunta {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .pregunta h3 {
-      margin-top: 0;
-    }
-
-    .opcion {
-      margin: 8px 0;
-      padding: 10px;
-      background: #e9ecef;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .opcion:hover {
-      background: #ca3712;
-    }
-
-    .correcta {
-      background-color: #c8e6c9 !important;
-      color: #256029;
-    }
-
-    .incorrecta {
-      background-color: #ffcdd2 !important;
-      color: #b71c1c;
-    }
-
-    .opcion.desactivada {
-      pointer-events: none;
-      opacity: 0.7;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Quiz de Música</title>
+    <link rel="stylesheet" href="../Estilos/quizs.css">
 </head>
-<body id="musica">
+<body id="Musica">
 
-  <h1>Cuestionario de Música</h1>
+    <h1>Cuestionario de Música</h1>
 
-  <!-- Pregunta 1 -->
-  <div class="pregunta" data-correcta="B">
-    <h3>1. ¿Quién es conocido como "El Rey del Pop"?</h3>
-    <div class="opcion" data-opcion="A">A) Elvis Presley</div>
-    <div class="opcion" data-opcion="B">B) Michael Jackson</div>
-    <div class="opcion" data-opcion="C">C) Prince</div>
-    <div class="opcion" data-opcion="D">D) Justin Timberlake</div>
-  </div>
+    <a href="../index.html"><h5>Volver al inicio</h5></a>
 
-  <!-- Pregunta 2 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>2. ¿Qué banda británica fue formada por John Lennon, Paul McCartney, George Harrison y Ringo Starr?</h3>
-    <div class="opcion" data-opcion="A">A) The Beatles</div>
-    <div class="opcion" data-opcion="B">B) The Rolling Stones</div>
-    <div class="opcion" data-opcion="C">C) Queen</div>
-    <div class="opcion" data-opcion="D">D) Pink Floyd</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>1. ¿Quién es conocido como "El Rey del Pop"?</h3>
+        <div class="opcion" data-opcion="A">A) Elvis Presley</div>
+        <div class="opcion" data-opcion="B">B) Michael Jackson</div>
+        <div class="opcion" data-opcion="C">C) Prince</div>
+        <div class="opcion" data-opcion="D">D) Justin Timberlake</div>
+    </div>
 
-  <!-- Pregunta 3 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>3. ¿Cuál de los siguientes artistas es conocido por el álbum "Purple Rain"?</h3>
-    <div class="opcion" data-opcion="A">A) Michael Jackson</div>
-    <div class="opcion" data-opcion="B">B) David Bowie</div>
-    <div class="opcion" data-opcion="C">C) Prince</div>
-    <div class="opcion" data-opcion="D">D) Bruce Springsteen</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>2. ¿Qué banda británica fue formada por John Lennon, Paul McCartney, George Harrison y Ringo Starr?</h3>
+        <div class="opcion" data-opcion="A">A) The Beatles</div>
+        <div class="opcion" data-opcion="B">B) The Rolling Stones</div>
+        <div class="opcion" data-opcion="C">C) Queen</div>
+        <div class="opcion" data-opcion="D">D) Pink Floyd</div>
+    </div>
 
-  <!-- Pregunta 4 -->
-  <div class="pregunta" data-correcta="D">
-    <h3>4. ¿En qué año se lanzó el famoso álbum "Thriller" de Michael Jackson?</h3>
-    <div class="opcion" data-opcion="A">A) 1981</div>
-    <div class="opcion" data-opcion="B">B) 1984</div>
-    <div class="opcion" data-opcion="C">C) 1990</div>
-    <div class="opcion" data-opcion="D">D) 1982</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>3. ¿Cuál de los siguientes artistas es conocido por el álbum "Purple Rain"?</h3>
+        <div class="opcion" data-opcion="A">A) Michael Jackson</div>
+        <div class="opcion" data-opcion="B">B) David Bowie</div>
+        <div class="opcion" data-opcion="C">C) Prince</div>
+        <div class="opcion" data-opcion="D">D) Bruce Springsteen</div>
+    </div>
 
-  <!-- Pregunta 5 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>5. ¿Quién cantó el éxito "Like a Virgin" en los años 80?</h3>
-    <div class="opcion" data-opcion="A">A) Madonna</div>
-    <div class="opcion" data-opcion="B">B) Cyndi Lauper</div>
-    <div class="opcion" data-opcion="C">C) Whitney Houston</div>
-    <div class="opcion" data-opcion="D">D) Britney Spears</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>4. ¿En qué año se lanzó el famoso álbum "Thriller" de Michael Jackson?</h3>
+        <div class="opcion" data-opcion="A">A) 1981</div>
+        <div class="opcion" data-opcion="B">B) 1984</div>
+        <div class="opcion" data-opcion="C">C) 1990</div>
+        <div class="opcion" data-opcion="D">D) 1982</div>
+    </div>
 
-  <!-- Pregunta 6 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>6. ¿Qué instrumento musical es conocido como el "Rey de los Instrumentos"?</h3>
-    <div class="opcion" data-opcion="A">A) Piano</div>
-    <div class="opcion" data-opcion="B">B) Guitarra</div>
-    <div class="opcion" data-opcion="C">C) Órgano</div>
-    <div class="opcion" data-opcion="D">D) Violín</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>5. ¿Quién cantó el éxito "Like a Virgin" en los años 80?</h3>
+        <div class="opcion" data-opcion="A">A) Madonna</div>
+        <div class="opcion" data-opcion="B">B) Cyndi Lauper</div>
+        <div class="opcion" data-opcion="C">C) Whitney Houston</div>
+        <div class="opcion" data-opcion="D">D) Britney Spears</div>
+    </div>
 
-  <!-- Pregunta 7 -->
-  <div class="pregunta" data-correcta="D">
-    <h3>7. ¿Qué cantante lanzó el álbum "21" en 2011?</h3>
-    <div class="opcion" data-opcion="A">A) Taylor Swift</div>
-    <div class="opcion" data-opcion="B">B) Adele</div>
-    <div class="opcion" data-opcion="C">C) Beyoncé</div>
-    <div class="opcion" data-opcion="D">D) Amy Winehouse</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>6. ¿Qué instrumento musical es conocido como el "Rey de los Instrumentos"?</h3>
+        <div class="opcion" data-opcion="A">A) Piano</div>
+        <div class="opcion" data-opcion="B">B) Guitarra</div>
+        <div class="opcion" data-opcion="C">C) Órgano</div>
+        <div class="opcion" data-opcion="D">D) Violín</div>
+    </div>
 
-  <!-- Pregunta 8 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>8. ¿De qué país es originario el grupo de música "ABBA"?</h3>
-    <div class="opcion" data-opcion="A">A) Noruega</div>
-    <div class="opcion" data-opcion="B">B) Alemania</div>
-    <div class="opcion" data-opcion="C">C) Suecia</div>
-    <div class="opcion" data-opcion="D">D) Finlandia</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>7. ¿Qué cantante lanzó el álbum "21" en 2011?</h3>
+        <div class="opcion" data-opcion="A">A) Taylor Swift</div>
+        <div class="opcion" data-opcion="B">B) Adele</div>
+        <div class="opcion" data-opcion="C">C) Beyoncé</div>
+        <div class="opcion" data-opcion="D">D) Amy Winehouse</div>
+    </div>
 
-  <!-- Pregunta 9 -->
-  <div class="pregunta" data-correcta="B">
-    <h3>9. ¿Qué género musical es conocido por el uso de guitarras eléctricas y batería rápida?</h3>
-    <div class="opcion" data-opcion="A">A) Jazz</div>
-    <div class="opcion" data-opcion="B">B) Rock</div>
-    <div class="opcion" data-opcion="C">C) Reggaetón</div>
-    <div class="opcion" data-opcion="D">D) Salsa</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>8. ¿De qué país es originario el grupo de música "ABBA"?</h3>
+        <div class="opcion" data-opcion="A">A) Noruega</div>
+        <div class="opcion" data-opcion="B">B) Alemania</div>
+        <div class="opcion" data-opcion="C">C) Suecia</div>
+        <div class="opcion" data-opcion="D">D) Finlandia</div>
+    </div>
 
-  <!-- Pregunta 10 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>10. ¿Cuál es el nombre de la banda que creó el famoso álbum "The Dark Side of the Moon"?</h3>
-    <div class="opcion" data-opcion="A">A) Pink Floyd</div>
-    <div class="opcion" data-opcion="B">B) Led Zeppelin</div>
-    <div class="opcion" data-opcion="C">C) The Beatles</div>
-    <div class="opcion" data-opcion="D">D) The Rolling Stones</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>9. ¿Qué género musical es conocido por el uso de guitarras eléctricas y batería rápida?</h3>
+        <div class="opcion" data-opcion="A">A) Jazz</div>
+        <div class="opcion" data-opcion="B">B) Rock</div>
+        <div class="opcion" data-opcion="C">C) Reggaetón</div>
+        <div class="opcion" data-opcion="D">D) Salsa</div>
+    </div>
 
-  <!-- Pregunta 11 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>11. ¿En qué año fue lanzado el primer álbum de la banda Nirvana, "Nevermind"?</h3>
-    <div class="opcion" data-opcion="A">A) 1990</div>
-    <div class="opcion" data-opcion="B">B) 1992</div>
-    <div class="opcion" data-opcion="C">C) 1991</div>
-    <div class="opcion" data-opcion="D">D) 1993</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>10. ¿Cuál es el nombre de la banda que creó el famoso álbum "The Dark Side of the Moon"?</h3>
+        <div class="opcion" data-opcion="A">A) Pink Floyd</div>
+        <div class="opcion" data-opcion="B">B) Led Zeppelin</div>
+        <div class="opcion" data-opcion="C">C) The Beatles</div>
+        <div class="opcion" data-opcion="D">D) The Rolling Stones</div>
+    </div>
 
-  <!-- Pregunta 12 -->
-  <div class="pregunta" data-correcta="B">
-    <h3>12. ¿Qué cantante es conocida por el apodo de "La Diva del Bronx"?</h3>
-    <div class="opcion" data-opcion="A">A) Selena Quintanilla</div>
-    <div class="opcion" data-opcion="B">B) Jennifer Lopez</div>
-    <div class="opcion" data-opcion="C">C) Shakira</div>
-    <div class="opcion" data-opcion="D">D) Beyoncé</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>11. ¿En qué año fue lanzado el primer álbum de la banda Nirvana, "Nevermind"?</h3>
+        <div class="opcion" data-opcion="A">A) 1990</div>
+        <div class="opcion" data-opcion="B">B) 1992</div>
+        <div class="opcion" data-opcion="C">C) 1991</div>
+        <div class="opcion" data-opcion="D">D) 1993</div>
+    </div>
 
-  <!-- Pregunta 13 -->
-  <div class="pregunta" data-correcta="D">
-    <h3>13. ¿Qué tipo de música popularizó Elvis Presley?</h3>
-    <div class="opcion" data-opcion="A">A) Jazz</div>
-    <div class="opcion" data-opcion="B">B) Salsa</div>
-    <div class="opcion" data-opcion="C">C) Reggae</div>
-    <div class="opcion" data-opcion="D">D) Rock and Roll</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>12. ¿Qué cantante es conocida por el apodo de "La Diva del Bronx"?</h3>
+        <div class="opcion" data-opcion="A">A) Selena Quintanilla</div>
+        <div class="opcion" data-opcion="B">B) Jennifer Lopez</div>
+        <div class="opcion" data-opcion="C">C) Shakira</div>
+        <div class="opcion" data-opcion="D">D) Beyoncé</div>
+    </div>
 
-  <!-- Pregunta 14 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>14. ¿Cuál de estos géneros musicales nació en Cuba?</h3>
-    <div class="opcion" data-opcion="A">A) Salsa</div>
-    <div class="opcion" data-opcion="B">B) Reggaetón</div>
-    <div class="opcion" data-opcion="C">C) Rumba</div>
-    <div class="opcion" data-opcion="D">D) Tango</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>13. ¿Qué tipo de música popularizó Elvis Presley?</h3>
+        <div class="opcion" data-opcion="A">A) Jazz</div>
+        <div class="opcion" data-opcion="B">B) Salsa</div>
+        <div class="opcion" data-opcion="C">C) Reggae</div>
+        <div class="opcion" data-opcion="D">D) Rock and Roll</div>
+    </div>
 
-  <!-- Pregunta 15 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>15. ¿Qué cantante lanzó la canción "Rolling in the Deep"?</h3>
-    <div class="opcion" data-opcion="A">A) Adele</div>
-    <div class="opcion" data-opcion="B">B) Rihanna</div>
-    <div class="opcion" data-opcion="C">C) Beyoncé</div>
-    <div class="opcion" data-opcion="D">D) Katy Perry</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>14. ¿Cuál de estos géneros musicales nació en Cuba?</h3>
+        <div class="opcion" data-opcion="A">A) Salsa</div>
+        <div class="opcion" data-opcion="B">B) Reggaetón</div>
+        <div class="opcion" data-opcion="C">C) Rumba</div>
+        <div class="opcion" data-opcion="D">D) Tango</div>
+    </div>
 
-  <!-- Pregunta 16 -->
-  <div class="pregunta" data-correcta="D">
-    <h3>16. ¿Qué país es originario el cantante Shakira?</h3>
-    <div class="opcion" data-opcion="A">A) México</div>
-    <div class="opcion" data-opcion="B">B) Argentina</div>
-    <div class="opcion" data-opcion="C">C) Venezuela</div>
-    <div class="opcion" data-opcion="D">D) Colombia</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>15. ¿Qué cantante lanzó la canción "Rolling in the Deep"?</h3>
+        <div class="opcion" data-opcion="A">A) Adele</div>
+        <div class="opcion" data-opcion="B">B) Rihanna</div>
+        <div class="opcion" data-opcion="C">C) Beyoncé</div>
+        <div class="opcion" data-opcion="D">D) Katy Perry</div>
+    </div>
 
-  <!-- Pregunta 17 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>17. ¿Qué banda inglesa es conocida por la canción "Bohemian Rhapsody"?</h3>
-    <div class="opcion" data-opcion="A">A) The Rolling Stones</div>
-    <div class="opcion" data-opcion="B">B) The Beatles</div>
-    <div class="opcion" data-opcion="C">C) Queen</div>
-    <div class="opcion" data-opcion="D">D) Pink Floyd</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>16. ¿Qué país es originario el cantante Shakira?</h3>
+        <div class="opcion" data-opcion="A">A) México</div>
+        <div class="opcion" data-opcion="B">B) Argentina</div>
+        <div class="opcion" data-opcion="C">C) Venezuela</div>
+        <div class="opcion" data-opcion="D">D) Colombia</div>
+    </div>
 
-  <!-- Pregunta 18 -->
-  <div class="pregunta" data-correcta="B">
-    <h3>18. ¿Qué cantante se hizo famosa con su álbum "Bad Romance"?</h3>
-    <div class="opcion" data-opcion="A">A) Britney Spears</div>
-    <div class="opcion" data-opcion="B">B) Lady Gaga</div>
-    <div class="opcion" data-opcion="C">C) Rihanna</div>
-    <div class="opcion" data-opcion="D">D) Ariana Grande</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>17. ¿Qué banda inglesa es conocida por la canción "Bohemian Rhapsody"?</h3>
+        <div class="opcion" data-opcion="A">A) The Rolling Stones</div>
+        <div class="opcion" data-opcion="B">B) The Beatles</div>
+        <div class="opcion" data-opcion="C">C) Queen</div>
+        <div class="opcion" data-opcion="D">D) Pink Floyd</div>
+    </div>
 
-  <!-- Pregunta 19 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>19. ¿Qué género musical es conocido por el uso de la guitarra eléctrica y distorsión?</h3>
-    <div class="opcion" data-opcion="A">A) Rock</div>
-    <div class="opcion" data-opcion="B">B) Jazz</div>
-    <div class="opcion" data-opcion="C">C) Hip-hop</div>
-    <div class="opcion" data-opcion="D">D) Salsa</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>18. ¿Qué cantante se hizo famosa con su álbum "Bad Romance"?</h3>
+        <div class="opcion" data-opcion="A">A) Britney Spears</div>
+        <div class="opcion" data-opcion="B">B) Lady Gaga</div>
+        <div class="opcion" data-opcion="C">C) Rihanna</div>
+        <div class="opcion" data-opcion="D">D) Ariana Grande</div>
+    </div>
 
-  <!-- Pregunta 20 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>20. ¿Quién es conocido como "El Sol de México"?</h3>
-    <div class="opcion" data-opcion="A">A) Carlos Santana</div>
-    <div class="opcion" data-opcion="B">B) Vicente Fernández</div>
-    <div class="opcion" data-opcion="C">C) Luis Miguel</div>
-    <div class="opcion" data-opcion="D">D) Juan Gabriel</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>19. ¿Qué género musical es conocido por el uso de la guitarra eléctrica y distorsión?</h3>
+        <div class="opcion" data-opcion="A">A) Rock</div>
+        <div class="opcion" data-opcion="B">B) Jazz</div>
+        <div class="opcion" data-opcion="C">C) Hip-hop</div>
+        <div class="opcion" data-opcion="D">D) Salsa</div>
+    </div>
 
-  <!-- Pregunta 21 -->
-  <div class="pregunta" data-correcta="B">
-    <h3>21. ¿Qué género musical tiene su origen en la isla de Jamaica?</h3>
-    <div class="opcion" data-opcion="A">A) Salsa</div>
-    <div class="opcion" data-opcion="B">B) Reggae</div>
-    <div class="opcion" data-opcion="C">C) Tango</div>
-    <div class="opcion" data-opcion="D">D) Rumba</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>20. ¿Quién es conocido como "El Sol de México"?</h3>
+        <div class="opcion" data-opcion="A">A) Carlos Santana</div>
+        <div class="opcion" data-opcion="B">B) Vicente Fernández</div>
+        <div class="opcion" data-opcion="C">C) Luis Miguel</div>
+        <div class="opcion" data-opcion="D">D) Juan Gabriel</div>
+    </div>
 
-  <!-- Pregunta 22 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>22. ¿Quién lanzó el exitoso álbum "The Fame" en 2008?</h3>
-    <div class="opcion" data-opcion="A">A) Lady Gaga</div>
-    <div class="opcion" data-opcion="B">B) Katy Perry</div>
-    <div class="opcion" data-opcion="C">C) Rihanna</div>
-    <div class="opcion" data-opcion="D">D) Beyoncé</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>21. ¿Qué género musical tiene su origen en la isla de Jamaica?</h3>
+        <div class="opcion" data-opcion="A">A) Salsa</div>
+        <div class="opcion" data-opcion="B">B) Reggae</div>
+        <div class="opcion" data-opcion="C">C) Tango</div>
+        <div class="opcion" data-opcion="D">D) Rumba</div>
+    </div>
 
-  <!-- Pregunta 23 -->
-  <div class="pregunta" data-correcta="D">
-    <h3>23. ¿Qué banda de grunge fue liderada por Kurt Cobain?</h3>
-    <div class="opcion" data-opcion="A">A) Pearl Jam</div>
-    <div class="opcion" data-opcion="B">B) Soundgarden</div>
-    <div class="opcion" data-opcion="C">C) Alice in Chains</div>
-    <div class="opcion" data-opcion="D">D) Nirvana</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>22. ¿Quién lanzó el exitoso álbum "The Fame" en 2008?</h3>
+        <div class="opcion" data-opcion="A">A) Lady Gaga</div>
+        <div class="opcion" data-opcion="B">B) Katy Perry</div>
+        <div class="opcion" data-opcion="C">C) Rihanna</div>
+        <div class="opcion" data-opcion="D">D) Beyoncé</div>
+    </div>
 
-  <!-- Pregunta 24 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>24. ¿Cuál es el apodo de la cantante Beyoncé?</h3>
-    <div class="opcion" data-opcion="A">A) Queen B</div>
-    <div class="opcion" data-opcion="B">B) The Diva</div>
-    <div class="opcion" data-opcion="C">C) Sasha Fierce</div>
-    <div class="opcion" data-opcion="D">D) The Boss</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>23. ¿Qué banda de grunge fue liderada por Kurt Cobain?</h3>
+        <div class="opcion" data-opcion="A">A) Pearl Jam</div>
+        <div class="opcion" data-opcion="B">B) Soundgarden</div>
+        <div class="opcion" data-opcion="C">C) Alice in Chains</div>
+        <div class="opcion" data-opcion="D">D) Nirvana</div>
+    </div>
 
-  <!-- Pregunta 25 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>25. ¿Qué banda creó la famosa canción "Smells Like Teen Spirit"?</h3>
-    <div class="opcion" data-opcion="A">A) The Rolling Stones</div>
-    <div class="opcion" data-opcion="B">B) Metallica</div>
-    <div class="opcion" data-opcion="C">C) Nirvana</div>
-    <div class="opcion" data-opcion="D">D) Pearl Jam</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>24. ¿Cuál es el apodo de la cantante Beyoncé?</h3>
+        <div class="opcion" data-opcion="A">A) Queen B</div>
+        <div class="opcion" data-opcion="B">B) The Diva</div>
+        <div class="opcion" data-opcion="C">C) Sasha Fierce</div>
+        <div class="opcion" data-opcion="D">D) The Boss</div>
+    </div>
 
-  <!-- Pregunta 26 -->
-  <div class="pregunta" data-correcta="D">
-    <h3>26. ¿Qué cantante de R&B lanzó "Confessions" en 2004?</h3>
-    <div class="opcion" data-opcion="A">A) Usher</div>
-    <div class="opcion" data-opcion="B">B) Chris Brown</div>
-    <div class="opcion" data-opcion="C">C) Trey Songz</div>
-    <div class="opcion" data-opcion="D">D) R. Kelly</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>25. ¿Qué banda creó la famosa canción "Smells Like Teen Spirit"?</h3>
+        <div class="opcion" data-opcion="A">A) The Rolling Stones</div>
+        <div class="opcion" data-opcion="B">B) Metallica</div>
+        <div class="opcion" data-opcion="C">C) Nirvana</div>
+        <div class="opcion" data-opcion="D">D) Pearl Jam</div>
+    </div>
 
-  <!-- Pregunta 27 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>27. ¿En qué país nació el famoso DJ David Guetta?</h3>
-    <div class="opcion" data-opcion="A">A) España</div>
-    <div class="opcion" data-opcion="B">B) Italia</div>
-    <div class="opcion" data-opcion="C">C) Francia</div>
-    <div class="opcion" data-opcion="D">D) Estados Unidos</div>
-  </div>
+    <div class="pregunta" data-correcta="D">
+        <h3>26. ¿Qué cantante de R&B lanzó "Confessions" en 2004?</h3>
+        <div class="opcion" data-opcion="A">A) Usher</div>
+        <div class="opcion" data-opcion="B">B) Chris Brown</div>
+        <div class="opcion" data-opcion="C">C) Trey Songz</div>
+        <div class="opcion" data-opcion="D">D) R. Kelly</div>
+    </div>
 
-  <!-- Pregunta 28 -->
-  <div class="pregunta" data-correcta="B">
-    <h3>28. ¿Qué tipo de música es conocida por su origen en la cultura afroamericana de Nueva Orleans?</h3>
-    <div class="opcion" data-opcion="A">A) Blues</div>
-    <div class="opcion" data-opcion="B">B) Jazz</div>
-    <div class="opcion" data-opcion="C">C) Soul</div>
-    <div class="opcion" data-opcion="D">D) Hip-hop</div>
-  </div>
+    <div class="pregunta" data-correcta="C">
+        <h3>27. ¿En qué país nació el famoso DJ David Guetta?</h3>
+        <div class="opcion" data-opcion="A">A) España</div>
+        <div class="opcion" data-opcion="B">B) Italia</div>
+        <div class="opcion" data-opcion="C">C) Francia</div>
+        <div class="opcion" data-opcion="D">D) Estados Unidos</div>
+    </div>
 
-  <!-- Pregunta 29 -->
-  <div class="pregunta" data-correcta="A">
-    <h3>29. ¿Qué grupo musical lanzó la canción "I Want It That Way"?</h3>
-    <div class="opcion" data-opcion="A">A) Backstreet Boys</div>
-    <div class="opcion" data-opcion="B">B) NSYNC</div>
-    <div class="opcion" data-opcion="C">C) Westlife</div>
-    <div class="opcion" data-opcion="D">D) One Direction</div>
-  </div>
+    <div class="pregunta" data-correcta="B">
+        <h3>28. ¿Qué tipo de música es conocida por su origen en la cultura afroamericana de Nueva Orleans?</h3>
+        <div class="opcion" data-opcion="A">A) Blues</div>
+        <div class="opcion" data-opcion="B">B) Jazz</div>
+        <div class="opcion" data-opcion="C">C) Soul</div>
+        <div class="opcion" data-opcion="D">D) Hip-hop</div>
+    </div>
 
-  <!-- Pregunta 30 -->
-  <div class="pregunta" data-correcta="C">
-    <h3>30. ¿Quién es conocida como "La Reina del Reggaetón"?</h3>
-    <div class="opcion" data-opcion="A">A) Karol G</div>
-    <div class="opcion" data-opcion="B">B) Becky G</div>
-    <div class="opcion" data-opcion="C">C) Daddy Yankee</div>
-    <div class="opcion" data-opcion="D">D) Nicky Jam</div>
-  </div>
+    <div class="pregunta" data-correcta="A">
+        <h3>29. ¿Qué grupo musical lanzó la canción "I Want It That Way"?</h3>
+        <div class="opcion" data-opcion="A">A) Backstreet Boys</div>
+        <div class="opcion" data-opcion="B">B) NSYNC</div>
+        <div class="opcion" data-opcion="C">C) Westlife</div>
+        <div class="opcion" data-opcion="D">D) One Direction</div>
+    </div>
 
+    <div class="pregunta" data-correcta="C">
+        <h3>30. ¿Quién es conocida como "La Reina del Reggaetón"?</h3>
+        <div class="opcion" data-opcion="A">A) Karol G</div>
+        <div class="opcion" data-opcion="B">B) Becky G</div>
+        <div class="opcion" data-opcion="C">C) Daddy Yankee</div>
+        <div class="opcion" data-opcion="D">D) Nicky Jam</div>
+    </div>
+
+    <div id="resultado">
+        <h2>Resultado final:</h2>
+        <p id="mensajeResultado"></p>
+        <a href="../index.html"><h5>Volver al inicio</h5></a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.pregunta').forEach(pregunta => {
+            const correcta = pregunta.getAttribute('data-correcta');
+            pregunta.querySelectorAll('.opcion').forEach(opcion => {
+                opcion.addEventListener('click', () => {
+                    pregunta.querySelectorAll('.opcion').forEach(opt => {
+                        opt.classList.add('desactivada');
+                    });
+                    const seleccion = opcion.getAttribute('data-opcion');
+                    if (seleccion === correcta) {
+                        opcion.classList.add('correcta');
+                    } 
+                    else {
+                        opcion.classList.add('incorrecta');
+                        pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
+                    }
+                });
+            });
+        });
+        const preguntas = document.querySelectorAll('.pregunta');
+        let puntuacion = 0;
+        let respondidas = 0;
+
+        preguntas.forEach(pregunta => {
+            const opciones = pregunta.querySelectorAll('.opcion');
+            const correcta = pregunta.dataset.correcta;
+
+            opciones.forEach(opcion => {
+                opcion.addEventListener('click', () => {
+                    if (pregunta.classList.contains('respondida')) return;
+
+                    const respuestaUsuario = opcion.dataset.opcion;
+
+                    if (respuestaUsuario === correcta) {
+                        opcion.classList.add('correcta');
+                        puntuacion++;
+                    } 
+                    else {
+                        opcion.classList.add('incorrecta');
+                        const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
+                        correctaEl.classList.add('correcta');
+                    }
+
+                    pregunta.classList.add('respondida');
+                    opciones.forEach(opt => opt.classList.add('desactivada'));
+
+                    respondidas++;
+
+                    // Mostrar resultado si es la última respondida
+                    if (respondidas === preguntas.length) {
+                        const resultadoDiv = document.getElementById('resultado');
+                        const mensaje = document.getElementById('mensajeResultado');
+                        mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
+                        resultadoDiv.style.display = 'block';
+                        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
