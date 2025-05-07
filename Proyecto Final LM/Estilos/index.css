@@ -80,3 +80,10 @@ body {
   .quiz-item a{
     text-decoration: none;
   }
+
+  #autores{
+    text-align: right;
+    font-size: medium;
+    padding: 100px 25px 50px;
+    font-weight: bold;
+  }
