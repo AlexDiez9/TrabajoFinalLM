@@ -1,13 +1,306 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
- <title>Inicio</title>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Quiz de Logotipos</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .pregunta {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-img {
+      width: 150px;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    .opcion {
+      margin: 8px 0;
+      padding: 10px;
+      background: #e9ecef;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .opcion:hover {
+      background: #ca3712;
+    }
+
+    .correcta {
+      background-color: #c8e6c9 !important;
+      color: #256029;
+    }
+
+    .incorrecta {
+      background-color: #ffcdd2 !important;
+      color: #b71c1c;
+    }
+
+    .opcion.desactivada {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
+  <h1>¿A qué marca pertenece este logotipo?</h1>
 
+  <!-- P1 -->
+  <div class="pregunta" data-correcta="A">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+    <div class="opcion" data-opcion="A">A) Apple</div>
+    <div class="opcion" data-opcion="B">B) Microsoft</div>
+    <div class="opcion" data-opcion="C">C) HP</div>
+    <div class="opcion" data-opcion="D">D) IBM</div>
+  </div>
+
+  <!-- P2 -->
+  <div class="pregunta" data-correcta="B">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/4/44/McDonalds_logo.svg" alt="McDonald's">
+    <div class="opcion" data-opcion="A">A) KFC</div>
+    <div class="opcion" data-opcion="B">B) McDonald's</div>
+    <div class="opcion" data-opcion="C">C) Wendy's</div>
+    <div class="opcion" data-opcion="D">D) Taco Bell</div>
+  </div>
+
+  <!-- P3 -->
+  <div class="pregunta" data-correcta="C">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Instagram_logo_2022.svg" alt="Instagram">
+    <div class="opcion" data-opcion="A">A) TikTok</div>
+    <div class="opcion" data-opcion="B">B) Snapchat</div>
+    <div class="opcion" data-opcion="C">C) Instagram</div>
+    <div class="opcion" data-opcion="D">D) Facebook</div>
+  </div>
+
+  <!-- P4 -->
+  <div class="pregunta" data-correcta="D">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Nike_logo.svg" alt="Nike">
+    <div class="opcion" data-opcion="A">A) Puma</div>
+    <div class="opcion" data-opcion="B">B) Adidas</div>
+    <div class="opcion" data-opcion="C">C) Reebok</div>
+    <div class="opcion" data-opcion="D">D) Nike</div>
+  </div>
+
+  <!-- P5 -->
+  <div class="pregunta" data-correcta="B">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+    <div class="opcion" data-opcion="A">A) eBay</div>
+    <div class="opcion" data-opcion="B">B) Amazon</div>
+    <div class="opcion" data-opcion="C">C) Etsy</div>
+    <div class="opcion" data-opcion="D">D) MercadoLibre</div>
+  </div>
+
+  <!-- P6 -->
+  <div class="pregunta" data-correcta="A">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Facebook_Logo_%282019%29.png" alt="Facebook">
+    <div class="opcion" data-opcion="A">A) Facebook</div>
+    <div class="opcion" data-opcion="B">B) Twitter</div>
+    <div class="opcion" data-opcion="C">C) LinkedIn</div>
+    <div class="opcion" data-opcion="D">D) Instagram</div>
+  </div>
+
+  <!-- P7 -->
+  <div class="pregunta" data-correcta="C">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Twitter_bird_logo_2012.svg" alt="Twitter/X">
+    <div class="opcion" data-opcion="A">A) Telegram</div>
+    <div class="opcion" data-opcion="B">B) Reddit</div>
+    <div class="opcion" data-opcion="C">C) Twitter</div>
+    <div class="opcion" data-opcion="D">D) Mastodon</div>
+  </div>
+
+  <!-- P8 -->
+  <div class="pregunta" data-correcta="D">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_of_Google_%282015-2019%29.svg" alt="Google">
+    <div class="opcion" data-opcion="A">A) YouTube</div>
+    <div class="opcion" data-opcion="B">B) Gmail</div>
+    <div class="opcion" data-opcion="C">C) Chrome</div>
+    <div class="opcion" data-opcion="D">D) Google</div>
+  </div>
+
+  <!-- P9 -->
+  <div class="pregunta" data-correcta="B">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/02/Pepsi_logo_2014.svg" alt="Pepsi">
+    <div class="opcion" data-opcion="A">A) Coca-Cola</div>
+    <div class="opcion" data-opcion="B">B) Pepsi</div>
+    <div class="opcion" data-opcion="C">C) Dr Pepper</div>
+    <div class="opcion" data-opcion="D">D) Sprite</div>
+  </div>
+
+  <!-- P10 -->
+  <div class="pregunta" data-correcta="A">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/YouTube_social_white_red_square.svg" alt="YouTube">
+    <div class="opcion" data-opcion="A">A) YouTube</div>
+    <div class="opcion" data-opcion="B">B) Vimeo</div>
+    <div class="opcion" data-opcion="C">C) Twitch</div>
+    <div class="opcion" data-opcion="D">D) TikTok</div>
+  </div>
+
+    <!-- P11 -->
+    <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Spotify_logo_with_text.svg" alt="Spotify">
+        <div class="opcion" data-opcion="A">A) Apple Music</div>
+        <div class="opcion" data-opcion="B">B) Deezer</div>
+        <div class="opcion" data-opcion="C">C) Spotify</div>
+        <div class="opcion" data-opcion="D">D) Tidal</div>
+      </div>
+    
+      <!-- P12 -->
+      <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest">
+        <div class="opcion" data-opcion="A">A) Tumblr</div>
+        <div class="opcion" data-opcion="B">B) Pinterest</div>
+        <div class="opcion" data-opcion="C">C) Instagram</div>
+        <div class="opcion" data-opcion="D">D) Flickr</div>
+      </div>
+    
+      <!-- P13 -->
+      <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Netflix_logo.svg" alt="Netflix">
+        <div class="opcion" data-opcion="A">A) Netflix</div>
+        <div class="opcion" data-opcion="B">B) Hulu</div>
+        <div class="opcion" data-opcion="C">C) Prime Video</div>
+        <div class="opcion" data-opcion="D">D) Disney+</div>
+      </div>
+    
+      <!-- P14 -->
+      <div class="pregunta" data-correcta="D">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Adobe_Creative_Cloud_rainbow_icon.svg" alt="Adobe">
+        <div class="opcion" data-opcion="A">A) CorelDraw</div>
+        <div class="opcion" data-opcion="B">B) Canva</div>
+        <div class="opcion" data-opcion="C">C) GIMP</div>
+        <div class="opcion" data-opcion="D">D) Adobe</div>
+      </div>
+    
+      <!-- P15 -->
+      <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mercedes-Benz_logo_2010.svg" alt="Mercedes-Benz">
+        <div class="opcion" data-opcion="A">A) BMW</div>
+        <div class="opcion" data-opcion="B">B) Audi</div>
+        <div class="opcion" data-opcion="C">C) Mercedes-Benz</div>
+        <div class="opcion" data-opcion="D">D) Lexus</div>
+      </div>
+    
+      <!-- P16 -->
+      <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Red_Bull_logo.svg" alt="Red Bull">
+        <div class="opcion" data-opcion="A">A) Monster</div>
+        <div class="opcion" data-opcion="B">B) Red Bull</div>
+        <div class="opcion" data-opcion="C">C) Burn</div>
+        <div class="opcion" data-opcion="D">D) Rockstar</div>
+      </div>
+    
+      <!-- P17 -->
+      <div class="pregunta" data-correcta="A">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/db/PlayStation_logo.svg" alt="PlayStation">
+        <div class="opcion" data-opcion="A">A) PlayStation</div>
+        <div class="opcion" data-opcion="B">B) Xbox</div>
+        <div class="opcion" data-opcion="C">C) Nintendo</div>
+        <div class="opcion" data-opcion="D">D) Sega</div>
+      </div>
+    
+      <!-- P18 -->
+      <div class="pregunta" data-correcta="C">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Volkswagen_logo_2019.svg" alt="Volkswagen">
+        <div class="opcion" data-opcion="A">A) Volvo</div>
+        <div class="opcion" data-opcion="B">B) Toyota</div>
+        <div class="opcion" data-opcion="C">C) Volkswagen</div>
+        <div class="opcion" data-opcion="D">D) Renault</div>
+      </div>
+    
+      <!-- P19 -->
+      <div class="pregunta" data-correcta="D">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lego_logo.svg" alt="LEGO">
+        <div class="opcion" data-opcion="A">A) Mega Bloks</div>
+        <div class="opcion" data-opcion="B">B) Hasbro</div>
+        <div class="opcion" data-opcion="C">C) Playmobil</div>
+        <div class="opcion" data-opcion="D">D) LEGO</div>
+      </div>
+    
+      <!-- P20 -->
+      <div class="pregunta" data-correcta="B">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Firefox_logo%2C_2019.svg" alt="Firefox">
+        <div class="opcion" data-opcion="A">A) Chrome</div>
+        <div class="opcion" data-opcion="B">B) Firefox</div>
+        <div class="opcion" data-opcion="C">C) Edge</div>
+        <div class="opcion" data-opcion="D">D) Opera</div>
+      </div>
+
+      <div id="resultado" style="display:none; padding:20px; background:#fff3cd; border:1px solid #ffeeba; border-radius:10px; margin-top:20px;">
+        <h2>Resultado final:</h2>
+        <p id="mensajeResultado"></p>
+      </div>
+    
+
+  <!-- Script -->
+  <script>
+    document.querySelectorAll('.pregunta').forEach(pregunta => {
+      const correcta = pregunta.getAttribute('data-correcta');
+      pregunta.querySelectorAll('.opcion').forEach(opcion => {
+        opcion.addEventListener('click', () => {
+          pregunta.querySelectorAll('.opcion').forEach(opt => {
+            opt.classList.add('desactivada');
+          });
+          const seleccion = opcion.getAttribute('data-opcion');
+          if (seleccion === correcta) {
+            opcion.classList.add('correcta');
+          } else {
+            opcion.classList.add('incorrecta');
+            pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
+          }
+        });
+      });
+    });
+    const preguntas = document.querySelectorAll('.pregunta');
+  let puntuacion = 0;
+  let respondidas = 0;
+
+  preguntas.forEach(pregunta => {
+    const opciones = pregunta.querySelectorAll('.opcion');
+    const correcta = pregunta.dataset.correcta;
+
+    opciones.forEach(opcion => {
+      opcion.addEventListener('click', () => {
+        if (pregunta.classList.contains('respondida')) return;
+
+        const respuestaUsuario = opcion.dataset.opcion;
+
+        if (respuestaUsuario === correcta) {
+          opcion.classList.add('correcta');
+          puntuacion++;
+        } else {
+          opcion.classList.add('incorrecta');
+          const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
+          correctaEl.classList.add('correcta');
+        }
+
+        pregunta.classList.add('respondida');
+        opciones.forEach(opt => opt.classList.add('desactivada'));
+
+        respondidas++;
+
+        // Mostrar resultado si es la última respondida
+        if (respondidas === preguntas.length) {
+          const resultadoDiv = document.getElementById('resultado');
+          const mensaje = document.getElementById('mensajeResultado');
+          mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
+          resultadoDiv.style.display = 'block';
+          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+      });
+    });
+  });
+  </script>
 
 </body>
-
 </html>

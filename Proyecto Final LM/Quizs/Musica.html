@@ -1,13 +1,167 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
- <title>Inicio</title>
- <meta charset="UTF-8">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <title>Quiz de Música</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
 
+    .pregunta {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pregunta h3 {
+      margin-top: 0;
+    }
+
+    .opcion {
+      margin: 8px 0;
+      padding: 10px;
+      background: #e9ecef;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .opcion:hover {
+      background: #ca3712;
+    }
+
+    .correcta {
+      background-color: #c8e6c9 !important;
+      color: #256029;
+    }
+
+    .incorrecta {
+      background-color: #ffcdd2 !important;
+      color: #b71c1c;
+    }
+
+    .opcion.desactivada {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body id="musica">
+
+  <h1>Cuestionario de Música</h1>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>1. ¿Quién es conocido como el “Rey del Pop”?</h3>
+    <div class="opcion" data-opcion="A">A) Elton John</div>
+    <div class="opcion" data-opcion="B">B) Michael Jackson</div>
+    <div class="opcion" data-opcion="C">C) Prince</div>
+    <div class="opcion" data-opcion="D">D) Elvis Presley</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>2. ¿Qué compositor compuso la Novena Sinfonía?</h3>
+    <div class="opcion" data-opcion="A">A) Mozart</div>
+    <div class="opcion" data-opcion="B">B) Bach</div>
+    <div class="opcion" data-opcion="C">C) Beethoven</div>
+    <div class="opcion" data-opcion="D">D) Chopin</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>3. ¿Cuál de estos instrumentos pertenece a la familia de cuerda?</h3>
+    <div class="opcion" data-opcion="A">A) Flauta</div>
+    <div class="opcion" data-opcion="B">B) Violín</div>
+    <div class="opcion" data-opcion="C">C) Timbal</div>
+    <div class="opcion" data-opcion="D">D) Clarinete</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>4. ¿Qué banda británica lanzó el álbum "A Night at the Opera"?</h3>
+    <div class="opcion" data-opcion="A">A) The Beatles</div>
+    <div class="opcion" data-opcion="B">B) Queen</div>
+    <div class="opcion" data-opcion="C">C) Rolling Stones</div>
+    <div class="opcion" data-opcion="D">D) Pink Floyd</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>5. ¿Qué cantante interpretó la canción “Rolling in the Deep”?</h3>
+    <div class="opcion" data-opcion="A">A) Rihanna</div>
+    <div class="opcion" data-opcion="B">B) Adele</div>
+    <div class="opcion" data-opcion="C">C) Amy Winehouse</div>
+    <div class="opcion" data-opcion="D">D) Beyoncé</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>6. ¿Qué significa "a capella"?</h3>
+    <div class="opcion" data-opcion="A">A) Con ritmo rápido</div>
+    <div class="opcion" data-opcion="B">B) Sin instrumentos</div>
+    <div class="opcion" data-opcion="C">C) Con acompañamiento de piano</div>
+    <div class="opcion" data-opcion="D">D) En coro</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>7. ¿Qué grupo mexicano es conocido por “Rayando el Sol”?</h3>
+    <div class="opcion" data-opcion="A">A) Zoé</div>
+    <div class="opcion" data-opcion="B">B) Maná</div>
+    <div class="opcion" data-opcion="C">C) Molotov</div>
+    <div class="opcion" data-opcion="D">D) Café Tacvba</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>8. ¿Cuál es el tempo más rápido en música clásica?</h3>
+    <div class="opcion" data-opcion="A">A) Andante</div>
+    <div class="opcion" data-opcion="B">B) Allegro</div>
+    <div class="opcion" data-opcion="C">C) Presto</div>
+    <div class="opcion" data-opcion="D">D) Largo</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>9. ¿Cuál fue el primer instrumento musical de la historia?</h3>
+    <div class="opcion" data-opcion="A">A) Tambor</div>
+    <div class="opcion" data-opcion="B">B) Lira</div>
+    <div class="opcion" data-opcion="C">C) Flauta</div>
+    <div class="opcion" data-opcion="D">D) Guitarra</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>10. ¿Qué cantante colombiano popularizó “Hips Don’t Lie”?</h3>
+    <div class="opcion" data-opcion="A">A) Juanes</div>
+    <div class="opcion" data-opcion="B">B) Maluma</div>
+    <div class="opcion" data-opcion="C">C) Shakira</div>
+    <div class="opcion" data-opcion="D">D) Karol G</div>
+  </div>
+<script>
+  // Selecciona todas las preguntas
+  document.querySelectorAll('.pregunta').forEach(pregunta => {
+    const correcta = pregunta.getAttribute('data-correcta');
+
+    // Selecciona todas las opciones dentro de esa pregunta
+    pregunta.querySelectorAll('.opcion').forEach(opcion => {
+      opcion.addEventListener('click', () => {
+        // Desactivar todas las opciones después de hacer clic
+        pregunta.querySelectorAll('.opcion').forEach(opt => {
+          opt.classList.add('desactivada');
+        });
+
+        const seleccion = opcion.getAttribute('data-opcion');
+        if (seleccion === correcta) {
+          opcion.classList.add('correcta');
+        } else {
+          opcion.classList.add('incorrecta');
+          // También mostrar cuál era la correcta
+          const correctaElem = pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`);
+          correctaElem.classList.add('correcta');
+        }
+      });
+    });
+  });
+</script>
 
 </body>
-
+</html>
+</body>
 </html>
