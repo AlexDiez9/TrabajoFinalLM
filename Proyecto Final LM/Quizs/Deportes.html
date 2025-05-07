@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Deportes</title>
+  <style>
+    body {
+      background-color: #c62828;
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pregunta {
+      background-color: #b71c1c;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      width: 80%;
+    }
+    .opcion {
+      background-color: #ef5350;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .opcion.correcta {
+      background-color: #2e7d32;
+    }
+    .opcion.incorrecta {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz de Deportes</h1>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>1. ¿Cuántos jugadores tiene un equipo de fútbol en el campo?</h3>
+    <div class="opcion" data-opcion="A">A) 9</div>
+    <div class="opcion" data-opcion="B">B) 10</div>
+    <div class="opcion" data-opcion="C">C) 11</div>
+    <div class="opcion" data-opcion="D">D) 12</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>2. ¿Qué país ganó el Mundial de Fútbol 2018?</h3>
+    <div class="opcion" data-opcion="A">A) Francia</div>
+    <div class="opcion" data-opcion="B">B) Croacia</div>
+    <div class="opcion" data-opcion="C">C) Brasil</div>
+    <div class="opcion" data-opcion="D">D) Alemania</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>3. ¿En qué deporte se utiliza el término "love" para referirse al marcador 0?</h3>
+    <div class="opcion" data-opcion="A">A) Fútbol</div>
+    <div class="opcion" data-opcion="B">B) Baloncesto</div>
+    <div class="opcion" data-opcion="C">C) Béisbol</div>
+    <div class="opcion" data-opcion="D">D) Tenis</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>4. ¿Cuál es el país de origen del judo?</h3>
+    <div class="opcion" data-opcion="A">A) China</div>
+    <div class="opcion" data-opcion="B">B) Japón</div>
+    <div class="opcion" data-opcion="C">C) Corea</div>
+    <div class="opcion" data-opcion="D">D) Tailandia</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>5. ¿Cuántos puntos vale un triple en baloncesto?</h3>
+    <div class="opcion" data-opcion="A">A) 1</div>
+    <div class="opcion" data-opcion="B">B) 2</div>
+    <div class="opcion" data-opcion="C">C) 3</div>
+    <div class="opcion" data-opcion="D">D) 4</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>6. ¿Qué nadador ha ganado más medallas olímpicas?</h3>
+    <div class="opcion" data-opcion="A">A) Michael Phelps</div>
+    <div class="opcion" data-opcion="B">B) Mark Spitz</div>
+    <div class="opcion" data-opcion="C">C) Ryan Lochte</div>
+    <div class="opcion" data-opcion="D">D) Ian Thorpe</div>
+  </div>
+
+  <div class="pregunta" data-correcta="B">
+    <h3>7. ¿En qué país se celebraron los Juegos Olímpicos de 2016?</h3>
+    <div class="opcion" data-opcion="A">A) China</div>
+    <div class="opcion" data-opcion="B">B) Brasil</div>
+    <div class="opcion" data-opcion="C">C) Grecia</div>
+    <div class="opcion" data-opcion="D">D) Reino Unido</div>
+  </div>
+
+  <div class="pregunta" data-correcta="C">
+    <h3>8. ¿Qué país ha ganado más Copas del Mundo de fútbol?</h3>
+    <div class="opcion" data-opcion="A">A) Alemania</div>
+    <div class="opcion" data-opcion="B">B) Italia</div>
+    <div class="opcion" data-opcion="C">C) Brasil</div>
+    <div class="opcion" data-opcion="D">D) Argentina</div>
+  </div>
+
+  <div class="pregunta" data-correcta="D">
+    <h3>9. ¿Cuántos sets debe ganar un jugador para vencer un partido de Grand Slam masculino?</h3>
+    <div class="opcion" data-opcion="A">A) 2</div>
+    <div class="opcion" data-opcion="B">B) 4</div>
+    <div class="opcion" data-opcion="C">C) 6</div>
+    <div class="opcion" data-opcion="D">D) 3</div>
+  </div>
+
+  <div class="pregunta" data-correcta="A">
+    <h3>10. ¿Qué equipo de la NBA tiene más campeonatos?</h3>
+    <div class="opcion" data-opcion="A">A) Boston Celtics</div>
+    <div class="opcion" data-opcion="B">B) Chicago Bulls</div>
+    <div class="opcion" data-opcion="C">C) Golden State Warriors</div>
+    <div class="opcion" data-opcion="D">D) Los Angeles Clippers</div>
+  </div>
+
+  <!-- Preguntas 11 a 29 similares -->
+
+  <div class="pregunta" data-correcta="C">
+    <h3>30. ¿Cuál es la duración de un partido de fútbol profesional?</h3>
+    <div class="opcion" data-opcion="A">A) 100 min</div>
+    <div class="opcion" data-opcion="B">B) 70 min</div>
+    <div class="opcion" data-opcion="C">C) 90 min</div>
+    <div class="opcion" data-opcion="D">D) 80 min</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.pregunta').forEach(pregunta => {
+      const correcta = pregunta.dataset.correcta;
+      const opciones = pregunta.querySelectorAll('.opcion');
+      opciones.forEach(opcion => {
+        opcion.addEventListener('click', () => {
+          opciones.forEach(o => o.classList.remove('correcta', 'incorrecta'));
+          if (opcion.dataset.opcion === correcta) {
+            opcion.classList.add('correcta');
+          } else {
+            opcion.classList.add('incorrecta');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
