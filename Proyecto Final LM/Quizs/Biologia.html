@@ -1,320 +1,298 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz de Biología</title>
-  <link rel="stylesheet" href="../Estilos/quizs.css">
+    <meta charset="UTF-8">
+    <title>Quiz de Biología</title>
+    <link rel="stylesheet" href="../Estilos/quizs.css"> <!-- Estilos de quizs-->
 </head>
-<body id="Biologia">
-    <h1>Quiz de Biología</h1>
+<body id="Biologia"> <!-- Id para el CSS para poner cosas especificas de arte, al ser comun para todos los quizs-->
 
-    <a href="../index.html"><h5>Volver al inicio</h5></a>
+    <div class="contenedorPreguntas"> <!-- contenedor para las preguntas-->
+        <h1>Quiz de Biología</h1>
 
-    <div class="pregunta" data-correcta="C">
-        <h3>1. ¿Cuál es la unidad básica de la vida?</h3>
-        <div class="opcion" data-opcion="A">A) Átomo</div>
-        <div class="opcion" data-opcion="B">B) Molécula</div>
-        <div class="opcion" data-opcion="C">C) Célula</div>
-        <div class="opcion" data-opcion="D">D) Órgano</div>
+        <!-- Enlace al inicio -->
+        <a href="../index.html"><h4>Volver al inicio</h4></a>
+
+        <!-- Pregunta 1. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>1. ¿Cuál es la unidad básica de la vida?</h3>
+            <div class="opcion" opcion="A">A) Átomo</div>
+            <div class="opcion" opcion="B">B) Molécula</div>
+            <div class="opcion" opcion="C">C) Célula</div>
+            <div class="opcion" opcion="D">D) Órgano</div>
+        </div>
+
+        <!-- Pregunta 2. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>2. ¿Qué tipo de célula no tiene núcleo?</h3>
+            <div class="opcion" opcion="A">A) Célula animal</div>
+            <div class="opcion" opcion="B">B) Célula procariota</div>
+            <div class="opcion" opcion="C">C) Célula vegetal</div>
+            <div class="opcion" opcion="D">D) Célula eucariota</div>
+        </div>
+
+        <!-- Pregunta 3. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>3. ¿Cuál de los siguientes es un ejemplo de una planta vascular?</h3>
+            <div class="opcion" opcion="A">A) Musgo</div>
+            <div class="opcion" opcion="B">B) Alga</div>
+            <div class="opcion" opcion="C">C) Helecho</div>
+            <div class="opcion" opcion="D">D) Hongo</div>
+        </div>
+
+        <!-- Pregunta 4. Su respuesta correcta es A-->
+        <div class="pregunta" correcta="A">
+            <h3>4. ¿En qué parte de la célula se lleva a cabo la respiración celular?</h3>
+            <div class="opcion" opcion="A">A) Mitocondria</div>
+            <div class="opcion" opcion="B">B) Núcleo</div>
+            <div class="opcion" opcion="C">C) Retículo endoplasmático</div>
+            <div class="opcion" opcion="D">D) Aparato de Golgi</div>
+        </div>
+
+        <!-- Pregunta 5. Su respuesta correcta es D-->
+        <div class="pregunta" correcta="D">
+            <h3>5. ¿Qué estructura celular está encargada de controlar las funciones celulares?</h3>
+            <div class="opcion" opcion="A">A) Ribosoma</div>
+            <div class="opcion" opcion="B">B) Lisosoma</div>
+            <div class="opcion" opcion="C">C) Vacuola</div>
+            <div class="opcion" opcion="D">D) Núcleo</div>
+        </div>
+
+        <!-- Pregunta 6. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>6. ¿Cuál es la principal función de los glóbulos rojos en la sangre?</h3>
+            <div class="opcion" opcion="A">A) Combatir infecciones</div>
+            <div class="opcion" opcion="B">B) Coagular la sangre</div>
+            <div class="opcion" opcion="C">C) Transportar oxígeno</div>
+            <div class="opcion" opcion="D">D) Regular la temperatura</div>
+        </div>
+
+        <!-- Pregunta 7. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>7. ¿En qué órgano se produce la insulina?</h3>
+            <div class="opcion" opcion="A">A) Estómago</div>
+            <div class="opcion" opcion="B">B) Páncreas</div>
+            <div class="opcion" opcion="C">C) Hígado</div>
+            <div class="opcion" opcion="D">D) Riñón</div>
+        </div>
+
+        <!-- Pregunta 8. Su respuesta correcta es D-->
+        <div class="pregunta" correcta="D">
+            <h3>8. ¿Qué tipo de proteína se encuentra en los músculos y es responsable de la contracción muscular?</h3>
+            <div class="opcion" opcion="A">A) Insulina</div>
+            <div class="opcion" opcion="B">B) Hemoglobina</div>
+            <div class="opcion" opcion="C">C) Colágeno</div>
+            <div class="opcion" opcion="D">D) Actina</div>
+        </div>
+
+        <!-- Pregunta 9. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>9. ¿Qué tipo de tejido conecta los huesos entre sí?</h3>
+            <div class="opcion" opcion="A">A) Tejido epitelial</div>
+            <div class="opcion" opcion="B">B) Tejido muscular</div>
+            <div class="opcion" opcion="C">C) Tejido conectivo</div>
+            <div class="opcion" opcion="D">D) Tejido nervioso</div>
+        </div>
+
+        <!-- Pregunta 10. Su respuesta correcta es A-->
+        <div class="pregunta" correcta="A">
+            <h3>10. ¿Qué tipo de célula está encargada de la defensa inmunológica del cuerpo?</h3>
+            <div class="opcion" opcion="A">A) Linfocito</div>
+            <div class="opcion" opcion="B">B) Neurona</div>
+            <div class="opcion" opcion="C">C) Epiteliocito</div>
+            <div class="opcion" opcion="D">D) Glóbulo rojo</div>
+        </div>
+
+        <!-- Pregunta 11. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>11. ¿Cuál es el principal gas que los humanos inhalan para la respiración?</h3>
+            <div class="opcion" opcion="A">A) Dióxido de carbono</div>
+            <div class="opcion" opcion="B">B) Oxígeno</div>
+            <div class="opcion" opcion="C">C) Nitrógeno</div>
+            <div class="opcion" opcion="D">D) Metano</div>
+        </div>
+
+        <!-- Pregunta 12. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>12. ¿Qué es la fotosíntesis?</h3>
+            <div class="opcion" opcion="A">A) El proceso de descomposición de los seres vivos</div>
+            <div class="opcion" opcion="B">B) La conversión de energía química en energía mecánica</div>
+            <div class="opcion" opcion="C">C) El proceso por el cual las plantas convierten la luz solar en energía química</div>
+            <div class="opcion" opcion="D">D) La formación de oxígeno por los animales</div>
+        </div>
+
+        <!-- Pregunta 13. Su respuesta correcta es A-->
+        <div class="pregunta" correcta="A">
+            <h3>13. ¿Cuál es la función principal de las mitocondrias?</h3>
+            <div class="opcion" opcion="A">A) Generar energía</div>
+            <div class="opcion" opcion="B">B) Controlar el ciclo celular</div>
+            <div class="opcion" opcion="C">C) Producir proteínas</div>
+            <div class="opcion" opcion="D">D) Sintetizar lípidos</div>
+        </div>
+
+        <!-- Pregunta 14. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>14. ¿Qué proteína es responsable del transporte de oxígeno en la sangre?</h3>
+            <div class="opcion" opcion="A">A) Actina</div>
+            <div class="opcion" opcion="B">B) Hemoglobina</div>
+            <div class="opcion" opcion="C">C) Colágeno</div>
+            <div class="opcion" opcion="D">D) Insulina</div>
+        </div>
+
+        <!-- Pregunta 15. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>15. ¿Qué es el ADN?</h3>
+            <div class="opcion" opcion="A">A) Un tipo de célula</div>
+            <div class="opcion" opcion="B">B) Una proteína</div>
+            <div class="opcion" opcion="C">C) Una molécula que contiene la información genética</div>
+            <div class="opcion" opcion="D">D) Un tipo de vitamina</div>
+        </div>
+
+        <!-- Pregunta 16. Su respuesta correcta es D-->
+        <div class="pregunta" correcta="D">
+            <h3>16. ¿Qué organelo celular es responsable de la síntesis de proteínas?</h3>
+            <div class="opcion" opcion="A">A) Mitocondria</div>
+            <div class="opcion" opcion="B">B) Aparato de Golgi</div>
+            <div class="opcion" opcion="C">C) Vacuola</div>
+            <div class="opcion" opcion="D">D) Ribosoma</div>
+        </div>
+
+        <!-- Pregunta 17. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>17. ¿Qué estructura celular está presente en las células vegetales pero no en las animales?</h3>
+            <div class="opcion" opcion="A">A) Lisosoma</div>
+            <div class="opcion" opcion="B">B) Cloroplasto</div>
+            <div class="opcion" opcion="C">C) Núcleo</div>
+            <div class="opcion" opcion="D">D) Mitocondria</div>
+        </div>
+
+        <!-- Pregunta 18. Su respuesta correcta es A-->
+        <div class="pregunta" correcta="A">
+            <h3>18. ¿Cuál es el principal componente de la pared celular de las plantas?</h3>
+            <div class="opcion" opcion="A">A) Celulosa</div>
+            <div class="opcion" opcion="B">B) Quitina</div>
+            <div class="opcion" opcion="C">C) Lignina</div>
+            <div class="opcion" opcion="D">D) Colágeno</div>
+        </div>
+
+        <!-- Pregunta 19. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>19. ¿Cómo se llama el proceso por el cual las células se dividen para producir dos células hijas idénticas?</h3>
+            <div class="opcion" opcion="A">A) Fisión binaria</div>
+            <div class="opcion" opcion="B">B) Meiosis</div>
+            <div class="opcion" opcion="C">C) Mitosis</div>
+            <div class="opcion" opcion="D">D) Fagocitosis</div>
+        </div>
+
+        <!-- Pregunta 20. Su respuesta correcta es D-->
+        <div class="pregunta" correcta="D">
+            <h3>20. ¿Qué tipo de célula se encuentra en los huesos?</h3>
+            <div class="opcion" opcion="A">A) Neurona</div>
+            <div class="opcion" opcion="B">B) Glóbulo rojo</div>
+            <div class="opcion" opcion="C">C) Célula muscular</div>
+            <div class="opcion" opcion="D">D) Osteocito</div>
+        </div>
+
+        <!-- Pregunta 21. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>21. ¿Cuál es la función principal de los riñones?</h3>
+            <div class="opcion" opcion="A">A) Filtrar las grasas</div>
+            <div class="opcion" opcion="B">B) Filtrar y eliminar desechos de la sangre</div>
+            <div class="opcion" opcion="C">C) Regular la temperatura corporal</div>
+            <div class="opcion" opcion="D">D) Producción de hormonas</div>
+        </div>
+
+        <!-- Pregunta 22. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>22. ¿Qué proceso se lleva a cabo en los ribosomas?</h3>
+            <div class="opcion" opcion="A">A) Respiración celular</div>
+            <div class="opcion" opcion="B">B) Producción de energía</div>
+            <div class="opcion" opcion="C">C) Síntesis de proteínas</div>
+            <div class="opcion" opcion="D">D) Almacenamiento de nutrientes</div>
+        </div>
+
+        <!-- Pregunta 23. Su respuesta correcta es A-->
+        <div class="pregunta" correcta="A">
+            <h3>23. ¿Qué molécula es esencial para la fotosíntesis?</h3>
+            <div class="opcion" opcion="A">A) Clorofila</div>
+            <div class="opcion" opcion="B">B) Hemoglobina</div>
+            <div class="opcion" opcion="C">C) Glucosa</div>
+            <div class="opcion" opcion="D">D) Ácido desoxirribonucleico</div>
+        </div>
+
+        <!-- Pregunta 24. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>24. ¿Qué tipo de molécula es el ADN?</h3>
+            <div class="opcion" opcion="A">A) Carbohidrato</div>
+            <div class="opcion" opcion="B">B) Ácido nucleico</div>
+            <div class="opcion" opcion="C">C) Proteína</div>
+            <div class="opcion" opcion="D">D) Lípido</div>
+        </div>
+
+        <!-- Pregunta 25. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>25. ¿Qué es la mitosis?</h3>
+            <div class="opcion" opcion="A">A) La división celular que da lugar a células con la mitad del número de cromosomas</div>
+            <div class="opcion" opcion="B">B) El proceso de reproducción sexual</div>
+            <div class="opcion" opcion="C">C) La división celular que da lugar a dos células hijas idénticas</div>
+            <div class="opcion" opcion="D">D) La fusión de dos células sexuales</div>
+        </div>
+
+        <!-- Pregunta 26. Su respuesta correcta es D-->
+        <div class="pregunta" correcta="D">
+            <h3>26. ¿Cuál es el principal componente de las membranas celulares?</h3>
+            <div class="opcion" opcion="A">A) Proteínas</div>
+            <div class="opcion" opcion="B">B) Carbohidratos</div>
+            <div class="opcion" opcion="C">C) Ácidos nucleicos</div>
+            <div class="opcion" opcion="D">D) Lípidos</div>
+        </div>
+
+        <!-- Pregunta 27. Su respuesta correcta es C-->
+        <div class="pregunta" correcta="C">
+            <h3>27. ¿Cuál de los siguientes no es un tipo de tejido?</h3>
+            <div class="opcion" opcion="A">A) Tejido epitelial</div>
+            <div class="opcion" opcion="B">B) Tejido nervioso</div>
+            <div class="opcion" opcion="C">C) Tejido macroscópico</div>
+            <div class="opcion" opcion="D">D) Tejido muscular</div>
+        </div>
+
+        <!-- Pregunta 28. Su respuesta correcta es A-->
+        <div class="pregunta" correcta="A">
+            <h3>28. ¿Cuál es la función de los glóbulos blancos?</h3>
+            <div class="opcion" opcion="A">A) Combatir infecciones</div>
+            <div class="opcion" opcion="B">B) Transportar oxígeno</div>
+            <div class="opcion" opcion="C">C) Transportar nutrientes</div>
+            <div class="opcion" opcion="D">D) Regular la temperatura</div>
+        </div>
+
+        <!-- Pregunta 29. Su respuesta correcta es B-->
+        <div class="pregunta" correcta="B">
+            <h3>29. ¿Qué órgano es el encargado de filtrar y eliminar desechos del cuerpo?</h3>
+            <div class="opcion" opcion="A">A) Corazón</div>
+            <div class="opcion" opcion="B">B) Riñón</div>
+            <div class="opcion" opcion="C">C) Pulmones</div>
+            <div class="opcion" opcion="D">D) Hígado</div>
+        </div>
+
+        <!-- Pregunta 30. Su respuesta correcta es D-->
+        <div class="pregunta" correcta="D">
+            <h3>30. ¿Cuál de los siguientes no es un proceso metabólico?</h3>
+            <div class="opcion" opcion="A">A) Respiración celular</div>
+            <div class="opcion" opcion="B">B) Fotosíntesis</div>
+            <div class="opcion" opcion="C">C) Digestión de la comida en el estómago</div>
+            <div class="opcion" opcion="D">D) Reproducción celular</div>
+        </div>
+
+        <!-- Resultados del quiz. muestra el numero de preguntas acertadas y un enlace para volver al inicio-->
+        <div id="resultado">
+            <h2>Resultado final:</h2>
+            <p>Has acertado <aciertos id="aciertos"></aciertos> de <preguntas id="preguntas"></preguntas> preguntas.</p>
+            <a href="../index.html"><h4>Volver al inicio</h4></a>
+        </div>
     </div>
 
-    <div class="pregunta" data-correcta="B">
-        <h3>2. ¿Qué tipo de célula no tiene núcleo?</h3>
-        <div class="opcion" data-opcion="A">A) Célula animal</div>
-        <div class="opcion" data-opcion="B">B) Célula procariota</div>
-        <div class="opcion" data-opcion="C">C) Célula vegetal</div>
-        <div class="opcion" data-opcion="D">D) Célula eucariota</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>3. ¿Cuál de los siguientes es un ejemplo de una planta vascular?</h3>
-        <div class="opcion" data-opcion="A">A) Musgo</div>
-        <div class="opcion" data-opcion="B">B) Alga</div>
-        <div class="opcion" data-opcion="C">C) Helecho</div>
-        <div class="opcion" data-opcion="D">D) Hongo</div>
-    </div>
-
-    <div class="pregunta" data-correcta="A">
-        <h3>4. ¿En qué parte de la célula se lleva a cabo la respiración celular?</h3>
-        <div class="opcion" data-opcion="A">A) Mitocondria</div>
-        <div class="opcion" data-opcion="B">B) Núcleo</div>
-        <div class="opcion" data-opcion="C">C) Retículo endoplasmático</div>
-        <div class="opcion" data-opcion="D">D) Aparato de Golgi</div>
-    </div>
-
-    <div class="pregunta" data-correcta="D">
-        <h3>5. ¿Qué estructura celular está encargada de controlar las funciones celulares?</h3>
-        <div class="opcion" data-opcion="A">A) Ribosoma</div>
-        <div class="opcion" data-opcion="B">B) Lisosoma</div>
-        <div class="opcion" data-opcion="C">C) Vacuola</div>
-        <div class="opcion" data-opcion="D">D) Núcleo</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>6. ¿Cuál es la principal función de los glóbulos rojos en la sangre?</h3>
-        <div class="opcion" data-opcion="A">A) Combatir infecciones</div>
-        <div class="opcion" data-opcion="B">B) Coagular la sangre</div>
-        <div class="opcion" data-opcion="C">C) Transportar oxígeno</div>
-        <div class="opcion" data-opcion="D">D) Regular la temperatura</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>7. ¿En qué órgano se produce la insulina?</h3>
-        <div class="opcion" data-opcion="A">A) Estómago</div>
-        <div class="opcion" data-opcion="B">B) Páncreas</div>
-        <div class="opcion" data-opcion="C">C) Hígado</div>
-        <div class="opcion" data-opcion="D">D) Riñón</div>
-    </div>
-
-    <div class="pregunta" data-correcta="D">
-        <h3>8. ¿Qué tipo de proteína se encuentra en los músculos y es responsable de la contracción muscular?</h3>
-        <div class="opcion" data-opcion="A">A) Insulina</div>
-        <div class="opcion" data-opcion="B">B) Hemoglobina</div>
-        <div class="opcion" data-opcion="C">C) Colágeno</div>
-        <div class="opcion" data-opcion="D">D) Actina</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>9. ¿Qué tipo de tejido conecta los huesos entre sí?</h3>
-        <div class="opcion" data-opcion="A">A) Tejido epitelial</div>
-        <div class="opcion" data-opcion="B">B) Tejido muscular</div>
-        <div class="opcion" data-opcion="C">C) Tejido conectivo</div>
-        <div class="opcion" data-opcion="D">D) Tejido nervioso</div>
-    </div>
-
-    <div class="pregunta" data-correcta="A">
-        <h3>10. ¿Qué tipo de célula está encargada de la defensa inmunológica del cuerpo?</h3>
-        <div class="opcion" data-opcion="A">A) Linfocito</div>
-        <div class="opcion" data-opcion="B">B) Neurona</div>
-        <div class="opcion" data-opcion="C">C) Epiteliocito</div>
-        <div class="opcion" data-opcion="D">D) Glóbulo rojo</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>11. ¿Cuál es el principal gas que los humanos inhalan para la respiración?</h3>
-        <div class="opcion" data-opcion="A">A) Dióxido de carbono</div>
-        <div class="opcion" data-opcion="B">B) Oxígeno</div>
-        <div class="opcion" data-opcion="C">C) Nitrógeno</div>
-        <div class="opcion" data-opcion="D">D) Metano</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>12. ¿Qué es la fotosíntesis?</h3>
-        <div class="opcion" data-opcion="A">A) El proceso de descomposición de los seres vivos</div>
-        <div class="opcion" data-opcion="B">B) La conversión de energía química en energía mecánica</div>
-        <div class="opcion" data-opcion="C">C) El proceso por el cual las plantas convierten la luz solar en energía química</div>
-        <div class="opcion" data-opcion="D">D) La formación de oxígeno por los animales</div>
-    </div>
-
-    <div class="pregunta" data-correcta="A">
-        <h3>13. ¿Cuál es la función principal de las mitocondrias?</h3>
-        <div class="opcion" data-opcion="A">A) Generar energía</div>
-        <div class="opcion" data-opcion="B">B) Controlar el ciclo celular</div>
-        <div class="opcion" data-opcion="C">C) Producir proteínas</div>
-        <div class="opcion" data-opcion="D">D) Sintetizar lípidos</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>14. ¿Qué proteína es responsable del transporte de oxígeno en la sangre?</h3>
-        <div class="opcion" data-opcion="A">A) Actina</div>
-        <div class="opcion" data-opcion="B">B) Hemoglobina</div>
-        <div class="opcion" data-opcion="C">C) Colágeno</div>
-        <div class="opcion" data-opcion="D">D) Insulina</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>15. ¿Qué es el ADN?</h3>
-        <div class="opcion" data-opcion="A">A) Un tipo de célula</div>
-        <div class="opcion" data-opcion="B">B) Una proteína</div>
-        <div class="opcion" data-opcion="C">C) Una molécula que contiene la información genética</div>
-        <div class="opcion" data-opcion="D">D) Un tipo de vitamina</div>
-    </div>
-
-    <div class="pregunta" data-correcta="D">
-        <h3>16. ¿Qué organelo celular es responsable de la síntesis de proteínas?</h3>
-        <div class="opcion" data-opcion="A">A) Mitocondria</div>
-        <div class="opcion" data-opcion="B">B) Aparato de Golgi</div>
-        <div class="opcion" data-opcion="C">C) Vacuola</div>
-        <div class="opcion" data-opcion="D">D) Ribosoma</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>17. ¿Qué estructura celular está presente en las células vegetales pero no en las animales?</h3>
-        <div class="opcion" data-opcion="A">A) Lisosoma</div>
-        <div class="opcion" data-opcion="B">B) Cloroplasto</div>
-        <div class="opcion" data-opcion="C">C) Núcleo</div>
-        <div class="opcion" data-opcion="D">D) Mitocondria</div>
-    </div>
-
-    <div class="pregunta" data-correcta="A">
-        <h3>18. ¿Cuál es el principal componente de la pared celular de las plantas?</h3>
-        <div class="opcion" data-opcion="A">A) Celulosa</div>
-        <div class="opcion" data-opcion="B">B) Quitina</div>
-        <div class="opcion" data-opcion="C">C) Lignina</div>
-        <div class="opcion" data-opcion="D">D) Colágeno</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>19. ¿Cómo se llama el proceso por el cual las células se dividen para producir dos células hijas idénticas?</h3>
-        <div class="opcion" data-opcion="A">A) Mitosis</div>
-        <div class="opcion" data-opcion="B">B) Meiosis</div>
-        <div class="opcion" data-opcion="C">C) Mitosis</div>
-        <div class="opcion" data-opcion="D">D) Fagocitosis</div>
-    </div>
-
-    <div class="pregunta" data-correcta="D">
-        <h3>20. ¿Qué tipo de célula se encuentra en los huesos?</h3>
-        <div class="opcion" data-opcion="A">A) Neurona</div>
-        <div class="opcion" data-opcion="B">B) Glóbulo rojo</div>
-        <div class="opcion" data-opcion="C">C) Célula muscular</div>
-        <div class="opcion" data-opcion="D">D) Osteocito</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>21. ¿Cuál es la función principal de los riñones?</h3>
-        <div class="opcion" data-opcion="A">A) Filtrar las grasas</div>
-        <div class="opcion" data-opcion="B">B) Filtrar y eliminar desechos de la sangre</div>
-        <div class="opcion" data-opcion="C">C) Regular la temperatura corporal</div>
-        <div class="opcion" data-opcion="D">D) Producción de hormonas</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>22. ¿Qué proceso se lleva a cabo en los ribosomas?</h3>
-        <div class="opcion" data-opcion="A">A) Respiración celular</div>
-        <div class="opcion" data-opcion="B">B) Producción de energía</div>
-        <div class="opcion" data-opcion="C">C) Síntesis de proteínas</div>
-        <div class="opcion" data-opcion="D">D) Almacenamiento de nutrientes</div>
-    </div>
-
-    <div class="pregunta" data-correcta="A">
-        <h3>23. ¿Qué molécula es esencial para la fotosíntesis?</h3>
-        <div class="opcion" data-opcion="A">A) Clorofila</div>
-        <div class="opcion" data-opcion="B">B) Hemoglobina</div>
-        <div class="opcion" data-opcion="C">C) Glucosa</div>
-        <div class="opcion" data-opcion="D">D) Ácido desoxirribonucleico</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>24. ¿Qué tipo de molécula es el ADN?</h3>
-        <div class="opcion" data-opcion="A">A) Carbohidrato</div>
-        <div class="opcion" data-opcion="B">B) Ácido nucleico</div>
-        <div class="opcion" data-opcion="C">C) Proteína</div>
-        <div class="opcion" data-opcion="D">D) Lípido</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>25. ¿Qué es la mitosis?</h3>
-        <div class="opcion" data-opcion="A">A) La división celular que da lugar a células con la mitad del número de cromosomas</div>
-        <div class="opcion" data-opcion="B">B) El proceso de reproducción sexual</div>
-        <div class="opcion" data-opcion="C">C) La división celular que da lugar a dos células hijas idénticas</div>
-        <div class="opcion" data-opcion="D">D) La fusión de dos células sexuales</div>
-    </div>
-
-    <div class="pregunta" data-correcta="D">
-        <h3>26. ¿Cuál es el principal componente de las membranas celulares?</h3>
-        <div class="opcion" data-opcion="A">A) Proteínas</div>
-        <div class="opcion" data-opcion="B">B) Carbohidratos</div>
-        <div class="opcion" data-opcion="C">C) Ácidos nucleicos</div>
-        <div class="opcion" data-opcion="D">D) Lípidos</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>27. ¿Cuál de los siguientes no es un tipo de tejido?</h3>
-        <div class="opcion" data-opcion="A">A) Tejido epitelial</div>
-        <div class="opcion" data-opcion="B">B) Tejido nervioso</div>
-        <div class="opcion" data-opcion="C">C) Tejido macroscópico</div>
-        <div class="opcion" data-opcion="D">D) Tejido muscular</div>
-    </div>
-
-    <div class="pregunta" data-correcta="A">
-        <h3>28. ¿Cuál es la función de los glóbulos blancos?</h3>
-        <div class="opcion" data-opcion="A">A) Combatir infecciones</div>
-        <div class="opcion" data-opcion="B">B) Transportar oxígeno</div>
-        <div class="opcion" data-opcion="C">C) Transportar nutrientes</div>
-        <div class="opcion" data-opcion="D">D) Regular la temperatura</div>
-    </div>
-
-    <div class="pregunta" data-correcta="B">
-        <h3>29. ¿Qué órgano es el encargado de filtrar y eliminar desechos del cuerpo?</h3>
-        <div class="opcion" data-opcion="A">A) Corazón</div>
-        <div class="opcion" data-opcion="B">B) Riñón</div>
-        <div class="opcion" data-opcion="C">C) Pulmones</div>
-        <div class="opcion" data-opcion="D">D) Hígado</div>
-    </div>
-
-    <div class="pregunta" data-correcta="C">
-        <h3>30. ¿Cuál de los siguientes no es un proceso metabólico?</h3>
-        <div class="opcion" data-opcion="A">A) Respiración celular</div>
-        <div class="opcion" data-opcion="B">B) Fotosíntesis</div>
-        <div class="opcion" data-opcion="C">C) Digestión de la comida en el estómago</div>
-        <div class="opcion" data-opcion="D">D) Reproducción celular</div>
-    </div>
-
-    <div id="resultado">
-        <h2>Resultado final:</h2>
-        <p id="mensajeResultado"></p>
-        <a href="../index.html"><h5>Volver al inicio</h5></a>
-    </div>
-
-    <script>
-        document.querySelectorAll('.pregunta').forEach(pregunta => {
-            const correcta = pregunta.getAttribute('data-correcta');
-            pregunta.querySelectorAll('.opcion').forEach(opcion => {
-                opcion.addEventListener('click', () => {
-                    pregunta.querySelectorAll('.opcion').forEach(opt => {
-                        opt.classList.add('desactivada');
-                    });
-                    const seleccion = opcion.getAttribute('data-opcion');
-                    if (seleccion === correcta) {
-                        opcion.classList.add('correcta');
-                    } 
-                    else {
-                        opcion.classList.add('incorrecta');
-                        pregunta.querySelector(`.opcion[data-opcion="${correcta}"]`).classList.add('correcta');
-                    }
-                });
-            });
-        });
-        const preguntas = document.querySelectorAll('.pregunta');
-        let puntuacion = 0;
-        let respondidas = 0;
-
-        preguntas.forEach(pregunta => {
-            const opciones = pregunta.querySelectorAll('.opcion');
-            const correcta = pregunta.dataset.correcta;
-
-            opciones.forEach(opcion => {
-                opcion.addEventListener('click', () => {
-                    if (pregunta.classList.contains('respondida')) return;
-
-                    const respuestaUsuario = opcion.dataset.opcion;
-
-                    if (respuestaUsuario === correcta) {
-                        opcion.classList.add('correcta');
-                        puntuacion++;
-                    } 
-                    else {
-                        opcion.classList.add('incorrecta');
-                        const correctaEl = Array.from(opciones).find(opt => opt.dataset.opcion === correcta);
-                        correctaEl.classList.add('correcta');
-                    }
-
-                    pregunta.classList.add('respondida');
-                    opciones.forEach(opt => opt.classList.add('desactivada'));
-
-                    respondidas++;
-
-                    // Mostrar resultado si es la última respondida
-                    if (respondidas === preguntas.length) {
-                        const resultadoDiv = document.getElementById('resultado');
-                        const mensaje = document.getElementById('mensajeResultado');
-                        mensaje.textContent = `Has acertado ${puntuacion} de ${preguntas.length} preguntas.`;
-                        resultadoDiv.style.display = 'block';
-                        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-                    }
-                });
-            });
-        });
-    </script>
+    <!-- Scripts. Uno es el enlace a la libreria de JQuery (la primera) y la otra al script donde esta todo-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JavaScript/script.js"></script>
 </body>
 </html>
