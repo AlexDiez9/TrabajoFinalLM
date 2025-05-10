@@ -1,111 +1,141 @@
-body{
+body{ /*El cuerpo tiene la fuente "sans-serif", y un padding de 20px*/
     font-family: sans-serif;
-    background-color: #F8F9FA;
     padding: 20px;
 }
 
-.contenedorPreguntas{
-    padding-left: 75px;
-    padding-right: 75px;
+.contenedorPreguntas{ /*El contenedor de las preguntas tiene un padding de 75px a la derecha e izquierda*/
+    padding: 0px 75px;
 }
 
+/*
+Las preguntas tienen un color blanco, con un padding de 15px por todos los lados, margen de 20px debajo,
+y un borde redondeado de 10px
+*/
 .pregunta{
-    background: #FFF;
+    background: white;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.pregunta h3{
+.pregunta h3{ /* El texto de la pregunta tiene un margen de arriba de 0px*/
     margin-top: 0;
 }
 
-.opcion{
-    margin: 8px 0;
+/* 
+Los contenedores de las preguntas tienen un margen de 8px encima y debajo, y 0px a la derecha e izquierda, padding de 10px en general, 
+un fondo mas oscuro para poder verlo (como gris claro mas claro), un borde redondeado de 5px.
+Cuando el raton pase por encima se pondra en puntero (mano), y tiene una transicion a gris claro en 0,3 segundos.
+*/
+.opcion{ 
+    margin: 8px 0px;
     padding: 10px;
-    background: #E9ECEF;
+    background: rgb(239, 233, 233);
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-.opcion:hover{
+.opcion:hover{ /* Al pasar por encima en fondo de la opcion se pone gris claro. (transicion)*/
     background: lightgray;
 }
 
+/* 
+La clase "correcta" la añade el JS. Al seleccionar una opcion, la opcion que tenga esta clase (la opcion correcta),
+se pone el fondo verde muy claro, y la letra de verde.
+*/
 .correcta{
-    background-color: #C8E6C9 !important;
+    background-color: rgb(182, 221, 187);
     color: green;
 }
 
+/* 
+La clase "incorrecta" la añade el JS. Al seleccionar una opcion incorrecta,
+se pone el fondo rojo muy claro y la letra de roja.
+*/
 .incorrecta{
-    background-color: #FFCDD2 !important;
+    background-color: rgb(224, 175, 175);
     color: red;
 }
 
+/*
+La clase "incorrecta" la añade el JS. Al seleccionar una opcion, desactiva todas las opciones de la pregunta.
+No deja volver a hacer click en una de ellas y las hace menos opacas.
+*/
 .opcion.desactivada{
     pointer-events: none;
-    opacity: 0.7;
+    opacity: 0.5;
 }
-    
+
+/*
+El titulo de los quizes es blanco, con un espacio entre las letras de 1,5px 
+y un espacio entre las palabras de 10px.
+*/
 h1{
     color: white;
     letter-spacing: 1.5px;
     word-spacing: 10px;
 }
 
-a{
+a{ /*Quita la linea de los enlaces.*/
     text-decoration: none;
 }
 
-h4::before{
+/*Añade antes de los h4 (textos en los enlaces) una flecha hacia la izquierda con una separacion de 0,5px.*/
+h4::before{ 
     content: "← ";
     letter-spacing: 0.5px;
 }
-h4{
+h4{ /*Los h4 son de color blanco y con un espacio entre letras de 1px.*/
     color: white;
     letter-spacing: 1px;
 }
 
+/* 
+El contenedor "resultados" esta oculto en un principio y luego al contestar todas las preguntas se muestra.
+Tiene un padding de 20px y de 5 encima, un margen de  10 px encima, tiene un fondo de color amarillo claro,
+y un borde redondeado de 5px.
+*/
 #resultado{
     display: none; 
     padding: 20px; 
     padding-top: 5px;
-    background:#fff3cd; 
-    border:1px solid #ffeeba; 
-    border-radius:10px; 
-    margin-top:10px;
+    background-color: rgb(255, 252, 163);
+    border-radius: 10px; 
+    margin-top: 10px;
 }
-#resultado h4{
+#resultado h4{ /*El texto del enlace en el resultado es negro.*/
     color: black;
 }
 
-#Historia, #Cine{
+#Historia, #Cine{ /*El fondo del quiz de historia y cine son rojos algo opacos*/
     background-color: rgb(255, 51, 51, 0.85);
 }
 
-#Arte, #Literatura{
+#Arte, #Literatura{ /*Elfondo del quiz de arte y literatura son azules claro algo opacos*/
     background-color: rgba(0, 199, 234, 0.578);
 }
 
-#Biologia, #Deporte, #Geografia{
+#Biologia, #Deporte, #Geografia{ /*El fondo del quiz de biologia, deporte y cine son verdes algo opacos*/
     background-color: rgba(22, 195, 25, 0.719);
 }
 
-#CulturaGeneral, #Musica{
+#CulturaGeneral, #Musica{ /*El fondo del quiz de cultura general y musica son naranjas algo opacos*/
     background-color: rgba(255, 109, 4, 0.774);
 }
 
-#FyQ, #Logos, #Tecnologia{
+#FyQ, #Logos, #Tecnologia{ /*El fondo del quiz de Fisica y quimica, logos y tecnologia son rojos algo opacos*/
     background-color: rgba(99, 39, 251, 0.852);
 }
 
-.logo-img{
-    width: 150px;
-    height: auto;
-    margin: 10px 0;
+#Aleatorio{
+    background-color: rgb(218, 214, 2); /*El fondo del quiz de preguntas aleatorias es amarillo.*/
 }
 
+/*Las imagenes del quiz de logos tienen un ancho de 150px y un margen de 10px a la derecha e izquierda y de 30 debajo.*/
+.logo-img{ 
+    width: 150px;
+    margin: 10px 0 10px 30px;
+}
 
     

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz de Arte</title>
+    <link rel="stylesheet" href="../Estilos/quizs.css"> <!-- Estilos de quizs-->
+</head>
+<body id="Aleatorio"> <!-- Id para el CSS para poner cosas especificas de arte, al ser comun para todos los quizs-->
+
+    <div class="contenedorPreguntas"> <!-- Contenedor para las preguntas-->
+        <h1>Quiz de Arte</h1>
+        
+        <!-- Enlace al inicio-->
+        <a href="../index.html"><h4>Volver al inicio</h4></a>
+
+        <!-- Contendor para que se pongan las preguntas eleatorias-->
+        <div class="aleatorio">
+        </div>
+
+        <!-- Resultados del quiz. muestra el numero de preguntas acertadas y un enlace para volver al inicio-->
+        <div id="resultado">
+            <h2>Resultado final:</h2>
+            <p>Has acertado <span id="aciertos"></span> de <span id="preguntas"></span> preguntas.</p>
+            <a href="../index.html"><h4>Volver al inicio</h4></a>
+        </div>
+    </div>
+
+    <!-- Scripts. Uno es el enlace a la libreria de JQuery (el primera) 
+    y el otro es el script que hace las cosas de este quiz aleatorio-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JavaScript/scriptAleatorio.js"></script> 
+</body>
+</html>

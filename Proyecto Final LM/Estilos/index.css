@@ -1,16 +1,24 @@
-body{
+/*
+El fondo del body del index es una foto de interrogaciones.
+La fuente del texto es verdana, y si no puede serlo sigue por la lista.
+El margen y el padding de todos los lados es 0.
+*/
+body{ 
     background: url(../Fotos/Fondo\ Interrogaciones.png) center/cover fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
-h1{
+h1{ /* El titulo se centra y tiene un margen encima de 20px*/
     text-align: center;
     margin-top: 20px;
 }
 
+/*
+Contiene el texto de la introduccion, que es 1,2 veces el tamaño del padre, centrado, 
+con un margen en la encima y debajo de 20px y a los lados automatico, con un ancho maximo de 800px.
+*/
 .intro{
     font-size: 1.2em;
     text-align: center;
@@ -18,6 +26,11 @@ h1{
     max-width: 800px;
 }
 
+/*
+El contenedor de los quiz se divide en tres columnas en las que va dicidiendo los quizes.
+Tienen un espacio entre si de 20 px, un padding de 40px, un ancho maximo automatico, 
+una altura maxima que se ajusta al contenido, y un margen de 0 arriba y abajo, y automatico a los lados.
+*/
 .quizes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,46 +41,73 @@ h1{
     margin: 0 auto;
 }
 
+/*
+Cada quiz es de color blanco, con bordes redondeados de 10px, centrados, con un padding de 15px, y una transicion 
+al pasar por encima para que se haga un poco mas grande en 0,2 segundos.
+*/
 .quiz{
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
     padding: 15px;
     transition: transform 0.2s;
 }
 
-.quiz:hover{
+.quiz:hover{ /*Al pasar por encima del quiz se hace un 1,05 mas grande. (transformacion)*/
     transform: scale(1.05);
 }
 
+/*
+las imagenes de los quizes tienes un ancho del 100% del contenedor y una altura de 200px.
+La imagen cubre el contenedor y tiene un borde redondeado de 8px.
+*/
 .quiz img{
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
 
+/* Los parrafos de los quizes tienen un amrgen de arriba de 10px, letra en negrita de color negro.*/
 .quiz p{
     margin-top: 10px;
     font-weight: bold;
     color: black;
-    font-size: 1rem;
 }
 
+/*Los enlaces de los quizes no estan subrayados*/
 .quiz a{
     text-decoration: none;
 }
 
-.quiz-aleatorio{
-    grid-column: span 3;
-    display: flex;
-    justify-content: center;
+/*
+Para dificultad le pone un color.
+El texto se añade aqui porque era mas facil de editar, al ser la dificultad algo que depende de la persona,
+le pasamos la pagina a varios amigos para que la probaran y poner las dificultades.
+*/
+.muyFacil::after{
+    content: "Muy fácil";
+    color: rgb(3, 255, 238);
+}
+.facil::after{
+    content: "Fácil";
+    color: rgb(20, 255, 59);
+}
+.media::after{
+    content: "Media";
+    color: rgb(220, 206, 11);
+}
+.dificil::after{
+    content: "Dificil";
+    color: rgb(255, 88, 88);
 }
 
+/*
+El contenedor del nombre de los autores esta a la derecha de la pagina, con un padding de 100px encima, 
+25px a los lados, y 50 debajo.
+*/
 #autores{
     text-align: right;
-    font-size: medium;
     padding: 100px 25px 50px;
     font-weight: bold;
 }

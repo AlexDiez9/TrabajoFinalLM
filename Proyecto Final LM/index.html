@@ -3,41 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
-    <link rel="stylesheet" href="Estilos/index.css">
+    <link rel="stylesheet" href="Estilos/index.css"> <!-- Estilos de quizs-->
+    
 </head>
 <body>
     <h1>Introducción</h1>
-    <div class="intro">
+    <div class="intro"> <!-- Contenedor con texto-->
         <p>¡Pon a prueba tus conocimientos con nuestros quizzes interactivos!</p>
         <p>¿Listo para desafiar tu mente?</p>
         <p>Explora una variedad de quizzes divertidos y educativos sobre cultura general, ciencia, historia, entretenimiento y mucho más.
         Aprende jugando, compite con tus amigos y descubre qué tanto sabes. ¡Cada pregunta cuenta!</p>
     </div>
 
-    <div class="quiz-container">
-        <div class="quiz-item"><a href="Quizs/Historia.html"><img src="Fotos/historia.jpg" alt="Historia"><p>Historia</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Arte.html"><img src="Fotos/Arte.jpg" alt="Arte"><p>Arte</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Biologia.html"><img src="Fotos/Biologia.jpg" alt="Biología"><p>Biología</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Cine.html"><img src="Fotos/Cine.jpg" alt="Cine"><p>Cine</p></a></div>
-        <div class="quiz-item"><a href="Quizs/CulturaGeneral.html"><img src="Fotos/CulturaGeneral.jpg" alt="Cultura General"><p>Cultura General</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Deportes.html"><img src="Fotos/Deportes.jpg" alt="Deportes"><p>Deportes</p></a></div>
-        <div class="quiz-item"><a href="Quizs/FisicaQuimica.html"><img src="Fotos/FisicaQuimica.jpg" alt="Física y Química"><p>Física y Química</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Geografia.html"><img src="Fotos/Geografia.jpg" alt="Geografía"><p>Geografía</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Literatura.html"><img src="Fotos/Literatura.jpg" alt="Literatura"><p>Literatura</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Logos.html"><img src="Fotos/Logos.jpg" alt="Logos"><p>Marcas y Logos</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Musica.html"><img src="Fotos/musica.jpg" alt="Música"><p>Música</p></a></div>
-        <div class="quiz-item"><a href="Quizs/Tecnologia.html"><img src="Fotos/Tecnologia.jpg" alt="Tecnología"><p>Tecnología</p></a></div>
-
-        <!-- Aleatorio al final, centrado -->
-        <div class="quiz-aleatorio">
-            <div class="quiz-item">
-                <a href="Quizs/Aleatorio.html">
-                <img src="Fotos/ALEATORIO.png" alt="Aleatorio">
-                <p>Aleatorio<br>NO TERMINADO</p>
-                </a>
-            </div>
+    <!-- Contenedor de los enlaces a cada quiz-->
+    <div class="quizes"> 
+        <div class="quiz"> <!-- Quiz de historia-->
+            <a href="Quizs/Historia.html">
+                <img src="Fotos/historia.jpg" alt="Historia">
+                <p>Historia<br>Dificultad: <span class="media"></span></p>
+            </a>
         </div>
+
+        <div class="quiz"> <!-- Quiz de arte-->
+            <a href="Quizs/Arte.html">
+                <img src="Fotos/Arte.jpg" alt="Arte">
+                <p>Arte<br>Dificultad: <span class="media"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de biologia-->
+            <a href="Quizs/Biologia.html">
+                <img src="Fotos/Biologia.jpg" alt="Biología">
+                <p>Biología<br>Dificultad: <span class="dificil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de cine-->
+            <a href="Quizs/Cine.html">
+                <img src="Fotos/Cine.jpg" alt="Cine">
+                <p>Cine<br>Dificultad: <span class="facil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de cultura general-->
+            <a href="Quizs/CulturaGeneral.html">
+                <img src="Fotos/CulturaGeneral.jpg" alt="Cultura General">
+                <p>Cultura General<br>Dificultad: <span class="facil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de deporte-->
+            <a href="Quizs/Deportes.html">
+                <img src="Fotos/Deportes.jpg" alt="Deportes">
+                <p>Deportes<br>Dificultad: <span class="facil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de fisica y quimica-->
+            <a href="Quizs/FisicaQuimica.html">
+                <img src="Fotos/FisicaQuimica.jpg" alt="Física y Química">
+                <p>Física y Química<br>Dificultad: <span class="dificil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de geografia-->
+            <a href="Quizs/Geografia.html">
+                <img src="Fotos/Geografia.jpg" alt="Geografía">
+                <p>Geografía<br>Dificultad: <span class="facil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de literatura-->
+            <a href="Quizs/Literatura.html">
+                <img src="Fotos/Literatura.jpg" alt="Literatura">
+                <p>Literatura<br>Dificultad: <span class="dificil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de logos-->
+            <a href="Quizs/Logos.html">
+                <img src="Fotos/Logos.jpg" alt="Logos">
+                <p>Marcas y Logos<br>Dificultad: <span class="muyFacil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de musica-->
+            <a href="Quizs/Musica.html">
+                <img src="Fotos/musica.jpg" alt="Música">
+                <p>Música<br>Dificultad: <span class="facil"></span></p>
+            </a>
+        </div>
+
+        <div class="quiz"> <!-- Quiz de tecnologia-->
+            <a href="Quizs/Tecnologia.html">
+                <img src="Fotos/Tecnologia.jpg" alt="Tecnología">
+                <p>Tecnología<br>Dificultad: <span class="media"></span></p>
+            </a>
+        </div>
+    
+        <div></div> <!-- Div para que el quiz aleatorio este en el centro-->
+
+        <div class="quiz"> <!-- Quiz aleatorio-->
+            <a href="Quizs/Aleatorio.html">
+                <img src="Fotos/ALEATORIO.png" alt="Aleatorio">
+                <p>Aleatorio</p>
+            </a>
+        </div>
+
+        <div></div> <!-- Div para que el quiz aleatorio este en el centro-->
     </div>
-    <div id="autores">Por Álvaro Esquína y Alex Díez</div>
+
+    <div id="autores">Por Álvaro Esquina y Alex Díez</div> <!-- Contenedor de los autores-->
 </body>
 </html>
