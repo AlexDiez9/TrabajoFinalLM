@@ -1,0 +1,7 @@
+Si se ejecuta el index en el buscador, iran los enlaces a los quizes y los quizzes que no sea el Aleatorio. 
+El navegador bloquea las peticiones a otros HTMLs, que es de donde saca las preguntas.
+
+Tendra que ejecutarse con Live Server de Visual Estudio para que pueda usar preguntas de otros quizzes.
+
+
+Por cierto me acabo de dar cuenta de que "quiz" en plural es "quizzes" no "quizes". Los comentarios creo que estan asi, pero bueno no creo que pase nada, ¿no? se entiende.
