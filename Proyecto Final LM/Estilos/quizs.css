@@ -64,7 +64,7 @@ No deja volver a hacer click en una de ellas y las hace menos opacas.
 */
 .opcion.desactivada{
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 /*
