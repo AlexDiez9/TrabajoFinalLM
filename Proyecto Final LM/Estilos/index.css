@@ -36,7 +36,6 @@ una altura maxima que se ajusta al contenido, y un margen de 0 arriba y abajo, y
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 40px;
-    max-width: auto;
     max-height: fit-content;
     margin: 0 auto;
 }
