@@ -1,0 +1,11 @@
+Repositorios:
+Repositorio de todos los archivos: https://github.com/AlexDiez9/TrabajoFinalLM
+Repositorio para la pagina web: https://github.com/AlexDiez9/AlexDiez9.github.io
+
+
+Paginas web:
+Pagina en github pages: https://AlexDiez9.github.io
+Pagina en netlify: https://sensational-basbousa-f56169.netlify.app
+
+A las pesonas que les pasamos los enlaces para probar la pagina no les cargaba la de nelify, pero a nosotros si.
+En la de github que si cargaba no funciona el quiz de preguntas aleatorias, pero en el de nelify si.
